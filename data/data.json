@@ -1,0 +1,27 @@
+{
+  "firstName" : "Navneet",
+  "lastName"  : "Prakash",
+  "address"   : {
+      "apartment" : "WA-112",
+      "street"    : "Gali No. -16",
+      "colony"    : "Shakarpur",
+      "city"      : "Delhi-92",
+      "state"     : "New Delhi"
+  },
+  "contact"   : {
+      "phone"     : "+91-9527936489",
+      "email"     : "hello_navneet@hotmail.com",
+      "github"    : "https://www.github.com/techraiders",
+      "linkedin"  : "in.linkedin.com/in/techraiders",
+      "skype"     : null
+  },
+
+  "summary"   : "Awarded Web Geek with good knowledge of MVC architecture, Angular Js, Object oriented JavaScript, PHP,SDLC, NPM, Version control, willing to learn new technologies, works well in both team environment and individual Assignments.",
+
+  "services" : "Seeking an entry level position in the field of Web or Hybrid Mobile Applications Development in an organization which recognizes and utilizes my true potential while nurturing my skills.",
+
+  "skils" : {
+      "skill1" : "status",
+      "skill2" : "status"
+  }
+}
