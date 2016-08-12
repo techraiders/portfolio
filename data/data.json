@@ -13,15 +13,45 @@
       "email"     : "hello_navneet@hotmail.com",
       "github"    : "https://www.github.com/techraiders",
       "linkedin"  : "in.linkedin.com/in/techraiders",
-      "skype"     : null
+      "skype"     : "null"
   },
 
-  "summary"   : "Awarded Web Geek with good knowledge of MVC architecture, Angular Js, Object oriented JavaScript, PHP,SDLC, NPM, Version control, willing to learn new technologies, works well in both team environment and individual Assignments.",
+  "summary"   : "this is summary from data.json file",
 
-  "services" : "Seeking an entry level position in the field of Web or Hybrid Mobile Applications Development in an organization which recognizes and utilizes my true potential while nurturing my skills.",
+  "services" : ["service1", "service2", "service3", "service4"],
 
   "skils" : {
-      "skill1" : "status",
-      "skill2" : "status"
-  }
+      "skill1" : "50%",
+      "skill2" : "90%"
+  },
+  "trainings" : [
+      {
+        "name" : "Ultimate AngularJS: Build a Real-World App from Scratch",
+        "certificateURL" : "NA"
+      },
+      {
+        "name" : "HTML 5 - HTML5 training for web developers",
+        "certificateURL" : "ude.my/UC-59ZM2CW8"
+      },
+      {
+        "name" : "Git Fundamentals Mastery & GitHub : 100% Hands-on Git Guide",
+        "certificateURL" : "ude.my/UC-DIX4NVSM"
+      },
+      {
+        "name" : "Mastering Web and Mobile Debugging Using Dev Tools",
+        "certificateURL" : "ude.my/UC-XGNOIS8P"
+      },
+      {
+        "name" : "Angular 2 Master Class",
+        "certificateURL" : "ude.my/UC-V0SYWARM"
+      },
+      {
+        "name" : "OpenCart 2.0 Video QuickStart",
+        "certificateURL" : "ude.my/UC-40TOTS5R"
+      },
+      {
+        "name" : "WordPress Essentials Step by Step setup and using WordPress",
+        "certificateURL" : "ude.my/UC-VALT3YFU"
+      }
+  ]
 }
