@@ -85,18 +85,18 @@
     <div class="container">
       <!-- EXPERIMENTS HERE -->
       <div class="row" id="introduction">
-        <div class="col-md-3">
+        <div class="col-xs-12 col-sm-3 col-md-3">
           <img src="img/dp.jpg" class="img-thumbnail img-responsive">
         </div><!-- col -->
-        <div class="col-md-8">
+        <div class="col-xs-12 col-sm-9 col-md-9">
               <div class="row">
-                <div class="col-md-12 invisible">Empty row </div>
+                <div class="col-md-12 invisible hidden-sm hidden-xs">Empty row </div>
               </div>
               <div class="row">
-                <div class="col-md-12 invisible">Empty row</div>
+                <div class="col-md-12 invisible hidden-sm hidden-xs">Empty row</div>
               </div>
               <div class="row">
-                <div class="col-md-12 invisible">Empty row</div>
+                <div class="col-md-12 invisible hidden-sm">Empty row</div>
               </div>
           <p>I'M NAVNEET PRAKASH<br/>SOFTWARE ENGINEER</p>
           <p>Age: 24<br/>
@@ -105,17 +105,17 @@
             Email: hello_navneet@hotmail.com
           </p><hr/>
           <div class="row vdivide">
-            <div class="col-md-7">
-              <span>Let's be in touch
+            <div class="col-xs-3 col-sm-3 col-md-4">
+              Let's be in touch
+            </div>
+            <div class="col-xs-7 col-sm-7 col-md-4">
                 <ul class="socialicons">
                   <li><a href="http://facebook.com/techraiders" target="_blank"><i class="fa fa-facebook"></i></a></li>
                   <li><a href="https://in.linkedin.com/in/techraiders" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                   <li class="disabled"><a href="#"><i class="fa fa-twitter" target="_blank"></i></a></li>
                   <li class="disabled"><a href="#" target="_blank"><i class="fa fa-google-plus"></i> </a></li>
-                </ul>
-              </span>
             </div><!-- col -->
-            <div class="col-md-5">
+            <div class="col-xs-2 col-sm-2 col-md-4">
               <button class="btn btn-success">Hire me</button>
             </div>
           </div><!-- row -->
@@ -143,7 +143,7 @@
           <h2>Skills</h2>
         </div><!-- col -->
         <div class="row text-center" ng-controller="skillsCtrl">
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="progress" ng-repeat="skill in skills.slice(0,6)">
               <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{skill.status}}"
               aria-valuemin="0" aria-valuemax="100" style="width:{{skill.status}}">
@@ -151,7 +151,7 @@
               </div><!-- progress bar -->
             </div><!-- progress -->  
           </div><!-- col -->
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="progress" ng-repeat="skill in skills.slice(7,13)">
               <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{skill.status}}"
               aria-valuemin="0" aria-valuemax="100" style="width:{{skill.status}}">
@@ -159,7 +159,7 @@
               </div><!-- progress bar -->
             </div><!-- progress -->
           </div><!-- col -->
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="progress" ng-repeat="skill in skills.slice(14,20)">
               <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{skill.status}}"
               aria-valuemin="0" aria-valuemax="100" style="width:{{skill.status}}">
@@ -213,7 +213,7 @@
             <tbody ng-controller="trainingsCtrl" >
               <tr ng-repeat="course in courses">
                 <td>{{course.name}}</td>
-                <td>{{course.certificateURL}}</td>
+                <td><a href="http://{{course.certificateURL}}">{{course.certificateURL}}</a></td>
               </tr>
             </tbody>
           </table>
