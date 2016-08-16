@@ -13,18 +13,19 @@
 
         <!-- font awesome CDN for social icons -->
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/w3.css">
         <style>
           body {
-              padding-top: 50px;
+              padding-top: 100px;
               padding-bottom: 20px;
-          }
-          .input-group{
-            padding-top: 5px;  
-          }
-          .input-group input, button{
-            height: 44px;
 
+          }
+          footer{
+            text-align: center;
+          }
+          div.w3-card-4{
+            margin-left: 50px;
+            margin-right: 50px;
           }
           
         </style>
@@ -37,211 +38,75 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-default navbar-fixed-top hidden-sm hidden-xs" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <span class="navbar-brand"><a href="#">Portfolio</a> <span class="label label-danger"> Beta</span></span>
-          <!-- <p class="navbar-text bg-danger">This website is under development</p> -->
-        </div>
-      </div>
-    </nav>
-    <div class="container">  
-      <nav class="navbar navbar-default">
-         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div> <!-- navbar-header -->
-        <div class="collapse navbar-collapse" id="collapsemenu">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Achievements</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <form class="form-inline navbar-right" role="search">
-            <div class="form-group">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search" id="searchbar">
-                <span class="input-group-btn">
-                  <button class="btn btn-default" type="button">
-                    <span class="glyphicon glyphicon-search"></span>
-                  </button>
-                </span>
-              </div> <!-- input group -->
-            </div> <!-- form group -->
-          </form>
-        </div> <!-- collapse menu --> 
-      </nav>  
-    </div><!-- collapse menu container -->
+        
+        <header ng-include="'ui_components/navbar.html'"></header>
 
-    <div class="container">
-      <!-- EXPERIMENTS HERE -->
-      <section class="row" id="introduction">
-        <figure class="col-xs-12 col-sm-3 col-md-3">
-          <img src="img/dp.jpg" class="img-thumbnail img-responsive" alt="Display Picture">
-          <figcaption class="text-center">Er. Navneet Prakash</figcaption>
-        </figure><!-- col -->
-        <div class="col-xs-12 col-sm-9 col-md-9">
-            <div class="row">
-              <div class="col-md-12 invisible hidden-sm hidden-xs">Empty row </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 invisible hidden-sm hidden-xs">Empty row</div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 invisible hidden-sm">Empty row</div>
-            </div>
-          <p>I'M NAVNEET PRAKASH<br/>SOFTWARE ENGINEER</p>
-          <p>Age: 24<br/>
-            Address: WA-112, Gali No. 16, Shakarpur, Delhi-92, New Delhi<br/>
-            Phone: +91-9527936489<br/>
-            Email: hello_navneet@hotmail.com
-          </p><hr/>
-            <div class="row vdivide">
-              <div class="col-xs-3 col-sm-3 col-md-4">
-                Let's be in touch
-              </div>
-              <div class="col-xs-7 col-sm-7 col-md-4">
-                  <ul class="socialicons">
-                    <li><a href="http://facebook.com/techraiders" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://in.linkedin.com/in/techraiders" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li class="disabled"><a href="#"><i class="fa fa-twitter" target="_blank"></i></a></li>
-                    <li class="disabled"><a href="#" target="_blank"><i class="fa fa-google-plus"></i> </a></li>
-                  </ul>
-              </div><!-- col -->
-              <div class="col-xs-2 col-sm-2 col-md-4">
-                <button class="btn btn-success">Hire me</button>
-              </div>
-            </div><!-- row socialicons -->
-          </div><!-- col -->
-      </section><!-- introduction-->
-
-      <section class="row" id="summary" ng-controller="summaryCtrl">
-        <div class="col-md-12">
+        <section class="w3-container">
           <div class="w3-card-4">
-            <header class="w3-container w3-blue"><h2>SUMMARY</h2></header>
-            <summary class="w3-container">{{summary}}</summary>
-            <footer>  </footer>
-          </div><!-- card -->
-        </div><!-- col -->
-      </section><!-- summary-->
+            <div class="w3-row w3-hide-small">
+              <div class="w3-col m1 w3-center w3-grey">1</div>
+              <div class="w3-col m1 w3-center">2</div>
+              <div class="w3-col m1 w3-center w3-grey">3</div>
+              <div class="w3-col m1 w3-center">4</div>
+              <div class="w3-col m1 w3-center w3-grey">5</div>
+              <div class="w3-col m1 w3-center">6</div>
+              <div class="w3-col m1 w3-center w3-grey">7</div>
+              <div class="w3-col m1 w3-center">8</div>
+              <div class="w3-col m1 w3-center w3-grey">9</div>
+              <div class="w3-col m1 w3-center">10</div>
+              <div class="w3-col m1 w3-center w3-grey">11</div>
+              <div class="w3-col m1 w3-center">12</div>
+            </div>
+            <div class="w3-row">
+              <div class="w3-col w3-card l2">
+                <img src="img/dp.jpg" style="width:100%;">
+              </div>
+              <div class="w3-col l10">
+                <div class="w3-container w3-margin-top">
+                  <figure>Place here "Hello and Welcome" bubble</figure>
+                  <p class="w3-margin-left">
+                    I'M NAVNEET PRAKASH<br/>
+                    SOFTWARE ENGINEER<br/>
+                    Age: 24<br/>
+                    Address: WA-112, Gali No. 16, Shakarpur, Delhi-92, New Delhi<br/>
+                    Phone: +91-9527936489<br/>
+                    Email: hello_navneet@hotmail.com
+                  </p>
+                  <div class="w3-row" style="margin-left: 16px;">
+                    <div class="w3-col l10"></div>
+                    Let's be in touch  &nbsp;&nbsp;&nbsp;
+                    <ul class="socialicons">
+                      <li><a href="http://facebook.com/techraiders" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="https://in.linkedin.com/in/techraiders" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                      <li class="disabled"><a href="#"><i class="fa fa-twitter" target="_blank"></i></a></li>
+                      <li class="disabled"><a href="#" target="_blank"><i class="fa fa-google-plus"></i> </a></li>
+                  </ul>
+                  </div><!-- social icon row nested inside col beside dp -->
+                </div>
+              </div> <!-- intro column beside dp -->
+            </div><!-- dp row -->
+          </div><!-- container -->
+        </section>
 
-        <br/><br/><br/><br/><br/>
-      <section class="row" id="services" ng-controller="servicesCtrl">
-        <div class="col-md-12">
-          <div class="panel panel-warning">
-          <div class="panel-heading">Services</div>
-          <div class="panel-body">
+        <section class="w3-container">
+          <div class="w3-card-4 w3-center">
+            <div class="w3-row  w3-padding-xlarge">
+              <h1>Header</h1>
+              <div ng-controller="summaryCtrl"><summary>{{summary}}</summary></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="w3-container" id="services" ng-controller="servicesCtrl">
+          <div class="w3-card-4 w3-padding-xlarge">
             <ul ng-repeat="service in services">
               <li>{{service}}</li>
             </ul>
-          </div><!-- panel body -->
-        </div><!-- panel-->
-      </div><!-- col -->
+          </div><!-- card -->
       </section>
 
-      <!-- skill section -->
-      <section class="row">
-        <div class="col-md-12">
-          <div class="panel panel-primary">
-          <div class="panel-heading">Skills</div>
-            <div class="panel-body">
-              <div class="row text-center" ng-controller="skillsCtrl">
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                  <div class="progress" ng-repeat="skill in skills.slice(0,6)">
-                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{skill.status}}"
-                    aria-valuemin="0" aria-valuemax="100" style="width:{{skill.status}}">
-                      {{skill.name}}
-                    </div><!-- progress bar -->
-                  </div><!-- progress -->  
-                </div><!-- col -->
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                  <div class="progress" ng-repeat="skill in skills.slice(7,13)">
-                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{skill.status}}"
-                    aria-valuemin="0" aria-valuemax="100" style="width:{{skill.status}}">
-                      {{skill.name}}
-                    </div><!-- progress bar -->
-                  </div><!-- progress -->
-                </div><!-- col -->
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                  <div class="progress" ng-repeat="skill in skills.slice(14,20)">
-                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{skill.status}}"
-                    aria-valuemin="0" aria-valuemax="100" style="width:{{skill.status}}">
-                      {{skill.name}}
-                    </div><!-- progress bar -->
-                  </div><!-- progress -->
-                </div> <!-- col -->
-              </div><!-- row -->
-            </div><!-- panel body-->
-          </div><!-- panel primary -->  
-        </div><!-- col -->
-      </section>
+      
 
-      <!-- education section -->
-      <section class="row">
-        <div class="col-md-12">
-          <div ng-controller="educationCtrl">
-            <div class="panel panel-primary">
-              <div class="panel-heading">Education</div>
-              <div class="panel-body">
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th>Degree</th>
-                      <th>University</th>
-                      <th>Institute</th>
-                      <th>Year of Passing</th>
-                      <th>Percentage</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr ng-repeat="education in educations">
-                      <td>{{education.degree}}</td>
-                      <td>{{education.university}}</td>
-                      <td>{{education.institute}}</td>
-                      <td>{{education.yop}}</td>
-                      <td>{{education.percentage}}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>         
-            </div> <!-- panel -->
-          </div><!-- controller -->
-        </div><!-- education col -->
-      </section><!-- education section -->
-
-      <!-- trainings section -->
-      <section class="row">
-        <div class="col-md-12">
-        <h2>Online Trainings Taken</h2>
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>Course Name</th>
-                <th>Certificate URL</th>
-              </tr>
-            </thead>
-            <tbody ng-controller="trainingsCtrl" >
-              <tr ng-repeat="course in courses">
-                <td>{{course.name}}</td>
-                <td><a href="http://{{course.certificateURL}}" target="_blank">{{course.certificateURL}}</a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div><!-- col -->
-      </section><!-- row table-->
-
-      <a href="#introduction">Back to top</a>
-    </div><!-- container -->
-    <hr>
       <footer class="text-center">
               <p>Copyright &copy; Navneet Creations. <br/> All rights reserved &reg;</p>
         </div>   
@@ -250,21 +115,30 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
-        
-        
         <script src="node_modules/angular/angular.min.js" type="text/javascript"></script>
         <script src="scripts/app.js"></script>
         <script src="components/portfolio.ctr.js" type="text/javascript"></script>
         <script src="js/main.js"></script>
 
+        <script type="text/javascript">
+          function myFunction() {
+              var x = document.getElementById("demo");
+              if (x.className.indexOf("w3-show") == -1) {
+                  x.className += " w3-show";
+              } else {
+                  x.className = x.className.replace(" w3-show", "");
+              }
+          }
+        </script>
+
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            /*(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');*/
         </script>
     </body>
 </html>
