@@ -65,7 +65,7 @@ ul.socialicons li a i:hover {
   min-height: 70px;
 }
 
-h2{
+h2, .panel-heading{
   text-align: center;
 }
 

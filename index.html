@@ -28,7 +28,7 @@
           }
           
         </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -40,8 +40,8 @@
     <nav class="navbar navbar-default navbar-fixed-top hidden-sm hidden-xs" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">Portfolio</a>
-          <p class="navbar-text"></p>
+          <span class="navbar-brand"><a href="#">Portfolio</a> <span class="label label-danger"> Beta</span></span>
+          <!-- <p class="navbar-text bg-danger">This website is under development</p> -->
         </div>
       </div>
     </nav>
@@ -84,123 +84,142 @@
 
     <div class="container">
       <!-- EXPERIMENTS HERE -->
-      <div class="row" id="introduction">
-        <div class="col-xs-12 col-sm-3 col-md-3">
-          <img src="img/dp.jpg" class="img-thumbnail img-responsive">
-        </div><!-- col -->
+      <section class="row" id="introduction">
+        <figure class="col-xs-12 col-sm-3 col-md-3">
+          <img src="img/dp.jpg" class="img-thumbnail img-responsive" alt="Display Picture">
+          <figcaption class="text-center">Er. Navneet Prakash</figcaption>
+        </figure><!-- col -->
         <div class="col-xs-12 col-sm-9 col-md-9">
-              <div class="row">
-                <div class="col-md-12 invisible hidden-sm hidden-xs">Empty row </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12 invisible hidden-sm hidden-xs">Empty row</div>
-              </div>
-              <div class="row">
-                <div class="col-md-12 invisible hidden-sm">Empty row</div>
-              </div>
+            <div class="row">
+              <div class="col-md-12 invisible hidden-sm hidden-xs">Empty row </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 invisible hidden-sm hidden-xs">Empty row</div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 invisible hidden-sm">Empty row</div>
+            </div>
           <p>I'M NAVNEET PRAKASH<br/>SOFTWARE ENGINEER</p>
           <p>Age: 24<br/>
             Address: WA-112, Gali No. 16, Shakarpur, Delhi-92, New Delhi<br/>
             Phone: +91-9527936489<br/>
             Email: hello_navneet@hotmail.com
           </p><hr/>
-          <div class="row vdivide">
-            <div class="col-xs-3 col-sm-3 col-md-4">
-              Let's be in touch
-            </div>
-            <div class="col-xs-7 col-sm-7 col-md-4">
-                <ul class="socialicons">
-                  <li><a href="http://facebook.com/techraiders" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="https://in.linkedin.com/in/techraiders" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                  <li class="disabled"><a href="#"><i class="fa fa-twitter" target="_blank"></i></a></li>
-                  <li class="disabled"><a href="#" target="_blank"><i class="fa fa-google-plus"></i> </a></li>
-            </div><!-- col -->
-            <div class="col-xs-2 col-sm-2 col-md-4">
-              <button class="btn btn-success">Hire me</button>
-            </div>
-          </div><!-- row -->
-        </div><!-- col -->
-      </div><!-- row introduction-->
-      <hr/>
-      <div class="row" id="summary" ng-controller="summaryCtrl">
-        <div class="col-md-12">
-          <h2>Hello There!</h2>
-          <p>{{summary}}</p>
-        </div><!-- col -->
-      </div><!-- row summary-->
-      <hr/>
-      <div class="row" id="services" ng-controller="servicesCtrl">
-        <div class="col-md-12">
-          <h2>Services</h2>
-          <ul ng-repeat="service in services">
-            <li>{{service}}</li>
-          </ul>
-        </div><!-- col -->
-      </div><!-- row services-->
-      <hr/>
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Skills</h2>
-        </div><!-- col -->
-        <div class="row text-center" ng-controller="skillsCtrl">
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="progress" ng-repeat="skill in skills.slice(0,6)">
-              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{skill.status}}"
-              aria-valuemin="0" aria-valuemax="100" style="width:{{skill.status}}">
-                {{skill.name}}
-              </div><!-- progress bar -->
-            </div><!-- progress -->  
+            <div class="row vdivide">
+              <div class="col-xs-3 col-sm-3 col-md-4">
+                Let's be in touch
+              </div>
+              <div class="col-xs-7 col-sm-7 col-md-4">
+                  <ul class="socialicons">
+                    <li><a href="http://facebook.com/techraiders" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://in.linkedin.com/in/techraiders" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="disabled"><a href="#"><i class="fa fa-twitter" target="_blank"></i></a></li>
+                    <li class="disabled"><a href="#" target="_blank"><i class="fa fa-google-plus"></i> </a></li>
+                  </ul>
+              </div><!-- col -->
+              <div class="col-xs-2 col-sm-2 col-md-4">
+                <button class="btn btn-success">Hire me</button>
+              </div>
+            </div><!-- row socialicons -->
           </div><!-- col -->
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="progress" ng-repeat="skill in skills.slice(7,13)">
-              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{skill.status}}"
-              aria-valuemin="0" aria-valuemax="100" style="width:{{skill.status}}">
-                {{skill.name}}
-              </div><!-- progress bar -->
-            </div><!-- progress -->
-          </div><!-- col -->
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="progress" ng-repeat="skill in skills.slice(14,20)">
-              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{skill.status}}"
-              aria-valuemin="0" aria-valuemax="100" style="width:{{skill.status}}">
-                {{skill.name}}
-              </div><!-- progress bar -->
-            </div><!-- progress -->
-          </div> <!-- col -->
-        </div><!-- row -->
-      </div><!-- row skills progress bars-->
-      <hr/>
+      </section><!-- introduction-->
+
+      <section class="row" id="summary" ng-controller="summaryCtrl">
+        <div class="col-md-12">
+          <div class="w3-card-4">
+            <header class="w3-container w3-blue"><h2>SUMMARY</h2></header>
+            <summary class="w3-container">{{summary}}</summary>
+            <footer>  </footer>
+          </div><!-- card -->
+        </div><!-- col -->
+      </section><!-- summary-->
+
+        <br/><br/><br/><br/><br/>
+      <section class="row" id="services" ng-controller="servicesCtrl">
+        <div class="col-md-12">
+          <div class="panel panel-warning">
+          <div class="panel-heading">Services</div>
+          <div class="panel-body">
+            <ul ng-repeat="service in services">
+              <li>{{service}}</li>
+            </ul>
+          </div><!-- panel body -->
+        </div><!-- panel-->
+      </div><!-- col -->
+      </section>
+
+      <!-- skill section -->
+      <section class="row">
+        <div class="col-md-12">
+          <div class="panel panel-primary">
+          <div class="panel-heading">Skills</div>
+            <div class="panel-body">
+              <div class="row text-center" ng-controller="skillsCtrl">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="progress" ng-repeat="skill in skills.slice(0,6)">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{skill.status}}"
+                    aria-valuemin="0" aria-valuemax="100" style="width:{{skill.status}}">
+                      {{skill.name}}
+                    </div><!-- progress bar -->
+                  </div><!-- progress -->  
+                </div><!-- col -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="progress" ng-repeat="skill in skills.slice(7,13)">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{skill.status}}"
+                    aria-valuemin="0" aria-valuemax="100" style="width:{{skill.status}}">
+                      {{skill.name}}
+                    </div><!-- progress bar -->
+                  </div><!-- progress -->
+                </div><!-- col -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="progress" ng-repeat="skill in skills.slice(14,20)">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{skill.status}}"
+                    aria-valuemin="0" aria-valuemax="100" style="width:{{skill.status}}">
+                      {{skill.name}}
+                    </div><!-- progress bar -->
+                  </div><!-- progress -->
+                </div> <!-- col -->
+              </div><!-- row -->
+            </div><!-- panel body-->
+          </div><!-- panel primary -->  
+        </div><!-- col -->
+      </section>
+
       <!-- education section -->
-      <div class="row">
+      <section class="row">
         <div class="col-md-12">
-            <div ng-controller="educationCtrl">
-            <h2>Education</h2>
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>Degree</th>
-                  <th>University</th>
-                  <th>Institute</th>
-                  <th>Year of Passing</th>
-                  <th>Percentage</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr ng-repeat="education in educations">
-                  <td>{{education.degree}}</td>
-                  <td>{{education.university}}</td>
-                  <td>{{education.institute}}</td>
-                  <td>{{education.yop}}</td>
-                  <td>{{education.percentage}}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-      <hr/>
+          <div ng-controller="educationCtrl">
+            <div class="panel panel-primary">
+              <div class="panel-heading">Education</div>
+              <div class="panel-body">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Degree</th>
+                      <th>University</th>
+                      <th>Institute</th>
+                      <th>Year of Passing</th>
+                      <th>Percentage</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-repeat="education in educations">
+                      <td>{{education.degree}}</td>
+                      <td>{{education.university}}</td>
+                      <td>{{education.institute}}</td>
+                      <td>{{education.yop}}</td>
+                      <td>{{education.percentage}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>         
+            </div> <!-- panel -->
+          </div><!-- controller -->
+        </div><!-- education col -->
+      </section><!-- education section -->
+
       <!-- trainings section -->
-      <div class="row">
+      <section class="row">
         <div class="col-md-12">
         <h2>Online Trainings Taken</h2>
           <table class="table table-bordered">
@@ -213,12 +232,12 @@
             <tbody ng-controller="trainingsCtrl" >
               <tr ng-repeat="course in courses">
                 <td>{{course.name}}</td>
-                <td><a href="http://{{course.certificateURL}}">{{course.certificateURL}}</a></td>
+                <td><a href="http://{{course.certificateURL}}" target="_blank">{{course.certificateURL}}</a></td>
               </tr>
             </tbody>
           </table>
         </div><!-- col -->
-      </div><!-- row table-->
+      </section><!-- row table-->
 
       <a href="#introduction">Back to top</a>
     </div><!-- container -->
