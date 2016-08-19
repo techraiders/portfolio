@@ -68,10 +68,6 @@ ul.socialicons li a i:hover {
   min-height: 70px;
 }
 
-h2, .panel-heading{
-  text-align: center;
-}
-
 @media only screen and (max-width: 500px) {
 
 }
