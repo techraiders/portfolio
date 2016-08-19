@@ -32,5 +32,10 @@
       $http.get('data/data.json').then(function(data) {
         $scope.achievements = data.data.achievements;
       })
+    })
+    .controller("experienceCtrl", function($scope, $http) {
+        $http.get('data/data.json').then(function(response){
+          $scope.experiences = response.data.experiences;
+        })
     });
 })();

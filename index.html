@@ -104,6 +104,7 @@
               </div><!-- col -->
               <div class="w3-col m6">
                 <div class="w3-content" style="max-width:800px;position:relative">
+                  <h1><i class="fa fa-trophy" aria-hidden="true"></i>Achievements</h1>
                   <div class="w3-display-container mySlides">
                     <img src="img/webgeek.jpg" style="width:100%">
                     <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
@@ -128,7 +129,7 @@
                   <div class="w3-display-container mySlides">
                     <img src="img/team.jpg" style="width:100%">
                     <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
-                      The Rain Forest
+                      Awarded for team work
                     </div>
                   </div>
 
@@ -142,38 +143,61 @@
           </div>
         </section>
 
-        <section class="w3-container" id="services" ng-controller="servicesCtrl">
-          <h1>How can I serve you?</h1>
-          <div class="w3-card-4 w3-padding-xlarge">     
-            <ul ng-repeat="service in services">
-              <li>{{service}}</li>
-            </ul>
+        <section class="w3-container">
+         <div class="w3-card-4 w3-padding-xlarge">
+          <div class="w3-row-padding">
+         
+            <div class="w3-col m6" id="experience" ng-controller="experienceCtrl">
+              
+              <h1><i class="fa fa-briefcase" aria-hidden="true"></i> Work Experience</h1>
+                
+                <h4><i class="fa fa-building-o" aria-hidden="true"></i> CAREERTECH IT SOLUTIONS</h4>
+                <h6><i class="fa fa-calendar" aria-hidden="true"></i> Feb 2016 - May 2016</h6>
+
+
+                <ul ng-repeat="experience in experiences">
+                    <li>{{ experience }}</li>
+                  </ul>
+              </div>
+           
+            <div class="w3-col m6" id="services" ng-controller="servicesCtrl">
+                    
+              <h1><i class="fa fa-wrench" aria-hidden="true"></i> How can I serve you?</h1>
+                  <ul ng-repeat="service in services">
+                    <li>{{service}}</li>
+                  </ul>
+            </div>
+             </div><!-- row -->
           </div><!-- card -->
         </section>
 
       <section class="w3-container" id="education" ng-controller="educationCtrl">
-        <h1><i class="fa fa-graduation-cap" aria-hidden="true"></i>Education</h1>
-        <div class="w3-responsive w3-card-4">
-          <table class="w3-table w3-bordered w3-striped">
-                <thead>
-                  <tr class="w3-green w3-hover-red">
-                    <th>Degree</th>
-                    <th>University</th>
-                    <th>Institute</th>
-                    <th>Year of Passing</th>
-                    <th>Percentage</th>
-                  </tr>
-                </thead>
-                <tbody ng-repeat="edu in educations">
-                  <tr class="w3-hover-red">
-                    <td>{{ edu.degree }}</td>
-                    <td>{{ edu.university }}</td>
-                    <td>{{ edu.institute }}</td>
-                    <td>{{ edu.yop }}</td>
-                    <td>{{ edu.percentage }}</td>
-                  </tr>
-                </tbody>
-              </table>
+        <div class="w3-row">
+          <div class="w3-col">
+            <h1><i class="fa fa-book" aria-hidden="true"></i></i> Education</h1>
+              <div class="w3-responsive w3-card-4">
+                <table class="w3-table w3-bordered w3-striped">
+                      <thead>
+                        <tr class="w3-green w3-hover-red">
+                          <th>Degree</th>
+                          <th>University</th>
+                          <th>Institute</th>
+                          <th>Year of Passing</th>
+                          <th>Percentage</th>
+                        </tr>
+                      </thead>
+                      <tbody ng-repeat="edu in educations">
+                        <tr class="w3-hover-red">
+                          <td>{{ edu.degree }}</td>
+                          <td>{{ edu.university }}</td>
+                          <td>{{ edu.institute }}</td>
+                          <td>{{ edu.yop }}</td>
+                          <td>{{ edu.percentage }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+              </div>
+          </div>
         </div>
       </section>
 
@@ -213,34 +237,51 @@
           </div><!-- card -->
       </section>
 
-      <section class="w3-container" id="education">
-        <div class="w3-responsive w3-card-4">
+      <section class="w3-container" id="trainings">
+        <div class="w3-card-4">
           <div class="w3-row-padding">
             <div class="w3-col s12 m6" ng-controller="trainingsCtrl">
-            <h1>Online Trainings</h1>
-              <table class="w3-table w3-bordered w3-striped">
-                <thead>
-                  <tr class="w3-green">
-                    <th>Name</th>
-                    <th>Certificate URL</th>
-                  </tr>
-                </thead>
-                <tbody ng-repeat="course in courses">
-                  <tr>
-                    <td>{{ course.name }}</td>
-                    <td><a href="http://{{ course.certificateURL }}"> Click here</a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div><!-- col -->
-            <div class="w3-col s12 m6" ng-controller="achievementsCtrl">
-              <h1><i class="fa fa-trophy" aria-hidden="true"></i>Achievements</h1>
-              <ul ng-repeat="achievement in achievements">
-                <li>{{achievement}}</li>
-              </ul>
-            </div>
+              <h1>Online Trainings</h1>
+                <table class="w3-table w3-bordered w3-striped">
+                  <thead>
+                    <tr class="w3-green">
+                      <th>Course Name</th>
+                      <th>Certificate URL</th>
+                    </tr>
+                  </thead>
+                  <tbody ng-repeat="course in courses">
+                    <tr>
+                      <td>{{ course.name }}</td>
+                      <td><a href="http://{{ course.certificateURL }}"> Click here</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- col -->
+              <div class="w3-col s12 m6" ng-controller="achievementsCtrl">
+                <h1><i class="fa fa-trophy" aria-hidden="true"></i> Achievements</h1>
+                <ul ng-repeat="achievement in achievements">
+                  <li>{{achievement}}</li>
+                </ul>
+              </div><!-- col -->
           </div><!-- row -->
         </div><!-- card -->
+      </section>
+
+      <section class="w3-container" id="contact">
+        <div class="w3-row">
+          <div class="w3-col m5">
+            <div class="w3-card-4">
+              <header class="w3-container w3-green">
+                <h1>Find Me on Map</h1>
+              </header>
+                  <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:316px;width:600px;'><div id='gmap_canvas' style='height:316px;width:600px;'></div><div><small><a href="http://www.embedgooglemaps.com">Generate your Google map here, quick and easy!</a></small></div><div><small><a href="https://binaireoptieservaringen.nl/">Bij ons leest u alleen betrouwbare reviews!</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(28.6281812,77.28000670000006),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(28.6281812,77.28000670000006)});infowindow = new google.maps.InfoWindow({content:'<strong>Navneet Prakash</strong><br>WA-112, Gali No. 16, Shakarpur Delhi-92, New Delhi<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>  
+              <footer class="w3-container w3-green">
+                <h5>Footer</h5>
+              </footer>
+            </div><!-- card -->
+          </div><!-- col -->
+          <div class="w3-col m7"></div>
+        </div><!-- row -->
       </section>
 
       <footer class="text-center">
