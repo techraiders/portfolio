@@ -92,36 +92,41 @@
           <div class="w3-card-4">
             <div class="w3-row-padding  w3-padding-xlarge">
               <div class="w3-col m6">
-                <h3>May I please introduce myself?</h3>
+                <header class="w3-green">
+                  <h3>May I introduce myself?</h3>
+                </header>
                 <div ng-controller="summaryCtrl"><summary>{{summary}}</summary></div>
               </div><!-- col -->
-              <div class="w3-col m6">
+              <div class="w3-col m6" ng-controller="slidesCtrl">
                 <div class="w3-content" style="max-width:800px;position:relative">
-                  <h3><i class="fa fa-trophy" aria-hidden="true"></i>Achievements</h3>
+                  <header class="w3-green">
+                    <h3><i class="fa fa-trophy" aria-hidden="true"></i> Achievements</h3>
+                  </header>
+
+                  <div class="w3-display-container mySlides">
+                    <img ng-src="img/quiz.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-black">
+                      Runner up in Technical Quiz
+                    </div>
+                  </div>
+
                   <div class="w3-display-container mySlides">
                     <img src="img/webgeek.jpg" style="width:100%">
-                    <div class="w3-display-bottomleft w3-large w3-container w3-black">
+                    <div class="w3-display-bottomleft w3-large w3-black">
                       Won Web Design Competition
                     </div>
                   </div>
 
                   <div class="w3-display-container mySlides">
                     <img src="img/trophy.jpg" style="width:100%">
-                    <div class="w3-display-bottomright w3-large w3-container w3-black">
+                    <div class="w3-display-bottomright w3-large w3-black">
                       Received trophy for quiz contest
                     </div>
                   </div>
 
                   <div class="w3-display-container mySlides">
-                    <img src="img/quiz.jpg" style="width:100%">
-                    <div class="w3-display-bottomleft w3-large w3-container w3-black">
-                      Runner up in Technical Quiz
-                    </div>
-                  </div>
-
-                  <div class="w3-display-container mySlides">
                     <img src="img/team.jpg" style="width:100%">
-                    <div class="w3-display-bottomright w3-large w3-container w3-black">
+                    <div class="w3-display-bottomright w3-large w3-black">
                       Awarded for team work
                     </div>
                   </div>
@@ -139,16 +144,20 @@
         <section class="w3-container">
           <div class="w3-card-4 w3-padding-xlarge">
             <div class="w3-row-padding">
-              <div class="w3-col m6" id="experience" ng-controller="experienceCtrl"> 
-                <h3><i class="fa fa-briefcase" aria-hidden="true"></i> Work Experience</h3>
+              <div class="w3-col m6" id="experience" ng-controller="experienceCtrl">
+                <header class="w3-green">
+                  <h3><i class="fa fa-briefcase" aria-hidden="true"></i> Work Experience</h3>
+                </header>
                   <h5><i class="fa fa-building-o" aria-hidden="true"></i> CAREERTECH IT SOLUTIONS</h5>
                   <h6><i class="fa fa-calendar" aria-hidden="true"></i> Feb 2016 - May 2016</h6>
                   <ul ng-repeat="experience in experiences">
                       <li>{{ experience }}</li>
                   </ul>
               </div>
-              <div class="w3-col m6" id="services" ng-controller="servicesCtrl">                    
-                <h3><i class="fa fa-wrench" aria-hidden="true"></i> How can I serve you?</h3>
+              <div class="w3-col m6" id="services" ng-controller="servicesCtrl">
+                <header class="w3-green">
+                  <h3><i class="fa fa-wrench" aria-hidden="true"></i> How can I serve you?</h3>
+                </header>
                     <ul ng-repeat="service in services">
                       <li>{{service}}</li>
                     </ul>
@@ -173,7 +182,7 @@
                         </tr>
                       </thead>
                       <tbody ng-repeat="edu in educations">
-                        <tr class="w3-hover-red">
+                        <tr>
                           <td>{{ edu.degree }}</td>
                           <td>{{ edu.university }}</td>
                           <td>{{ edu.institute }}</td>
@@ -188,7 +197,7 @@
       </section>
 
       <section class="w3-container" id="skills" ng-controller="skillsCtrl">
-          <h3>Skills</h3>
+         <header class=""><h3>Skills</h3></header>
           <div class="w3-card-4 w3-padding-xlarge">
             <div class="w3-row-padding">
               <div class="w3-col s12 m4">
@@ -268,7 +277,7 @@
             </div><!-- col -->
              <div class="w3-col m6">
               <header class="w3-green">
-                <h3>Write to me</h3>
+                <h3>Write to me <span class="w3-tag w3-orange w3-small">Coming soon!</span></p> </h3>
               </header>
 
                 <form action="#">
@@ -278,15 +287,15 @@
                 <input class="w3-input w3-border w3-sand" name="receiver" type="text" value="hello_navneet@hotmail.com" readonly="true"></p>
                 
                 <p>
-                <label class="w3-label w3-text-greem"><b>From</b></label>
+                <label class="w3-label w3-text-green"><b>From</b></label>
                 <input class="w3-input w3-border w3-sand" name="sender" type="text" placeholder="your name" required></p>
 
                 <p>
-                <label class="w3-label w3-text-greem"><b>Your Email</b></label>
+                <label class="w3-label w3-text-green"><b>Your Email</b></label>
                 <input class="w3-input w3-border w3-sand" name="email" type="email" placeholder="enter email" required></p>
 
                 <p>
-                <label class="w3-label w3-text-greem"><b>Your Website</b></label>
+                <label class="w3-label w3-text-green"><b>Your Website</b></label>
                 <input class="w3-input w3-border w3-sand" name="website" type="url" placeholder="your website (optional)"></p>
                 
                 <p>
