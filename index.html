@@ -27,6 +27,12 @@
             margin-left: 50px;
             margin-right: 50px;
           }
+          h1{
+            text-align: center;
+          }
+          td a{
+            text-decoration: none;
+          }
           
         </style>
         <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
@@ -58,19 +64,19 @@
               <div class="w3-col m1 w3-center">12</div>
             </div>
             <div class="w3-row">
-              <div class="w3-col w3-card l2">
+              <div class="w3-col w3-card m2">
                 <img src="img/dp.jpg" style="width:100%;">
               </div>
-              <div class="w3-col l10">
+              <div class="w3-col m10">
                 <div class="w3-container w3-margin-top">
                   <figure>Place here "Hello and Welcome" bubble</figure>
                   <p class="w3-margin-left">
                     I'M NAVNEET PRAKASH<br/>
                     SOFTWARE ENGINEER<br/>
                     Age: 24<br/>
-                    Address: WA-112, Gali No. 16, Shakarpur, Delhi-92, New Delhi<br/>
-                    Phone: +91-9527936489<br/>
-                    Email: hello_navneet@hotmail.com
+                    <i class="fa fa-map-marker w3-hide-medium w3-hide-large" aria-hidden="true"></i> <span class="w3-hide-small">Address:</span> WA-112, Gali No. 16, Shakarpur, Delhi-92, New Delhi<br/>
+                    <i class="fa fa-mobile w3-hide-medium w3-hide-large" aria-hidden="true"></i> <span class="w3-hide-small" >Phone:</span> +91-9527936489<br/>
+                    <i class="fa fa-envelope w3-hide-medium w3-hide-large" aria-hidden="true"></i> <span class="w3-hide-small">Email:</span> hello_navneet@hotmail.com
                   </p>
                   <div class="w3-row" style="margin-left: 16px;">
                     <div class="w3-col l10"></div>
@@ -78,8 +84,9 @@
                     <ul class="socialicons">
                       <li><a href="http://facebook.com/techraiders" target="_blank"><i class="fa fa-facebook"></i></a></li>
                       <li><a href="https://in.linkedin.com/in/techraiders" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                      <li class="disabled"><a href="#"><i class="fa fa-twitter" target="_blank"></i></a></li>
-                      <li class="disabled"><a href="#" target="_blank"><i class="fa fa-google-plus"></i> </a></li>
+                      <li><a href="https://github.com/techraiders" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> </li>
+                      <!-- <li class="disabled"><a href="#"><i class="fa fa-twitter" target="_blank"></i></a></li> -->
+                      <li class="disabled"><a href="#"><i class="fa fa-google-plus"></i> </a></li>
                   </ul>
                   </div><!-- social icon row nested inside col beside dp -->
                 </div>
@@ -89,23 +96,152 @@
         </section>
 
         <section class="w3-container">
-          <div class="w3-card-4 w3-center">
-            <div class="w3-row  w3-padding-xlarge">
-              <h1>Header</h1>
-              <div ng-controller="summaryCtrl"><summary>{{summary}}</summary></div>
-            </div>
+          <div class="w3-card-4">
+            <div class="w3-row-padding  w3-padding-xlarge">
+              <div class="w3-col m6">
+                <h1>May I please introduce myself?</h1>
+                <div ng-controller="summaryCtrl"><summary>{{summary}}</summary></div>
+              </div><!-- col -->
+              <div class="w3-col m6">
+                <div class="w3-content" style="max-width:800px;position:relative">
+                  <div class="w3-display-container mySlides">
+                    <img src="img/webgeek.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                      Won Web Design Competition
+                    </div>
+                  </div>
+
+                  <div class="w3-display-container mySlides">
+                    <img src="img/trophy.jpg" style="width:100%">
+                    <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                      Received trophy for quiz contest
+                    </div>
+                  </div>
+
+                  <div class="w3-display-container mySlides">
+                    <img src="img/quiz.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                      Runner up in Technical Quiz
+                    </div>
+                  </div>
+
+                  <div class="w3-display-container mySlides">
+                    <img src="img/team.jpg" style="width:100%">
+                    <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                      The Rain Forest
+                    </div>
+                  </div>
+
+                  <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+                  <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+
+                </div>
+
+              </div>
+            </div><!-- row -->
           </div>
         </section>
 
         <section class="w3-container" id="services" ng-controller="servicesCtrl">
-          <div class="w3-card-4 w3-padding-xlarge">
+          <h1>How can I serve you?</h1>
+          <div class="w3-card-4 w3-padding-xlarge">     
             <ul ng-repeat="service in services">
               <li>{{service}}</li>
             </ul>
           </div><!-- card -->
+        </section>
+
+      <section class="w3-container" id="education" ng-controller="educationCtrl">
+        <h1><i class="fa fa-graduation-cap" aria-hidden="true"></i>Education</h1>
+        <div class="w3-responsive w3-card-4">
+          <table class="w3-table w3-bordered w3-striped">
+                <thead>
+                  <tr class="w3-green w3-hover-red">
+                    <th>Degree</th>
+                    <th>University</th>
+                    <th>Institute</th>
+                    <th>Year of Passing</th>
+                    <th>Percentage</th>
+                  </tr>
+                </thead>
+                <tbody ng-repeat="edu in educations">
+                  <tr class="w3-hover-red">
+                    <td>{{ edu.degree }}</td>
+                    <td>{{ edu.university }}</td>
+                    <td>{{ edu.institute }}</td>
+                    <td>{{ edu.yop }}</td>
+                    <td>{{ edu.percentage }}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
       </section>
 
-      
+      <section class="w3-container" id="skills" ng-controller="skillsCtrl">
+          <h1>Skills</h1>
+          <div class="w3-card-4 w3-padding-xlarge">
+            <div class="w3-row-padding">
+              <div class="w3-col s12 m4">
+                <div ng-repeat="skill in skills.slice(0,6)">
+                  <div class="w3-progress-container">
+                    <div id="myBar" class="w3-progressbar w3-green" style="width:{{skill.status}}">
+                      <div class="w3-center w3-text-white">{{skill.name}}</div>
+                    </div>
+                  </div> <br/>
+                </div> <!-- repeater -->
+              </div><!-- col -->
+              <div class="w3-col s12 m4">
+                <div ng-repeat="skill in skills.slice(7,14)">
+                  <div class="w3-progress-container">
+                    <div id="myBar" class="w3-progressbar w3-green" style="width:{{skill.status}}">
+                      <div class="w3-center w3-text-white">{{skill.name}}</div>
+                    </div>
+                  </div> <br/>
+                </div> <!-- repeater -->
+              </div><!-- col -->
+              <div class="w3-col s12 m4">
+                <div ng-repeat="skill in skills.slice(15,20)">
+                  <div class="w3-progress-container">
+                    <div id="myBar" class="w3-progressbar w3-green" style="width:{{skill.status}}">
+                      <div class="w3-center w3-text-white">{{skill.name}}</div>
+                    </div>
+                  </div> <br/>
+                </div> <!-- repeater -->
+
+              </div><!-- col -->
+            </div><!-- row -->
+          </div><!-- card -->
+      </section>
+
+      <section class="w3-container" id="education">
+        <div class="w3-responsive w3-card-4">
+          <div class="w3-row-padding">
+            <div class="w3-col s12 m6" ng-controller="trainingsCtrl">
+            <h1>Online Trainings</h1>
+              <table class="w3-table w3-bordered w3-striped">
+                <thead>
+                  <tr class="w3-green">
+                    <th>Name</th>
+                    <th>Certificate URL</th>
+                  </tr>
+                </thead>
+                <tbody ng-repeat="course in courses">
+                  <tr>
+                    <td>{{ course.name }}</td>
+                    <td><a href="http://{{ course.certificateURL }}"> Click here</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><!-- col -->
+            <div class="w3-col s12 m6" ng-controller="achievementsCtrl">
+              <h1><i class="fa fa-trophy" aria-hidden="true"></i>Achievements</h1>
+              <ul ng-repeat="achievement in achievements">
+                <li>{{achievement}}</li>
+              </ul>
+            </div>
+          </div><!-- row -->
+        </div><!-- card -->
+      </section>
 
       <footer class="text-center">
               <p>Copyright &copy; Navneet Creations. <br/> All rights reserved &reg;</p>
@@ -120,16 +256,26 @@
         <script src="components/portfolio.ctr.js" type="text/javascript"></script>
         <script src="js/main.js"></script>
 
-        <script type="text/javascript">
-          function myFunction() {
-              var x = document.getElementById("demo");
-              if (x.className.indexOf("w3-show") == -1) {
-                  x.className += " w3-show";
-              } else {
-                  x.className = x.className.replace(" w3-show", "");
-              }
+
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
           }
-        </script>
+          x[slideIndex-1].style.display = "block";
+        }
+        </script
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

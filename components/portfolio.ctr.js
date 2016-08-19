@@ -27,5 +27,10 @@
         $http.get('data/data.json').then(function(data) {
           $scope.courses = data.data.trainings;
         })
+    })
+    .controller("achievementsCtrl", function($scope, $http) {
+      $http.get('data/data.json').then(function(data) {
+        $scope.achievements = data.data.achievements;
+      })
     });
 })();
