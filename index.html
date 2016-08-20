@@ -12,7 +12,8 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <!-- font awesome CDN for social icons -->
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
+        <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous"> -->
         <link rel="stylesheet" type="text/css" href="css/w3.css">
         <style>
           body {
@@ -33,6 +34,7 @@
           .mg-40 {
               margin-left: 40px;
             }
+
           @media only screen and (min-width: 1366px) {
             .w3-container{
               padding-left: 150px;
@@ -63,7 +65,7 @@
                 <div class="w3-margin-top">
                   <figure>Place here "Hello and Welcome" bubble</figure>
                   <p class="mg-40">
-                    I'M NAVNEET PRAKASH<br/>
+                    I'M NAVNEET PRAKASH <br/>
                     SOFTWARE ENGINEER<br/>
                     Age: 24<br/>
                     <i class="fa fa-map-marker w3-hide-medium w3-hide-large" aria-hidden="true"></i> <span class="w3-hide-small">Address:</span> WA-112, Gali No. 16, Shakarpur, Delhi-92, New Delhi<br/>
@@ -74,11 +76,11 @@
                     <div class="w3-col l10 mg-40">
                       Let's be in touch  &nbsp;&nbsp;&nbsp;
                       <ul class="socialicons">
-                        <li><a href="http://facebook.com/techraiders" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://in.linkedin.com/in/techraiders" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="http://facebook.com/techraiders" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://in.linkedin.com/in/techraiders" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                         <li><a href="https://github.com/techraiders" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> </li>
-                        <!-- <li class="disabled"><a href="#"><i class="fa fa-twitter" target="_blank"></i></a></li> -->
-                        <li class="disabled"><a href="#"><i class="fa fa-google-plus"></i> </a></li>
+                        <!-- <li class="disabled"><a href="#"><i class="fa fa-twitter" aria-hidden="true" target="_blank"></i></a></li> -->
+                        <li class="disabled"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i> </a></li>
                       </ul>
                     </div>
                   </div><!-- social icon row nested inside col beside dp -->
@@ -87,6 +89,23 @@
             </div><!-- dp row -->
           </div><!-- card -->
         </section>
+
+      <!-- Share button at the right that opens sidenav of sharing icons -->
+      <nav class="w3-sidenav w3-card-2 w3-hide-small" style="width:5%;height:auto;right:0;" id="shareicon">
+        <a href="" onclick="w3_openShareIconsSidenav()">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </a>
+      </nav>
+
+        <!-- side nav sharing icons holder -->
+      <nav class="w3-sidenav w3-animate-right w3-card-2" style="width:5%; height:auto;right:0;display:none;" id="shareiconsholder">
+        <a href="javascript:void(0)" onclick="w3_closeShareIconsSidenav()" class="w3-closenav">Close &times;</a>
+        <a href="#"><i class="fa fa-facebook" w3-xlarge w3-xlarge aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-linkedin" w3-xlarge aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-twitter" w3-xlarge aria-hidden="true" target="_blank"></i></a>
+        <a href="#"><i class="fa fa-google-plus" w3-xlarge aria-hidden="true"></i></a>
+      </nav>
+
 
         <section class="w3-container">
           <div class="w3-card-4">
@@ -141,6 +160,7 @@
           </div>
         </section>
 
+
         <section class="w3-container">
           <div class="w3-card-4 w3-padding-xlarge">
             <div class="w3-row-padding">
@@ -169,7 +189,7 @@
       <section class="w3-container" id="education" ng-controller="educationCtrl">
         <div class="w3-row">
           <div class="w3-col">
-            <h3><i class="fa fa-book" aria-hidden="true"></i></i> Education</h3>
+            <h3><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h3>
               <div class="w3-responsive w3-card-4">
                 <table class="w3-table w3-bordered w3-striped">
                       <thead>
@@ -241,7 +261,7 @@
                   <thead>
                     <tr class="w3-green">
                       <th>Course Name</th>
-                      <th>Certificate URL</th>
+                      <th>Certificate</th>
                     </tr>
                   </thead>
                   <tbody ng-repeat="course in courses">
