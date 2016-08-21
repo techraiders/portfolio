@@ -53,58 +53,11 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
  
-      <header ng-include="'ui_components/navbar.html'"></header>
+      <header ng-include="'components/navbar.html'"></header>
 
-        <section class="w3-container">
-          <div class="w3-card-4">
-            <div class="w3-row">
-              <div class="w3-col w3-card m2">
-                <img src="img/dp.jpg" style="width:100%;">
-              </div>
-              <div class="w3-col m10">
-                <div class="w3-margin-top">
-                  <figure>Place here "Hello and Welcome" bubble</figure>
-                  <p class="mg-40">
-                    I'M NAVNEET PRAKASH <br/>
-                    SOFTWARE ENGINEER<br/>
-                    Age: 24<br/>
-                    <i class="fa fa-map-marker w3-hide-medium w3-hide-large" aria-hidden="true"></i> <span class="w3-hide-small">Address:</span> WA-112, Gali No. 16, Shakarpur, Delhi-92, New Delhi<br/>
-                    <i class="fa fa-mobile w3-hide-medium w3-hide-large" aria-hidden="true"></i> <span class="w3-hide-small" >Phone:</span> +91-9527936489<br/>
-                    <i class="fa fa-envelope w3-hide-medium w3-hide-large" aria-hidden="true"></i> <span class="w3-hide-small">Email:</span> hello_navneet@hotmail.com
-                  </p>
-                  <div class="w3-row">
-                    <div class="w3-col l10 mg-40">
-                      Let's be in touch  &nbsp;&nbsp;&nbsp;
-                      <ul class="socialicons">
-                        <li><a href="http://facebook.com/techraiders" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="https://in.linkedin.com/in/techraiders" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="https://github.com/techraiders" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> </li>
-                        <!-- <li class="disabled"><a href="#"><i class="fa fa-twitter" aria-hidden="true" target="_blank"></i></a></li> -->
-                        <li class="disabled"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i> </a></li>
-                      </ul>
-                    </div>
-                  </div><!-- social icon row nested inside col beside dp -->
-                </div> <!-- dp details -->
-              </div> <!-- intro column beside dp -->
-            </div><!-- dp row -->
-          </div><!-- card -->
-        </section>
-
-      <!-- Share button at the right that opens sidenav of sharing icons -->
-      <nav class="w3-sidenav w3-card-2 w3-hide-small" style="width:5%;height:auto;right:0;" id="shareicon">
-        <a href="" onclick="w3_openShareIconsSidenav()">
-          <i class="fa fa-share-alt" aria-hidden="true"></i>
-        </a>
-      </nav>
-
-        <!-- side nav sharing icons holder -->
-      <nav class="w3-sidenav w3-animate-right w3-card-2" style="width:5%; height:auto;right:0;display:none;" id="shareiconsholder">
-        <a href="javascript:void(0)" onclick="w3_closeShareIconsSidenav()" class="w3-closenav">Close &times;</a>
-        <a href="#"><i class="fa fa-facebook" w3-xlarge w3-xlarge aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-linkedin" w3-xlarge aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-twitter" w3-xlarge aria-hidden="true" target="_blank"></i></a>
-        <a href="#"><i class="fa fa-google-plus" w3-xlarge aria-hidden="true"></i></a>
-      </nav>
+      <section ng-include="'components/siteheader.html'"></section>
+      <!-- side nav that holds social sharing buttons -->
+      <aside ng-include="'components/sidenav.html'"></aside>
 
 
         <section class="w3-container">
@@ -116,6 +69,8 @@
                 </header>
                 <div ng-controller="summaryCtrl"><summary>{{summary}}</summary></div>
               </div><!-- col -->
+              
+              
               <div class="w3-col m6" ng-controller="slidesCtrl">
                 <div class="w3-content" style="max-width:800px;position:relative">
                   <header class="w3-green">
@@ -152,182 +107,23 @@
 
                   <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
                   <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
-
                 </div>
-
-              </div>
-            </div><!-- row -->
-          </div>
-        </section>
-
-
-        <section class="w3-container">
-          <div class="w3-card-4 w3-padding-xlarge">
-            <div class="w3-row-padding">
-              <div class="w3-col m6" id="experience" ng-controller="experienceCtrl">
-                <header class="w3-green">
-                  <h3><i class="fa fa-briefcase" aria-hidden="true"></i> Work Experience</h3>
-                </header>
-                  <h5><i class="fa fa-building-o" aria-hidden="true"></i> CAREERTECH IT SOLUTIONS</h5>
-                  <h6><i class="fa fa-calendar" aria-hidden="true"></i> Feb 2016 - May 2016</h6>
-                  <ul ng-repeat="experience in experiences">
-                      <li>{{ experience }}</li>
-                  </ul>
-              </div>
-              <div class="w3-col m6" id="services" ng-controller="servicesCtrl">
-                <header class="w3-green">
-                  <h3><i class="fa fa-wrench" aria-hidden="true"></i> How can I serve you?</h3>
-                </header>
-                    <ul ng-repeat="service in services">
-                      <li>{{service}}</li>
-                    </ul>
-              </div>
+              </div><!-- col -->  
             </div><!-- row -->
           </div><!-- card -->
         </section>
 
-      <section class="w3-container" id="education" ng-controller="educationCtrl">
-        <div class="w3-row">
-          <div class="w3-col">
-            <h3><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h3>
-              <div class="w3-responsive w3-card-4">
-                <table class="w3-table w3-bordered w3-striped">
-                      <thead>
-                        <tr class="w3-green w3-hover-red">
-                          <th>Degree</th>
-                          <th>University</th>
-                          <th>Institute</th>
-                          <th>Year of Passing</th>
-                          <th>Percentage</th>
-                        </tr>
-                      </thead>
-                      <tbody ng-repeat="edu in educations">
-                        <tr>
-                          <td>{{ edu.degree }}</td>
-                          <td>{{ edu.university }}</td>
-                          <td>{{ edu.institute }}</td>
-                          <td>{{ edu.yop }}</td>
-                          <td>{{ edu.percentage }}</td>
-                        </tr>
-                      </tbody>
-                    </table>
-              </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="w3-container" id="skills" ng-controller="skillsCtrl">
-         <header class=""><h3>Skills</h3></header>
-          <div class="w3-card-4 w3-padding-xlarge">
-            <div class="w3-row-padding">
-              <div class="w3-col s12 m4">
-                <div ng-repeat="skill in skills.slice(0,6)">
-                  <div class="w3-progress-container">
-                    <div id="myBar" class="w3-progressbar w3-green" style="width:{{skill.status}}">
-                      <div class="w3-center w3-text-white">{{skill.name}}</div>
-                    </div>
-                  </div> <br/>
-                </div> <!-- repeater -->
-              </div><!-- col -->
-              <div class="w3-col s12 m4">
-                <div ng-repeat="skill in skills.slice(7,14)">
-                  <div class="w3-progress-container">
-                    <div id="myBar" class="w3-progressbar w3-green" style="width:{{skill.status}}">
-                      <div class="w3-center w3-text-white">{{skill.name}}</div>
-                    </div>
-                  </div> <br/>
-                </div> <!-- repeater -->
-              </div><!-- col -->
-              <div class="w3-col s12 m4">
-                <div ng-repeat="skill in skills.slice(15,20)">
-                  <div class="w3-progress-container">
-                    <div id="myBar" class="w3-progressbar w3-green" style="width:{{skill.status}}">
-                      <div class="w3-center w3-text-white">{{skill.name}}</div>
-                    </div>
-                  </div> <br/>
-                </div> <!-- repeater -->
-
-              </div><!-- col -->
-            </div><!-- row -->
-          </div><!-- card -->
-      </section>
-
-      <section class="w3-container" id="trainings">
-        <div class="w3-card-4">
-          <div class="w3-row-padding">
-            <div class="w3-col s12 m6" ng-controller="trainingsCtrl">
-              <h3>Online Trainings</h3>
-                <table class="w3-table w3-bordered w3-striped">
-                  <thead>
-                    <tr class="w3-green">
-                      <th>Course Name</th>
-                      <th>Certificate</th>
-                    </tr>
-                  </thead>
-                  <tbody ng-repeat="course in courses">
-                    <tr>
-                      <td>{{ course.name }}</td>
-                      <td><a href="http://{{ course.certificateURL }}"> Click here</a></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div><!-- col -->
-              <div class="w3-col s12 m6" ng-controller="achievementsCtrl">
-                <h3><i class="fa fa-trophy" aria-hidden="true"></i> Achievements</h3>
-                <ul ng-repeat="achievement in achievements">
-                  <li>{{achievement}}</li>
-                </ul>
-              </div><!-- col -->
-          </div><!-- row -->
-        </div><!-- card -->
-      </section>
-
-      <section class="w3-container" id="contact">
-        <h3> Contact Me</h3>
-        <div class="w3-card-4">
-          <div class="w3-row-padding">
-            <div class="w3-col m6">
-              <header class="w3-green">
-                <h3>Find Me on Map</h3>
-              </header>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.969717148491!2d77.27522831489338!3d28.63066969091647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfcad18e74289%3A0x34d861fdb781a88e!2sLaxmi+Nagar+Metro+Station!5e0!3m2!1sen!2sin!4v1471626444715" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-              <footer class="w3-container w3-green">
-                <h5><i class="fa fa-map-marker" aria-hidden="true"></i> View on Map</h5>
-              </footer>
-            </div><!-- col -->
-             <div class="w3-col m6">
-              <header class="w3-green">
-                <h3>Write to me <span class="w3-tag w3-orange w3-small">Coming soon!</span></p> </h3>
-              </header>
-
-                <form action="#">
-
-                <p>
-                <label class="w3-label w3-text-green"><b>To</b></label>
-                <input class="w3-input w3-border w3-sand" name="receiver" type="text" value="hello_navneet@hotmail.com" readonly="true"></p>
-                
-                <p>
-                <label class="w3-label w3-text-green"><b>From</b></label>
-                <input class="w3-input w3-border w3-sand" name="sender" type="text" placeholder="your name" required></p>
-
-                <p>
-                <label class="w3-label w3-text-green"><b>Email</b></label>
-                <input class="w3-input w3-border w3-sand" name="email" type="email" placeholder="your email" required></p>
-
-                <p>
-                <label class="w3-label w3-text-green"><b>Website</b></label>
-                <input class="w3-input w3-border w3-sand" name="website" type="url" placeholder="your website (optional)"></p>
-                
-                <p>
-                <textarea class="w3-sand" rows="4" cols="50" maxlength="50" placeholder="your message" style="width:100%;padding: 12px 20px;" required></textarea> </p>
-                <p>
-                <button class="w3-btn w3-green">Submit</button></p>
-
-                </form>
-            </div><!-- col -->
-          </div><!-- row -->
-        </div><!-- card -->
-      </section>
+      <!-- EXPERIENCE AND SERVICES -->
+      <section ng-include="'components/experienceandservices.html'"></section>
+      <!-- EDUCATION -->
+      <section ng-include="'components/education.html'"></section>
+      <!-- SKILLS -->
+      <section ng-include="'components/skills.html'"></section>
+      <!-- TRAININGS -->
+      <section ng-include="'components/trainings.html'"></section>
+      <!-- CONTACT US -->
+      <section ng-include="'components/contactus.html'"></section>
 
       <footer class="text-center">
               <p>Copyright &copy; Navneet Creations. <br/> All rights reserved &reg;</p>
@@ -336,10 +132,9 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
         <script src="node_modules/angular/angular.min.js" type="text/javascript"></script>
         <script src="scripts/app.js"></script>
-        <script src="components/portfolio.ctr.js" type="text/javascript"></script>
+        <script src="js/portfolio.ctr.js" type="text/javascript"></script>
         <script src="js/main.js"></script>
 
 

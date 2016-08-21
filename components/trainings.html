@@ -1,0 +1,31 @@
+<section class="w3-container" id="trainings">
+        <div class="w3-card-4">
+          <div class="w3-row-padding">
+            <div class="w3-col s12 m6" ng-controller="trainingsCtrl">
+              <h3>Online Trainings</h3>
+                <table class="w3-table w3-bordered w3-striped">
+                  <thead>
+                    <tr class="w3-green">
+                      <th>Course Name</th>
+                      <th>Certificate</th>
+                    </tr>
+                  </thead>
+                  <tbody ng-repeat="course in courses">
+                    <tr>
+                      <td>{{ course.name }}</td>
+                      <td><a href="http://{{ course.certificateURL }}"> Click here</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- col -->
+              <div class="w3-col s12 m6" ng-controller="achievementsCtrl">
+                <h3><i class="fa fa-trophy" aria-hidden="true"></i> Achievements</h3>
+                <ul ng-repeat="achievement in achievements">
+                  <li>{{achievement}}</li>
+                </ul>
+
+                
+              </div><!-- col -->
+          </div><!-- row -->
+        </div><!-- card -->
+      </section>

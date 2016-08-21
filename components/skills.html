@@ -1,0 +1,35 @@
+<section class="w3-container" id="skills" ng-controller="skillsCtrl">
+         <header class=""><h3>Skills</h3></header>
+          <div class="w3-card-4 w3-padding-xlarge">
+            <div class="w3-row-padding">
+              <div class="w3-col s12 m4">
+                <div ng-repeat="skill in skills.slice(0,6)">
+                  <div class="w3-progress-container w3-card-2">
+                    <div id="myBar" class="w3-progressbar w3-green" style="width:{{skill.status}}">
+                      <div class="w3-center w3-text-white">{{skill.name}}</div>
+                    </div>
+                  </div> <br/>
+                </div> <!-- repeater -->
+              </div><!-- col -->
+              <div class="w3-col s12 m4">
+                <div ng-repeat="skill in skills.slice(7,14)">
+                  <div class="w3-progress-container w3-card-2">
+                    <div id="myBar" class="w3-progressbar w3-green" style="width:{{skill.status}}">
+                      <div class="w3-center w3-text-white">{{skill.name}}</div>
+                    </div>
+                  </div> <br/>
+                </div> <!-- repeater -->
+              </div><!-- col -->
+              <div class="w3-col s12 m4">
+                <div ng-repeat="skill in skills.slice(15,20)">
+                  <div class="w3-progress-container w3-card-2">
+                    <div id="myBar" class="w3-progressbar w3-green" style="width:{{skill.status}}">
+                      <div class="w3-center w3-text-white">{{skill.name}}</div>
+                    </div>
+                  </div> <br/>
+                </div> <!-- repeater -->
+
+              </div><!-- col -->
+            </div><!-- row -->
+          </div><!-- card -->
+      </section>

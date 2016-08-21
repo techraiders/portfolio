@@ -1,0 +1,24 @@
+        <section class="w3-container">
+          <div class="w3-card-4 w3-padding-xlarge">
+            <div class="w3-row-padding">
+              <div class="w3-col m6" id="experience" ng-controller="experienceCtrl">
+                <header class="w3-green">
+                  <h3><i class="fa fa-briefcase" aria-hidden="true"></i> Work Experience</h3>
+                </header>
+                  <h5><i class="fa fa-building-o" aria-hidden="true"></i> CAREERTECH IT SOLUTIONS</h5>
+                  <h6><i class="fa fa-calendar" aria-hidden="true"></i> Feb 2016 - May 2016</h6>
+                  <ul ng-repeat="experience in experiences">
+                      <li>{{ experience }}</li>
+                  </ul>
+              </div>
+              <div class="w3-col m6" id="services" ng-controller="servicesCtrl">
+                <header class="w3-green">
+                  <h3><i class="fa fa-wrench" aria-hidden="true"></i> How can I serve you?</h3>
+                </header>
+                    <ul ng-repeat="service in services">
+                      <li>{{service}}</li>
+                    </ul>
+              </div>
+            </div><!-- row -->
+          </div><!-- card -->
+        </section>

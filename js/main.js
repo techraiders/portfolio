@@ -1,18 +1,17 @@
 /*sidenav sharing icons opens and closes*/
-function close() {
-      document.getElementById("shareicon").style.display= "none";
-    }
-function open() {
-  document.getElementById("shareicon").style.display = "block";
+function close(x) {
+    x.style.display= "none";
+}
+function open(y) {
+    y.style.display = "block";
 }
 
 
 function w3_openShareIconsSidenav() {
-    document.getElementById("shareiconsholder").style.display = "block";
-    close();
+    document.getElementById("socialshareiconsholder").style.display = "block";
+    close(shareicon);
 }
-function w3_closeShareIconsSidenav() {
-    document.getElementById("shareiconsholder").style.display = "none";
-    open();
+function w3_closesocialShareIconsSidenav() {
+    document.getElementById("socialshareiconsholder").style.display = "none";
+    open(shareicon);
 }
-

@@ -1,0 +1,29 @@
+      <section class="w3-container" id="education" ng-controller="educationCtrl">
+        <div class="w3-row">
+          <div class="w3-col">
+            <h3><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h3>
+              <div class="w3-responsive w3-card-4">
+                <table class="w3-table w3-bordered w3-striped">
+                      <thead>
+                        <tr class="w3-green w3-hover-red">
+                          <th>Degree</th>
+                          <th>University</th>
+                          <th>Institute</th>
+                          <th>Year of Passing</th>
+                          <th>Percentage</th>
+                        </tr>
+                      </thead>
+                      <tbody ng-repeat="edu in educations">
+                        <tr>
+                          <td>{{ edu.degree }}</td>
+                          <td>{{ edu.university }}</td>
+                          <td>{{ edu.institute }}</td>
+                          <td>{{ edu.yop }}</td>
+                          <td>{{ edu.percentage }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+              </div>
+          </div>
+        </div>
+      </section>
