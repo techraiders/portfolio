@@ -2,10 +2,10 @@
         <div class="w3-card-4">
           <div class="w3-row-padding">
             <div class="w3-col s12 m6" ng-controller="trainingsCtrl">
-              <h3>Online Trainings</h3>
+              <h3 class="w3-green">Online Trainings</h3>
                 <table class="w3-table w3-bordered w3-striped">
                   <thead>
-                    <tr class="w3-green">
+                    <tr>
                       <th>Course Name</th>
                       <th>Certificate</th>
                     </tr>
@@ -18,13 +18,13 @@
                   </tbody>
                 </table>
               </div><!-- col -->
-              <div class="w3-col s12 m6" ng-controller="achievementsCtrl">
-                <h3><i class="fa fa-trophy" aria-hidden="true"></i> Achievements</h3>
-                <ul ng-repeat="achievement in achievements">
-                  <li>{{achievement}}</li>
-                </ul>
 
-                
+              <div class="w3-col s12 m6">
+                <!-- <ul ng-repeat="achievement in achievements">
+                  <li>{{achievement}}</li>
+                </ul> -->
+                <header class="w3-green"><h3>Level of skills</h3></header>
+                <figure id="skills_chart" style="align:left;"></figure>
               </div><!-- col -->
           </div><!-- row -->
         </div><!-- card -->

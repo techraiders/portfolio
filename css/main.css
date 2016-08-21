@@ -2,7 +2,7 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+/*
 .row.no-gutter {
   margin-left: 0;
   margin-right: 0;
@@ -12,7 +12,7 @@
 .row.no-gutter [class*='col-']:not(:last-child) {
   padding-right: 0;
   padding-left: 0;
-}
+}*/
 
 ul.socialicons {
     overflow: auto;
@@ -59,7 +59,7 @@ ul.socialicons li a i:hover {
   background:#dd4b39;
 } 
 
-.row.vdivide [class*='col-']:not(:last-child):after {
+/*.row.vdivide [class*='col-']:not(:last-child):after {
   background: #e0e0e0;
   width: 1px;
   content: "";
@@ -69,10 +69,30 @@ ul.socialicons li a i:hover {
   bottom: 0;
   right: 0;
   min-height: 70px;
+}*/
+
+footer{
+    text-align: center;
+}
+          
+h3{
+   text-align: center;
+ }
+td a{
+  text-decoration: none;
+}
+.mg-40 {
+    margin-left: 40px;
+  }
+
+@media only screen and (min-width: 1366px) {
+  .w3-container{
+    padding-left: 150px;
+    padding-right: 150px
+  }
+
 }
 
 @media only screen and (max-width: 500px) {
 
 }
-
-
