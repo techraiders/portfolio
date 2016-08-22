@@ -20,8 +20,10 @@
               padding-top: 100px;
               padding-bottom: 20px;
           }
+          th{
+            text-align: left;
+          }
         </style>
-        <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
@@ -43,7 +45,7 @@
         <section class="w3-container">
           <div class="w3-card-4">
             <div class="w3-row-padding  w3-padding-xlarge">
-              <div class="w3-col m6">
+              <div class="w3-col l6">
                 <header class="w3-green">
                   <h3>May I introduce myself?</h3>
                 </header>
@@ -51,7 +53,7 @@
               </div><!-- col -->
               
               
-              <div class="w3-col m6" ng-controller="slidesCtrl">
+              <div class="w3-col l6" ng-controller="slidesCtrl">
                 <div class="w3-content" style="max-width:800px;position:relative">
                   <header class="w3-green">
                     <h3><i class="fa fa-trophy" aria-hidden="true"></i> Achievements</h3>
@@ -84,7 +86,6 @@
                       Awarded for team work
                     </div>
                   </div>
-
                   <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
                   <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
                 </div>
@@ -96,11 +97,10 @@
 
       <!-- EXPERIENCE AND SERVICES -->
       <section ng-include="'components/experienceandservices.html'"></section>
-      <!-- EDUCATION -->
-      <section ng-include="'components/education.html'"></section>
-      <!-- SKILLS -->
-      <!-- ONLINE TRAININGS AND ACHIEVEMENTS-->
-      <section ng-include="'components/trainings.html'"></section>
+      <!-- EDUCATION and TRAININGS-->
+      <section ng-include="'components/educationandtraining.html'"></section>
+      <!-- SKILLS and HOBBIES-->
+      
       <!-- CONTACT US -->
       <section ng-include="'components/contactus.html'"></section>
 
@@ -108,7 +108,8 @@
               <p>Copyright &copy; Navneet Creations. <br/> All rights reserved &reg;</p>
         </div>   
       </footer>      
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+        <script type="text/javascript" src="js/vendor/jquery-1.11.2.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="node_modules/angular/angular.min.js" type="text/javascript"></script>

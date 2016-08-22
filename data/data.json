@@ -27,7 +27,7 @@
 
   "whatido" : [ ],
 
-  "services" : ["Wireframing or Mockups with Balsamiq Mockups.", "Responsive web design using W3.css or Bootstrap 3.", "UX enhancement by AngularJS.", "PSD TO HTML Conversion.", "E-commerce setup using OpenCart.", "Source code management using git and github.", "Object oriented modeling using smart draw.", "Technical Writing"],
+  "services" : ["Wireframing or Mockups with Balsamiq Mockups.", "Responsive web design using W3.css or Bootstrap 3.", "UX enhancement by AngularJS.", "PSD tO HTML Conversion.", "E-commerce setup using OpenCart.", "Source code management using git and github.", "Object oriented modeling using smart draw.", "Technical Writing"],
 
   "skills" : [
       { "name" : "Bootstrap",        "status" : "80%" },
@@ -54,28 +54,28 @@
 
   "educations" : [
       {
-        "degree"     : "Master of Computer Applications",
+        "degree"     : "MCA",
         "university" : "University of Pune, Pune",
         "institute"  : "Padmashree Dr. D.Y.Patil Institute of MCA, Akurdi, Pune",
         "yop"        : "2016",
         "percentage" : "64.38"
       },
       {
-        "degree"     : "Bachelor of Computer Applications",
+        "degree"     : "BCA",
         "university" : "Jiwaji University, Gwalior",
         "institute"  : "Prestige Institute of Management, Gwalior",
         "yop"        : "2013",
         "percentage" : "67.85"
       },
       {
-        "degree"      : "Higher School Secondary Certificate",
+        "degree"      : "H.SC.",
         "university"  : "BSEB, Patna",
         "institute"     : "Tapeshwar Singh College, Chapra",
         "yop"         : "2009",
         "percentage"  : "68.60"
       },
        {
-        "degree"      : "Secondary School Certificate",
+        "degree"      : "S.SC",
         "university"  : "BSEB, Patna",
         "institute"     : "Vishweshwar Seminary High School, Chapra",
         "yop"         : "2007",

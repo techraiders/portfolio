@@ -1,0 +1,49 @@
+      <section class="w3-container" id="educationandtraining">
+          <div class="w3-card-4">
+        <h3><i class="fa fa-graduation-cap" aria-hidden="true"></i> EDUCATION AND TRAININGS</h3>
+            <div class="w3-row-padding">
+              <div class="w3-col m6" ng-controller="educationCtrl">
+                <div class="w3-responsive">
+                  <table class="w3-table w3-striped">
+                        <thead>
+                          <tr class="w3-green">
+                            <th>Degree</th>
+                            <th>University</th>
+                            <!-- <th>Institute</th> -->
+                            <th>YOP</th>
+                            <th>Percentage</th>
+                          </tr>
+                        </thead>
+                        <tbody ng-repeat="edu in educations">
+                          <tr class="w3-hover-light-grey">
+                            <td>{{ edu.degree }}</td>
+                            <td>{{ edu.university }}</td>
+                            <!-- <td>{{ edu.institute }}</td> -->
+                            <td>{{ edu.yop }}</td>
+                            <td>{{ edu.percentage }}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div> <!-- col -->
+          <div class="w3-col m6" ng-controller="trainingsCtrl">
+            <div class="w3-responsive">
+              <table class="w3-table w3-striped">
+                  <thead>
+                    <tr class="w3-green">
+                      <th>Course Name</th>
+                      <th>Certificate</th>
+                    </tr>
+                  </thead>
+                  <tbody ng-repeat="course in courses">
+                    <tr class="w3-hover-light-grey">
+                      <td>{{ course.name }}</td>
+                      <td><a href="http://{{ course.certificateURL }}"> Click here</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <span class="w3-tag w3-orange w3-right" style="margin-bottom:5px;">Sorry. Certificate of last course not available. </span>
+            </div>
+          </div><!-- col -->
+        </div><!-- row -->
+      </section>

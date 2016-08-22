@@ -2,17 +2,7 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*
-.row.no-gutter {
-  margin-left: 0;
-  margin-right: 0;
-}
 
-.row.no-gutter [class*='col-']:not(:first-child),
-.row.no-gutter [class*='col-']:not(:last-child) {
-  padding-right: 0;
-  padding-left: 0;
-}*/
 
 ul.socialicons {
     overflow: auto;
@@ -26,7 +16,6 @@ ul.socialicons li {
 }
  
 ul.socialicons li a i, .w3-sidenav a i, span i{
-    /*background: #dd4b39;*/
     color: #fff;
     width: 40px;
     height: 40px;
@@ -59,38 +48,26 @@ ul.socialicons li a i:hover {
   background:#dd4b39;
 } 
 
-/*.row.vdivide [class*='col-']:not(:last-child):after {
-  background: #e0e0e0;
-  width: 1px;
-  content: "";
-  display:block;
-  position: absolute;
-  top:0;
-  bottom: 0;
-  right: 0;
-  min-height: 70px;
-}*/
 
 footer{
     text-align: center;
 }
           
-h3{
+h3 {
    text-align: center;
- }
-td a{
+}
+td a {
   text-decoration: none;
 }
 .mg-40 {
     margin-left: 40px;
-  }
+}
 
 @media only screen and (min-width: 1366px) {
   .w3-container{
     padding-left: 150px;
     padding-right: 150px
   }
-
 }
 
 @media only screen and (max-width: 500px) {
