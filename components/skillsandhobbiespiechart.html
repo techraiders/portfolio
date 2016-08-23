@@ -2,19 +2,13 @@
   <h3>SKills AND HOBBIES</h3>
   <div class="w3-card-4">
     <div class="w3-row-padding">
-      <div class="w3-col m6">
+      <div class="w3-col">
         <h3 class="w3-green">&darr; Level of skills</h3>
-        <figure id="skills_chart" style="width:100%;"></figure>
+          <figure id="skills_chart" style="width:100%;"></figure>
       </div><!-- col -->
-      <div class="w3-col m6">
-      <h3 class="w3-green">Hobbies &darr;</h3>
-        <figure id="Hobbies_chart" style="width:100%;"></figure>
-      </div>
-    </div>
-  </div>
+    </div><!-- row -->
+  </div><!-- card -->
 </section>
-
-
 
 
 <script type="text/javascript">
@@ -58,8 +52,6 @@
         };
       // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.PieChart(document.getElementById('skills_chart'));
-        chart.draw(data, options);
-        var chart = new google.visualization.PieChart(document.getElementById('Hobbies_chart'));
         chart.draw(data, options);
       }
 

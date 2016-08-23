@@ -16,7 +16,10 @@
       "skype"     : "null"
   },
 
-  "summary"   : "Awarded Web Geek with good knowledge of MVC architecture, Angular Js, Object oriented JavaScript, PHP, SDLC, NPM, Version control, willing to learn new technologies, works well in both team environment and individual Assignments. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+  "summary"   : [
+      "I am an awarded 'WebGeek' with Hands-on experience of CSS Framework W3.CSS, and Bootstrap3, Google's MV(Whatever) Front End Framework AngularJS. I also have good knowledge of HTML5, Object Oriented Javascript., PHP, SDLC, Git and Github.",
+      "I am a tech savvy who likes to play with Front End Development."
+  ],
 
   "slides" : [
       {"imgname" : "quiz.jpg",    "caption" : "Runner up in Technical Quiz"},
@@ -69,14 +72,14 @@
       },
       {
         "degree"      : "H.SC.",
-        "university"  : "BSEB, Patna",
+        "university"  : "Bihar School Examination Board, Patna",
         "institute"     : "Tapeshwar Singh College, Chapra",
         "yop"         : "2009",
         "percentage"  : "68.60"
       },
        {
         "degree"      : "S.SC",
-        "university"  : "BSEB, Patna",
+        "university"  : "Bihar School Examination Board, Patna",
         "institute"     : "Vishweshwar Seminary High School, Chapra",
         "yop"         : "2007",
         "percentage"  : "60.80"
@@ -126,7 +129,7 @@
   ],
   "experiences" : [
       "Achieved modern, professional and responsive web layout using W3.css.",
-      "Developed complex web layout using grid system in Bootstrap 3.",
+      "Developed complex web layout using grid system in Bootstrap.",
       "Prepared Wireframes / Mockups using Balsamiq Mockups.",
       "Ensured cross browser compatibility and responsiveness, debugged pages using Google Chrome Developer tools.",
       "Managed source code and repositories using Git on Github."            
