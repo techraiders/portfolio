@@ -1,15 +1,18 @@
 <!-- Share button at the right that opens sidenav of sharing icons -->
-      <nav class="w3-sidenav w3-card-2 w3-hide-small w3-animate-right" style="width:auto;height:auto;right:0;" id="shareicon">
-        <a href="" onclick="w3_openShareIconsSidenav()">
+      <nav class="w3-sidenav w3-card-2 w3-hide-small w3-animate-right" style="width:auto;height:auto;right:0;" id="shareicon" ng-click="showsocialshareiconsholder=true" ng-show="!showsocialshareiconsholder">
+        <a href="">
           <i class="fa fa-share-alt" aria-hidden="true"></i>
         </a>
       </nav>
 
         <!-- side nav sharing icons holder -->
-      <nav class="w3-sidenav w3-animate-right w3-card-2" style="width:auto; height:auto;right:0;display:none;" id="socialshareiconsholder">
-        <a href="javascript:void(0)" onclick="w3_closesocialShareIconsSidenav()" class="w3-closenav">Close &times;</a>
-        <a href="#"><i class="fa fa-facebook" w3-xlarge w3-xlarge aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-linkedin" w3-xlarge aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-twitter" w3-xlarge aria-hidden="true" target="_blank"></i></a>
-        <a href="#"><i class="fa fa-google-plus" w3-xlarge aria-hidden="true"></i></a>
+      <nav class="w3-sidenav w3-animate-right w3-card-2" style="width:auto; height:auto;right:0;" id="socialshareiconsholder" ng-show="showsocialshareiconsholder">
+        <a href="#" class="w3-closenav" ng-click="showsocialshareiconsholder=false">Close &times;</a>
+        <a href="#"><i class="fa fa-facebook w3-xlarge" w3-xlarge aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-linkedin w3-xlarge" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-twitter w3-xlarge" aria-hidden="true" target="_blank"></i></a>
+        <a href="#"><i class="fa fa-google-plus w3-xlarge" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-envelope-o w3-xlarge" aria-hidden="true"></i></a>
+        
+        <a href=""><i class="fa fa-thumbs-o-up w3-xlarge w3-indigo" aria-hidden="true"></i></a>
       </nav>

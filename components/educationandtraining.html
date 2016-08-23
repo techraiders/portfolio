@@ -1,6 +1,6 @@
       <section class="w3-container" id="educationandtraining">
-          <div class="w3-card-4">
         <h3><i class="fa fa-graduation-cap" aria-hidden="true"></i> EDUCATION AND TRAININGS</h3>
+          <div class="w3-card-4">
             <div class="w3-row-padding">
               <div class="w3-col m6" ng-controller="educationCtrl">
                 <div class="w3-responsive">
@@ -42,11 +42,11 @@
                   <tbody ng-repeat="course in courses">
                     <tr class="w3-hover-light-grey">
                       <td>{{ course.name }}</td>
-                      <td><a href="http://{{ course.certificateURL }}"> Click here</a></td>
+                      <td><a href="http://{{ course.certificateURL }}" target="_blank"> Click here</a></td>
                     </tr>
                   </tbody>
                 </table>
-                <span class="w3-tag w3-blue w3-right w3-small" style="margin-bottom:5px;">Sorry. Certificate of last course not available. </span>
+                <span class="w3-tag w3-blue w3-right w3-small" style="margin-bottom:5px;">Certificate of last course isn't available! </span>
             </div>
           </div><!-- col -->
         </div><!-- row -->

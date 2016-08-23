@@ -13,8 +13,8 @@
         $scope.images = response.data.slides;
       })
     })
-    .controller("servicesCtrl", function($scope, $http) {
-      $http.get('data/data.json').then(function(data) {
+    .controller("servicesCtrl", function($scope, $http, candidatesFactory) {
+      candidatesFactory.getCandidates().then(function(data) {
         $scope.services = data.data.services;
       })
     })
