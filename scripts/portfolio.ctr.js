@@ -42,5 +42,18 @@
         $http.get('data/data.json').then(function(response){
           $scope.experiences = response.data.experiences;
         })
+    })
+    .controller("timeCtrl", function($scope, $timeout) {
+      $scope.seconds = 0;
+      $scope.minutes = 0;
+      var countUp = function() {
+        $scope.seconds += 1;
+          if ($scope.seconds===60) {
+            $scope.minutes += 1;
+            $scope.seconds = 0;
+          };
+        $timeout(countUp, 1000);
+      }
+      $timeout(countUp, 1000);
     });
 })();
