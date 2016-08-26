@@ -22,6 +22,8 @@
       $http.get('data/data.json').then(function(data) {
         $scope.skills = data.data.skills;
       })
+      $scope.div = ['Progress Bars', 'Table', 'Pie Chart'];
+      $scope.selectedDiv = $scope.div[0];
     })
     .controller("educationCtrl", function($scope, $http) {
       $http.get('data/data.json').then(function(data) {

@@ -56,7 +56,7 @@ var slideIndex = 1;
         // Set chart options
         var options = {
           'legend' : 'left',
-          'width'  : 650,
+          'width'  : 700,
           'height' : 500,
           'is3D'   : true
         };

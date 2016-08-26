@@ -148,3 +148,8 @@ p.speech:after {
     border-left-color: transparent;
   margin-left: 120px;
 }
+
+th {
+  text-transform: uppercase;
+  text-align: center;
+}
