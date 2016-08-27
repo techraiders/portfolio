@@ -23,7 +23,7 @@
         $scope.skills = data.data.skills;
       })
       $scope.div = ['Progress Bars', 'Table', 'Pie Chart'];
-      $scope.selectedDiv = $scope.div[0];
+      $scope.selectedDiv = $scope.div[1];
     })
     .controller("educationCtrl", function($scope, $http) {
       $http.get('data/data.json').then(function(data) {

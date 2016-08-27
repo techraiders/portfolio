@@ -1,9 +1,13 @@
 <section class="w3-container" id="skills" ng-controller="skillsCtrl">
     <h3>SKILLS</h3><br/>
   <div class="w3-card-4 w3-padding-medium">
-      <p class="w3-center" style="font-size: 1.2em;font-size: medium;font-variant: small-caps;">SHOW ME YOUR SKILLS IN:
-        <select class="w3-select w3-margin w3-padding" name="option" ng-model="selectedDiv" ng-options="item for item in div" style="width:20%;"></select>
-        </p><br/>
+      <div class="w3-row" style="font-size: 1.2em;font-size: medium;font-variant: small-caps;">
+        <div class="w3-col w3-center">
+          <p style="width:300px;display:inline-block;">SHOW ME YOUR SKILLS IN: </p>
+          <select class="w3-select w3-margin w3-padding" name="option" ng-model="selectedDiv" ng-options="item for item in div" style="width:190px;display:inline-block;"></select>
+          <br/>
+        </div><!-- col -->
+      </div><!-- row -->
 
           <div ng-switch="selectedDiv">
             <div class="w3-row-padding" ng-switch-when="Progress Bars">                  
@@ -41,7 +45,7 @@
             </div><!-- ng-swith-when row -->
 
             <div class="w3-row">
-              <div class="w3-col">
+              <div class="w3-col w3-responsive">
                 <table class="w3-table-all w3-striped w3-animate-right w3-hoverable w3-responsive" ng-switch-when="Table" id="skillsTable">
                   <thead>
                     <tr class="w3-green">
