@@ -43,18 +43,20 @@
 
         <section class="w3-container">
           <div class="w3-card-4">
-            <div class="w3-row-padding  w3-padding-xlarge">
+            <div class="w3-row-padding  w3-padding">
               <div class="w3-col l6">
                 <header class="w3-green">
                   <h3>May I introduce myself?</h3>
                 </header>
                 <p>First of all, I am a <strong><em>consistent performer</em></strong> as despite tons of ups and downs in my life. I always secured approximately same score in my academics.</p>
 
-                <p>Directors and Faculties of my institute found me a <strong><em>reliable</em></strong> and <strong><em>responsible</em></strong> person with excellent grammatical and written communication skill that eliminates ambiguity in my communication, hence they appointed me as Magazine Secretary of the Institute where I successfully contributed as proofreader and <strong><em>led a team</em></strong> of 8 members, by coordination and collaboration we prepared Institute’s Magazine for the Magazine competition organized by University of Pune.</p>
-
                 <p>I am a <strong><em>self-learner</em></strong> and I have been learning new skills online on Lynda.com and Udemy.com that improved my listening skill over time and now I am quite comfortable listening to American, British and Australian accent.</p>
 
-                  <button class="w3-btn w3-right w3-hover-white w3-blue" ng-click="more=true" ng-show="!more">Show More</button>
+                <p>Using my Git and Github version control skills I can easily maintain my source code <strong><em>avoiding complexity and bugs</em></strong>, <strong><em>Contribute</em></strong> to a project from anywhere in the world.</p>
+
+                <p>Using my <strong><em>hands-on experience</em></strong> of Grid System and Frameworks like <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">W3.css</a>  and Bootstrap, and Charting Libraries like Google chart I can rapidly build <strong><em>modern responsive UI</em></strong> for your projects.</p>
+
+                  <button class="w3-btn w3-right w3-hover-white w3-blue w3-card-4" ng-click="more=true" ng-show="!more">Show More</button>
               </div><!-- col -->
               
               <div class="w3-col l6" ng-controller="slidesCtrl">
@@ -95,18 +97,14 @@
                 </div>
               </div><!-- col -->  
             </div><!-- row -->
-            <div class="w3-row-padding">
+            <div class="w3-row w3-padding-left w3-padding-right">
               <div class="w3-col">
                 <div class="more w3-animate-top" ng-show="more">
-                  <p>Using my Git and Github version control skills I can easily maintain my source code <strong><em>avoiding complexity and bugs</em></strong>, <strong><em>Contribute</em></strong> to a project from anywhere in the world.</p>
-
-                  <p>Using my <strong><em>hands-on experience</em></strong> of Grid System and Frameworks like <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">W3.css</a>  and Bootstrap, and Charting Libraries like Google chart I can rapidly build <strong><em>modern responsive UI</em></strong> for your projects.</p>
-
                   <p>Using SDLC, MVC and Angular Js we will be doing extremely fast test driven development of Web / Mobile Applications.</p>
 
-                  <p>If I talk about my hobbies, I am fond of learning new English phrases, listening life changing seminars.</p>
+                  <p>My Institute found me a <strong><em>reliable</em></strong> and <strong><em>responsible</em></strong> person with excellent grammatical and written communication skill that eliminates ambiguity in my communication, hence they appointed me as Magazine Secretary of the Institute where I successfully contributed as proofreader and <strong><em>led a team</em></strong> of 8 members, by coordination and collaboration we prepared Institute’s Magazine for the Magazine competition organized by University of Pune.</p>
                 </div><!-- more -->
-                  <button class="w3-btn w3-right w3-hover-white w3-blue" ng-click="more=!more" ng-show="more">Less</button>
+                  <button class="w3-btn w3-right w3-hover-white w3-blue w3-margin-bottom" ng-click="more=!more" ng-show="more">Less</button>
               </div><!-- col -->
             </div><!-- row -->
           </div><!-- card -->
@@ -134,9 +132,9 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/portfolio.ctr.js" type="text/javascript"></script>
         <script src="scripts/candidates.fac.js" type="text/javascript"></script>
-
+        <script src="node_modules/downloadjs/download.min.js"></script>
         <script src="js/main.js"></script>
-
+        
         <script>
 
         /* Google Analytics: change UA-XXXXX-X to be your site's ID. */
