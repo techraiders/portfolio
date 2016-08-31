@@ -44,9 +44,9 @@
               <button onclick="document.getElementById('id01').style.display='block'" class="w3-btn">CLICK HERE FOR PIE CHART VIEW OF SKILLS</button><br/>
             </div><!-- ng-swith-when row -->
 
-            <div class="w3-row">
+            <div class="w3-row" ng-switch-when="Table">
               <div class="w3-col w3-responsive">
-                <table class="w3-table-all w3-striped w3-animate-right w3-hoverable w3-responsive" ng-switch-when="Table" id="skillsTable">
+                <table class="w3-table-all w3-striped w3-animate-right w3-hoverable w3-responsive"  id="skillsTable">
                   <thead>
                     <tr class="w3-green">
                       <th>Skill Name</th>
@@ -63,7 +63,7 @@
                     <tr ng-repeat="skill in skills">
                       <td>{{skill.name}}</td>
                       <td>{{skill.version}}</td>
-                      <td> {{skill.last_used_month}} </td> <td> {{skill.last_used_year}} </td>
+                      <td style="width:50px;"> {{skill.last_used_month}} </td> <td> {{skill.last_used_year}} </td>
                       <td> {{skill.experience}} </td>
                     </tr>
                   </tbody>
