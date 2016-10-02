@@ -30,7 +30,7 @@
 
   "whatido" : [ ],
 
-  "services" : ["Wireframing or Mockups with Balsamiq Mockups.", "Responsive web development using W3.css or Bootstrap 3.", "UX enhancement by AngularJS.", "PSD to HTML Conversion.", "E-commerce setup using OpenCart.", "Source code management using git and github.", "Object oriented modeling using smart draw.", "Technical Writing"],
+  "services" : ["Wireframing/Mockups/Prototyping with Balsamiq Mockups.", "Translating those wireframes/mockups/prototypes into fully functional UI.", "Responsive web development using W3.css or Bootstrap 3.", "UX enhancement by AngularJS.", "Source code management using git and github.", "Object oriented modeling using smart draw.", "E-commerce setup using OpenCart.", "Technical Writing"],
 
   "skills" : [
       { "name" : "Bootstrap",           "status" : "80%", "version" :"3.3.7",   "last_used_month" : "Sept", "last_used_year": "2016", "experience": "1" }, 
@@ -48,7 +48,8 @@
       { "name" : "OpenCart",            "status" : "22%", "version" :"2.2",     "last_used_month" : "Mar", "last_used_year": "2016", "experience": "1" },
       { "name" : "SQL Server",          "status" : "40%", "version" :"2014",    "last_used_month" : "Mar", "last_used_year": "2016", "experience": "1" },
       { "name" : "Core Java",           "status" : "30%", "version" :"SE5",     "last_used_month" : "Apr", "last_used_year": "2016", "experience": "NA" },
-      { "name" : "Adobe Photoshop",     "status" : "50%", "version" :"CS6",     "last_used_month" : "Aug", "last_used_year": "2016", "experience": "3" }  
+      { "name" : "Adobe Photoshop",     "status" : "50%", "version" :"CS6",     "last_used_month" : "Aug",   "last_used_year": "2016", "experience": "3" },
+      { "name" : "Ionic",               "status" : "15%", "version" :"1",       "last_used_month" : "Sept.", "last_used_year":"2016", "experience": "0" } 
   ],
 
   "educations" : [
