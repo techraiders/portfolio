@@ -35,12 +35,18 @@
               <table class="w3-table w3-striped">
                   <thead>
                     <tr class="w3-green">
+                      <th>
+                         <span class="w3-tooltip">CA
+                          <span class="w3-text w3-tag w3-blue" style="position:absolute;left:0;top:18px">Certification Authority</span>
+                          </span>
+                      </th>
                       <th>Course Name</th>
                       <th>Certificate</th>
                     </tr>
                   </thead>
                   <tbody ng-repeat="course in courses">
                     <tr class="w3-hover-light-grey">
+                      <td><a href="http://www.udemy.com/"><img src="https://media.licdn.com/media/p/8/005/05d/205/00a7692.png" style="width:75%" alt="UDEMY"></a> </td>
                       <td>{{ course.name }}</td>
                       <td><a href="http://{{ course.certificateURL }}" target="_blank"> Click here</a></td>
                     </tr>
