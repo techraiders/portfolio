@@ -1,1 +1,1 @@
-angular.module("ngPortfolio", [/*'720kb.socialshare'*/]);
+angular.module("ngPortfolio", ['720kb.socialshare']);

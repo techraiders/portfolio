@@ -23,7 +23,24 @@
         $scope.skills = data.data.skills;
       })
       $scope.div = ['Progress Bars', 'Table'];
-      $scope.selectedDiv = $scope.div[0];
+      $scope.selectedDiv = $scope.div[1];
+
+      // Intializing the filter variable
+      $scope.sortColumn = '-experience', // - prefix operator sorts in decending order
+      $scope.reverseSort = false;
+      
+      $scope.sortData = function(column) {
+        $scope.reverseSort = ($scope.sortColumn == column) ? !$scope.reverseSort : false;
+        $scope.sortColumn = column;
+
+      }
+
+      $scope.getSortClass = function(column) {
+        if ($scope.sortColumn == column) {
+          return $scope.reverseSort ? 'arrow-down' : 'arrow-up';
+        }
+      }
+
     })
     .controller("educationCtrl", function($scope, $http) {
       $http.get('data/data.json').then(function(data) {

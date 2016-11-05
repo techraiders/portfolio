@@ -45,24 +45,24 @@
             <div class="w3-row" ng-switch-when="Table">
               <div class="w3-col w3-responsive">
                 <div class="w3-margin">
-                  <form class="w3-center"><input type="search" ng-model="q" placeholder="Search Skill"></form>
+                  <form class="w3-center"><input type="search" ng-model="q.name" placeholder="Search Skill"></form>
                 </div>
-                <table class="w3-table-all w3-striped w3-animate-right w3-hoverable w3-responsive"  id="skillsTable">
+                <table class="w3-table-all w3-animate-right w3-hoverable w3-responsive"  id="skillsTable">
                   <thead>
                     <tr class="w3-green">
                       <th>No.</th>
-                      <th>Skill Name</th>
+                      <th ng-click="sortData('name')">Skill Name <span ng-class="getSortClass('name')"></span> </th>
                       <th>Version</th>
                       <th colspan="2">Last Used</th>
                       <th>
-                        <span class="w3-tooltip">EIM
+                        <span class="w3-tooltip" ng-click="sortData('experience')">EIM <span ng-class="getSortClass('experience')"></span>
                           <span class="w3-text w3-tag w3-blue" style="position:absolute;left:0;top:18px">Experience in Months</span>
                         </span>
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr ng-repeat="skill in skills | filter: q">
+                    <tr ng-repeat="skill in skills | orderBy: sortColumn:reverseSort | filter: q">
                       <td>{{$index+1 + "."}}</td>
                       <td>{{skill.name}}</td>
                       <td>{{skill.version}}</td>
