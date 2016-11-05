@@ -6,7 +6,6 @@
 
     .controller("homeCtrl", function($scope, $http, candidatesFactory) {
       candidatesFactory.getCandidates().then(function(response) {
-        //$scope.services = response.data.services;
         $scope.navneet = response.data;
         console.log("Navneet: ", $scope.navneet);
       })
