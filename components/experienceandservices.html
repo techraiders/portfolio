@@ -1,7 +1,7 @@
         <section class="w3-container">
           <div class="w3-card-4 w3-padding">
             <div class="w3-row-padding">
-              <div class="w3-col l6" id="experience" ng-controller="experienceCtrl">
+              <div class="w3-col l6" id="experience">
                 <header class="w3-green">
                   <h3><i class="fa fa-briefcase" aria-hidden="true"></i> Internship Experience</h3>
                 </header>
@@ -9,15 +9,15 @@
                   <!-- <h6 style="text-indent: 20px; font-size: .9em;"> -Mainly a Web Development / Designing Company</h6> -->
                   <h6 class="expcal"><i class="fa fa-calendar" aria-hidden="true"></i> Feb 2016 - May 2016</h6>
                   <!-- <h5>SOFTWARE ENGINEER</h5> -->
-                  <ul ng-repeat="experience in experiences">
+                  <ul ng-repeat="experience in navneet.experiences">
                       <li>{{ experience }}</li>
                   </ul>
               </div>
-              <div class="w3-col l6" id="services" ng-controller="servicesCtrl">
+              <div class="w3-col l6" id="services">
                 <header class="w3-green">
                   <h3><i class="fa fa-wrench" aria-hidden="true"></i> How can I serve you?</h3>
                 </header>
-                    <ul ng-repeat="service in services">
+                    <ul ng-repeat="service in navneet.services">
                       <li>{{service}}</li>
                     </ul>
                     <span class="w3-tag w3-right w3-blue">More Later!</span>
