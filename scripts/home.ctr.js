@@ -11,11 +11,11 @@
       })
 
       $scope.div = ['Progress Bars', 'Table'];
-      $scope.selectedDiv = $scope.div[0];
+      $scope.selectedDiv = $scope.div[1];
 
       // Intializing the filter variable
-      $scope.sortColumn = '-experience', // - prefix operator sorts in decending order
-      $scope.reverseSort = false;
+      $scope.sortColumn = 'experience', // - prefix operator sorts in decending order
+      $scope.reverseSort = true;
       
       $scope.sortData = function(column) {
         $scope.reverseSort = ($scope.sortColumn == column) ? !$scope.reverseSort : false;

@@ -3,6 +3,25 @@
    Author's custom styles
    ========================================================================== */
 
+a.company {
+  text-decoration: none;
+}
+
+a.company:hover {
+  text-decoration: underline;
+}
+
+a.help {
+  text-decoration: none;
+}
+
+a.help:hover {
+  cursor: help;
+}
+
+.clickAble {
+  cursor: pointer;
+}
 
 ul.socialicons {
     overflow: auto;
@@ -168,8 +187,9 @@ th {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid white;
   display: inline-block;
+  color: white;
 }
 
 .arrow-down {
@@ -177,6 +197,7 @@ th {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 10px solid black;
+  border-top: 10px solid white;
   display: inline-block;
+  color: white;
 }
