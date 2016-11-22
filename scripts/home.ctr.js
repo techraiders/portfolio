@@ -11,6 +11,14 @@
         $scope.Hide = true;
       })
 
+      $scope.w3_open = function() {
+        document.getElementById("menuSidenav").style.display = "block";
+      }
+
+      $scope.w3_close = function() {
+        document.getElementById("menuSidenav").style.display = "none";
+      }
+
       $scope.div = ['Progress Bars', 'Table'];
       $scope.selectedDiv = $scope.div[1];
 

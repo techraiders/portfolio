@@ -1,60 +1,49 @@
+<div class="w3-top"> <!-- Forces navbar to stay sticked at the top -->
 
-
-<div class="w3-top" id="menubar">
-  <ul class="w3-navbar w3-green w3-card-8">
-    <li class="w3-hide-large w3-green w3-opennav w3-right">
-      <a href="javascript:void(0);" onclick="myFunction()">☰</a>
+  <ul class="w3-navbar w3-hide-large w3-green">
+    <li><a href="#" ng-click="w3_open()"><span class="w3-opennav w3-xlarge">&#9776;</span></a>
     </li>
-    <li class="w3-navitem w3-padding-16">Portfolio <span class="w3-tag w3-round w3-red">Alpha</span></li>
-    <li class="w3-hide-small w3-hide-medium"><a class="w3-padding-16" href="#">Home</a></li>
-    <li class="w3-hide-small w3-hide-medium"><a class="w3-padding-16" href="#">Skills</a></li>
-    <li class="w3-hide-small w3-hide-medium"><a class="w3-padding-16" href="#">Education</a></li>
-    <li class="w3-hide-small w3-hide-medium"><a class="w3-padding-16" href="#">Experience</a></li>
-    <li class="w3-hide-small w3-hide-medium"><a class="w3-padding-16" href="#">Achievements</a></li>
-    <li class="w3-hide-small w3-hide-medium"><a class="w3-padding-16" href="#">Calendar</a></li>
-    <li class="w3-hide-small w3-hide-medium w3-dropdown-hover w3-hover-orange">
-        <a class="w3-padding-16" href="#">Projects <i class="fa fa-caret-down"></i></a>
-        <div class="w3-dropdown-content w3-green w3-card-8">
-          <a href="#">Portfolio</a>
-          <a href="#">Online Shopping</a>
-          <a href="http://techraiders.github.io/ngClassifieds/" target="_blank">Classified Ads</a>
-        </div>
+    <li><a class="w3-padding-16" href="#">
+      PORTFOLIO</a>
     </li>
-    <li class="w3-hide-small w3-hide-medium"><a class="w3-padding-16" href="#">References</a></li>
-    <li class="w3-hide-small w3-hide-medium"><a class="w3-padding-16" href="#">Contact</a></li>
-    <li class="w3-hide-small w3-hide-medium w3-navitem w3-right"><input type="text" class="w3-input w3-border-0" placeholder="Search.. (disabled)"></li>
   </ul>
 
-    <div id="demo" class="w3-hide w3-hide-large">
-      <ul class="w3-navbar w3-green w3-card-8">
-        <li><a class="w3-padding-16" href="#">Home</a></li>
-        <li><a class="w3-padding-16" href="#">Skills</a></li>
-        <li><a class="w3-padding-16" href="#">Education</a></li>
-        <li><a class="w3-padding-16" href="#">Experience</a></li>
-        <li><a class="w3-padding-16" href="#">Achievement</a></li>
-        <li><a class="w3-padding-16" href="#">Calendar</a></li>
-        <li class="w3-dropdown-hover w3-hover-orange">
-          <a class="w3-padding-16" href="#">Projects <i class="fa fa-caret-down"></i></a>
-          <div class="w3-dropdown-content w3-green w3-card-8">
-            <a href="#">Portfolio</a>
-            <a href="#">Online Shopping</a>
-            <a href="http://techraiders.github.io/ngClassifieds/" target="_blank">Classified Ads</a>
-          </div>
-        </li>
-        <li class="w3-hide-small w3-hide-medium"><a class="w3-padding-16" href="#">References</a></li>
-        <li><a class="w3-padding-16" href="#">Contact</a></li>
-        <li class="w3-navitem"><input type="search" class="w3-input w3-border-0" placeholder="Search.. (disabled)"></li>
-      </ul>
-    </div>
+  <ul class="w3-navbar w3-green w3-hide-medium w3-hide-small">
+    <li><a class="w3-padding-16" href="#">
+      PORTFOLIO</a>
+    </li>
+    <li><a class="w3-padding-16" href="#">SKILLS</a></li>
+    <li><a class="w3-padding-16" href="#">EDUCATION</a></li>
+    <li><a class="w3-padding-16" href="#">EXPERIENCE</a></li>
+    <li><a class="w3-padding-16" href="#">ACHIEVEMENTS</a></li>
+    <li><a class="w3-padding-16" href="#">CALENDAR</a></li>
+    <li class="w3-dropdown-hover">
+      <a class="w3-padding-16" href="#">PROJECTS <i class="fa fa-caret-down"></i></a>
+      <div class="w3-dropdown-content w3-green">
+        <a class="w3-padding-16" href="#">PORTFOLIO</a>
+        <a class="w3-padding-16" href="#">VAIDYA</a>
+        <a class="w3-padding-16" href="#">E-COMMERCE</a>
+        <a class="w3-padding-16" href="#">E-CLASSIFIEDS</a>
+      </div>
+    </li>
+    <li><a class="w3-padding-16" href="#">REFERENCES</a></li>
+    <li><a class="w3-padding-16" href="#">CONTACTS</a></li>
+    <li class="w3-right w3-navitem"><i class="fa fa-search w3-margin-right"></i></li>
+  </ul>
+
+  <nav class="w3-sidenav w3-collapse w3-white w3-card-2 w3-animate-left" id="menuSidenav" ng-blur="w3_close()">
+    <a class="w3-padding-16" href="#" ng-click="w3_close()" ng-init="w3_close()">CLOSE</a>
+    <a class="w3-padding-16" href="#">SKILLS</a>
+    <a class="w3-padding-16" href="#">EDUCATION</a>
+    <a class="w3-padding-16" href="#">EXPERIENCE</a>
+    <a class="w3-padding-16" href="#">ACHIEVEMENTS</a>
+    <a class="w3-padding-16" href="#">CALENDAR</a>
+    <a class="w3-padding-16" href="#">PROJECTS</a>
+    <a class="w3-padding-16" href="#">REFERENCES</a>
+    <a class="w3-padding-16" href="#">CONTACT</a>
+  </nav>
 </div>
 
-<script>
-function myFunction() {
-    var x = document.getElementById("demo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
+<script type="text/javascript">
+  
 </script>
