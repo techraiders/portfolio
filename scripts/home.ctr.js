@@ -8,6 +8,7 @@
       candidatesFactory.getCandidates().then(function(response) {
         $scope.navneet = response.data;
         console.log("Navneet: ", $scope.navneet);
+        $scope.Hide = true;
       })
 
       $scope.div = ['Progress Bars', 'Table'];
