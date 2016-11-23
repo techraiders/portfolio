@@ -3,6 +3,87 @@
    Author's custom styles
    ========================================================================== */
 
+/* TIMELINE STYLES */
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #4CAF50!important;
+} /* list style */
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: black;
+} /* list sudo element style */
+
+.timeline ul li.in-view::after {
+  background: #f38400;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #F45B69;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .7s ease-in-out;
+} /* list item style */
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+} /* list item arrow style */
+
+/* Some style for our odd elements */
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F45B69 transparent transparent;
+} /* odd list item arrow style */
+
+/* Some style for our even elements */
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+  transform: translate3d(-200px, 0, 0);
+}
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #F45B69;
+} /* even list item arrow style */
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* TIMELINE STYLES
+Reference: https://webdesign.tutsplus.com/tutorials/building-a-vertical-timeline-with-css-and-a-touch-of-javascript--cms-26528
+*/
+
+
 #loader {
   position: absolute;
   left: 50%;
