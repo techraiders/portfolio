@@ -1,9 +1,9 @@
 <div class="w3-top"> <!-- Forces navbar to stay sticked at the top -->
 
   <ul class="w3-navbar w3-hide-large w3-green">
-    <li><a href="#" ng-click="w3_open()"><span class="w3-opennav w3-xlarge">&#9776;</span></a>
+    <li><a href="#" ng-click="sideNavToggle()"><span class="w3-large">&#9776;</span></a>
     </li>
-    <li><a class="w3-padding-16" href="#">
+    <li><a href="#">
       PORTFOLIO</a>
     </li>
   </ul>
@@ -31,8 +31,7 @@
     <li class="w3-right w3-navitem"><i class="fa fa-search w3-margin-right"></i></li>
   </ul>
 
-  <nav class="w3-sidenav w3-collapse w3-white w3-card-2 w3-animate-left" id="menuSidenav" ng-blur="w3_close()">
-    <a class="w3-padding-16" href="#" ng-click="w3_close()" ng-init="w3_close()">CLOSE</a>
+  <nav class="w3-sidenav w3-collapse w3-white w3-card-2 w3-animate-left" id="menuSidenav" ng-init="w3_close()">
     <a class="w3-padding-16" href="#">SKILLS</a>
     <a class="w3-padding-16" href="#">EDUCATION</a>
     <a class="w3-padding-16" href="#">EXPERIENCE</a>
@@ -43,7 +42,3 @@
     <a class="w3-padding-16" href="#">CONTACT</a>
   </nav>
 </div>
-
-<script type="text/javascript">
-  
-</script>
