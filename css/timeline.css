@@ -1,14 +1,17 @@
 /* TIMELINE STYLES */
+.timeline > ul {
+  padding: 0;
+}
 
 .timeline ul li {
   list-style-type: none;
   position: relative;
   width: 6px;
   margin: 0 auto;
-  padding-top: 20px;
   background: #4CAF50!important;
+  padding-top: 46px;
+  perspective: 500px;
 } /* list style */
-
 .timeline ul li::after {
   content: '';
   position: absolute;
@@ -21,6 +24,29 @@
   background: #F45B69;
   transition: background-color 1s;
 }/* list sudo element style */
+
+.timeline ul li[data-year]::after {
+  content: attr(data-year);
+  height: 58px;
+  width: 61px;
+  line-height: 58px;
+  padding-left: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.timeline ul li[data-year]:not(:first-child) {
+  padding-top: 87px;
+}
+
+.timeline ul li[data-year]:not(:first-child) + li:after {
+  visibility: hidden;
+}
+
+.timeline ul li:last-child:after {
+  width: 111px;
+  height: 49px;
+  line-height: 49px;
+}
 
 .timeline ul li article {
   position: relative;
@@ -46,6 +72,7 @@
   transform: none;
   visibility: visible;
   opacity: 1;
+  animation: flag 2s cubic-bezier(0.45, 0.03, 0.51, 0.95) .8s infinite alternate;
 }
 
 .timeline ul li.in-view::after {
@@ -135,77 +162,78 @@ h2.experience{
   perspective: 800px;
  }
 
-.experience  span {
+.experience > span {
   display: inline-block;
   padding: 0;
   margin: 0;
   transform-origin: 50% 70%;
 }
 
-span:nth-child(1) {
+.experience > span:nth-child(1) {
   animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2s both,
-              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 4.8s;
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 4.8s infinite;
 }
 
-span:nth-child(2) {
+.experience > span:nth-child(2) {
   animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.2s both,
-              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 5s;
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 5s infinite;
 }
 
-span:nth-child(3) {
+.experience > span:nth-child(3) {
  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.4s both,
-              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 5.2s;
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 5.2s infinite;
 }
 
-span:nth-child(4) {
+.experience > span:nth-child(4) {
  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.6s both,
-              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 5.4s;
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 5.4s infinite;
 }
 
-span:nth-child(5) {
+.experience > span:nth-child(5) {
   animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.8s both,
-              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 5.8s;
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 5.8s infinite;
  }
 
-span:nth-child(6) {
+.experience > span:nth-child(6) {
   animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.1s both,
-              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 6s;
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 6s infinite;
 }
 
-span:nth-child(7) { 
+.experience > span:nth-child(7) { 
   animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.2s both,
-              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 6.2s;
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 6.2s infinite;
 }
-span:nth-child(8) { 
+.experience > span:nth-child(8) { 
   animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.4s both,
-              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 6.4s;
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 6.4s infinite;
 }
-span:nth-child(9) { 
+.experience > span:nth-child(9) { 
   animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.6s both,
-              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 6.8s;
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 6.8s infinite;
 }
-span:nth-child(10) { 
+.experience > span:nth-child(10) { 
   animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.8s both,
-              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 7s;
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 7s infinite;
 }
-span:nth-child(11) { 
+.experience > span:nth-child(11) { 
   animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4s both,
-              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 7.2s;
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 7.2s infinite;
 }
-span:nth-child(12) { 
+.experience > span:nth-child(12) { 
   animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4.2s both,
-              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 7.4s;
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 7.4s infinite;
 }
-span:nth-child(13) { 
+.experience > span:nth-child(13) { 
   animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4.4s both,
-              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 7.6s;
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 7.6s infinite;
 }
-span:nth-child(14) { 
+.experience > span:nth-child(14) { 
   animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4.6s both,
-              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 7.8s;
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 7.8s infinite;
 }
-span:nth-child(15) { 
-  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 8s both;
+.experience > span:nth-child(15) { 
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4.8s both,
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 8s infinite;
 }
 
 /* END OF TIMELINE HEADER FLIP UP ANIMATION */
