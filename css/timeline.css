@@ -131,65 +131,81 @@ Reference: https://webdesign.tutsplus.com/tutorials/building-a-vertical-timeline
   }
   
 /* TIMELINE HEADER FLIP UP ANIMATION */
-/*h2.experience{
+h2.experience{
   perspective: 800px;
  }
 
 .experience  span {
   display: inline-block;
+  padding: 0;
+  margin: 0;
   transform-origin: 50% 70%;
 }
 
 span:nth-child(1) {
-  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2s both;
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2s both,
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 4.8s;
 }
 
 span:nth-child(2) {
-  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.2s both;
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.2s both,
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 5s;
 }
 
 span:nth-child(3) {
- animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.4s both;
+ animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.4s both,
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 5.2s;
 }
 
 span:nth-child(4) {
- animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.6s both;
+ animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.6s both,
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 5.4s;
 }
 
 span:nth-child(5) {
-  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.8s both;
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.8s both,
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 5.8s;
  }
 
 span:nth-child(6) {
-  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.1s both;
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.1s both,
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 6s;
 }
 
 span:nth-child(7) { 
-  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.2s both;
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.2s both,
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 6.2s;
 }
 span:nth-child(8) { 
-  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.4s both;
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.4s both,
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 6.4s;
 }
 span:nth-child(9) { 
-  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.6s both;
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.6s both,
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 6.8s;
 }
 span:nth-child(10) { 
-  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.8s both;
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.8s both,
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 7s;
 }
 span:nth-child(11) { 
-  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4s both;
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4s both,
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 7.2s;
 }
 span:nth-child(12) { 
-  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4.2s both;
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4.2s both,
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 7.4s;
 }
 span:nth-child(13) { 
-  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4.4s both;
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4.4s both,
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 7.6s;
 }
 span:nth-child(14) { 
-  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4.6s both;
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4.6s both,
+              swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 7.8s;
 }
 span:nth-child(15) { 
-  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4.8s both;
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 8s both;
 }
 
-END OF TIMELINE HEADER FLIP UP ANIMATION */
+/* END OF TIMELINE HEADER FLIP UP ANIMATION */
