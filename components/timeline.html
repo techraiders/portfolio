@@ -1,32 +1,95 @@
 <style type="text/css">
-	.timeline article h6{
-		margin: 0;
-		font-weight: bold;
-	}
-	.timeline article > p {
-		margin-top: 5px;
-		margin-bottom: 0;
-	}
-	.timeline article > p::first-letter {
-		font-size: 3em;
-		font-weight: bold;
-		float: left;
-		padding: 6px 5px 0px 0px;
-	}
-	.timeline article .content {
-		font-size: .8em;
-	}
-	.timeline article a {
-		text-decoration: none;
-	}
+h2.experience{
+  perspective: 800px;
+ }
+
+.experience  span {
+	display: inline-block;
+	transform-origin: 50% 70%;
+}
+
+span:nth-child(1) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2s both;
+}
+
+span:nth-child(2) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.2s both;
+}
+
+span:nth-child(3) {
+ animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.4s both;
+}
+
+span:nth-child(4) {
+ animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.6s both;
+}
+
+span:nth-child(5) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.8s both;
+ }
+
+span:nth-child(6) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.1s both;
+}
+
+span:nth-child(7) { 
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.2s both;
+}
+span:nth-child(8) { 
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.4s both;
+}
+span:nth-child(9) { 
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.6s both;
+}
+span:nth-child(10) { 
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.8s both;
+}
+span:nth-child(11) { 
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4s both;
+}
+span:nth-child(12) { 
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4.2s both;
+}
+span:nth-child(13) { 
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4.4s both;
+}
+span:nth-child(14) { 
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4.6s both;
+}
+span:nth-child(15) { 
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4.8s both;
+}
+
+@keyframes flipUp {
+  from {transform: rotateX(90deg);}
+  to {tranform: rotateX(0deg);}
+}
+
 </style>
+
 
 <div class="w3-container">
 	<div class="w3-row">
 		<div class="w3-col w3-card-4">
 			<section class="timeline">
 				<header class="w3-center w3-green">
-					<h2>WORK EXPERIENCE</h2>
+					<h2 class="experience"> 
+					  <span>W</span>
+					  <span>O</span>
+					  <span>R</span>
+					  <span>K</span>
+					  <span>&nbsp;</span>
+					  <span>E</span>
+					  <span>X</span>
+					  <span>P</span>
+					  <span>E</span>
+					  <span>R</span>
+					  <span>I</span>
+					  <span>E</span>
+					  <span>N</span>
+					  <span>C</span>
+					  <span>E</span>
+					</h2>
 				</header>
 				<ul>
 					<li>

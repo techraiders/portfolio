@@ -1,0 +1,195 @@
+/* TIMELINE STYLES */
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 20px;
+  background: #4CAF50!important;
+} /* list style */
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #F45B69;
+  transition: background-color 1s;
+}/* list sudo element style */
+
+.timeline ul li article {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #F45B69;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+} /* list item style */
+
+.timeline ul li article::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+} /* list item arrow style */
+
+.timeline ul li.in-view:nth-child(1n) article {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+.timeline ul li.in-view::after {
+  background: #f38400;
+}
+/* Some style for our odd elements*/
+.timeline ul li:nth-child(odd) article {
+  left: 39px;
+  transform: translate3d(112px, 0, 0);
+}
+
+.timeline ul li:nth-child(odd) article::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F45B69 transparent transparent;
+} /* odd list item arrow style */
+
+/* Some style for our even elements */
+.timeline ul li:nth-child(even) article {
+  left: -433px;
+  transform: translate3d(-140px, 0, 0);
+}
+.timeline ul li:nth-child(even) article::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #F45B69;
+} /* even list item arrow style */
+
+@media screen and (max-width: 992px) {
+  .timeline ul li article {
+    width: 210px;
+  }
+  .timeline ul li:nth-child(even) article {
+    left: -241px; /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: -20px;
+  }
+   
+  .timeline ul li article {
+    width: calc(100vw - 217px);
+  }
+   
+  .timeline ul li:nth-child(even) article {
+    left: 45px;
+  }
+   
+  .timeline ul li:nth-child(even) article::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #F45B69 transparent transparent;
+  }
+}
+
+/* TIMELINE STYLES
+Reference: https://webdesign.tutsplus.com/tutorials/building-a-vertical-timeline-with-css-and-a-touch-of-javascript--cms-26528
+*/
+
+/* TIMELINE CONTENTS */
+
+.timeline article h6{
+    margin: 0;
+    font-weight: bold;
+  }
+  .timeline article > p {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  .timeline article > p::first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    float: left;
+    padding: 6px 5px 0px 0px;
+  }
+  .timeline article .content {
+    font-size: .8em;
+  }
+  .timeline article a {
+    text-decoration: none;
+  }
+  
+/* TIMELINE HEADER FLIP UP ANIMATION */
+/*h2.experience{
+  perspective: 800px;
+ }
+
+.experience  span {
+  display: inline-block;
+  transform-origin: 50% 70%;
+}
+
+span:nth-child(1) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2s both;
+}
+
+span:nth-child(2) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.2s both;
+}
+
+span:nth-child(3) {
+ animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.4s both;
+}
+
+span:nth-child(4) {
+ animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.6s both;
+}
+
+span:nth-child(5) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.8s both;
+ }
+
+span:nth-child(6) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.1s both;
+}
+
+span:nth-child(7) { 
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.2s both;
+}
+span:nth-child(8) { 
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.4s both;
+}
+span:nth-child(9) { 
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.6s both;
+}
+span:nth-child(10) { 
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 3.8s both;
+}
+span:nth-child(11) { 
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4s both;
+}
+span:nth-child(12) { 
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4.2s both;
+}
+span:nth-child(13) { 
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4.4s both;
+}
+span:nth-child(14) { 
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4.6s both;
+}
+span:nth-child(15) { 
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 4.8s both;
+}
+
+END OF TIMELINE HEADER FLIP UP ANIMATION */

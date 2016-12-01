@@ -1,0 +1,4 @@
+@keyframes flipUp {
+  from {transform: rotateX(90deg);}
+  to {tranform: rotateX(0deg);}
+}
