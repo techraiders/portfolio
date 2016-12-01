@@ -27,18 +27,18 @@
   transition: background-color 1s;
 }/* list sudo element style */
 
-.timeline ul li div {
+.timeline ul li article {
   position: relative;
   bottom: 0;
   width: 400px;
   padding: 15px;
   background: #F45B69;
   visibility: hidden;
-  opacity: .1;
+  opacity: 0;
   transition: all 1s ease-in-out;
 } /* list item style */
 
-.timeline ul li div::before {
+.timeline ul li article::before {
   content: '';
   position: absolute;
   bottom: 7px;
@@ -47,7 +47,7 @@
   border-style: solid;
 } /* list item arrow style */
 
-.timeline ul li.in-view:nth-child(1n) div {
+.timeline ul li.in-view:nth-child(1n) article {
   transform: none;
   visibility: visible;
   opacity: 1;
@@ -57,33 +57,33 @@
   background: #f38400;
 }
 /* Some style for our odd elements*/
-.timeline ul li:nth-child(odd) div {
+.timeline ul li:nth-child(odd) article {
   left: 39px;
   transform: translate3d(112px, 0, 0);
 }
 
-.timeline ul li:nth-child(odd) div::before {
+.timeline ul li:nth-child(odd) article::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
   border-color: transparent #F45B69 transparent transparent;
 } /* odd list item arrow style */
 
 /* Some style for our even elements */
-.timeline ul li:nth-child(even) div {
+.timeline ul li:nth-child(even) article {
   left: -433px;
   transform: translate3d(-140px, 0, 0);
 }
-.timeline ul li:nth-child(even) div::before {
+.timeline ul li:nth-child(even) article::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
   border-color: transparent transparent transparent #F45B69;
 } /* even list item arrow style */
 
 @media screen and (max-width: 992px) {
-  .timeline ul li div {
+  .timeline ul li article {
     width: 210px;
   }
-  .timeline ul li:nth-child(even) div {
+  .timeline ul li:nth-child(even) article {
     left: -241px;*/ /*250+45-6*/
   }
 }
@@ -93,15 +93,15 @@
     margin-left: -20px;
   }
    
-  .timeline ul li div {
+  .timeline ul li article {
     width: calc(100vw - 217px);
   }
    
-  .timeline ul li:nth-child(even) div {
+  .timeline ul li:nth-child(even) article {
     left: 45px;
   }
    
-  .timeline ul li:nth-child(even) div::before {
+  .timeline ul li:nth-child(even) article::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent #F45B69 transparent transparent;
@@ -149,6 +149,7 @@ ul.socialicons {
 ul.socialicons li {
     list-style-type: none;
     float: left;
+    padding-top: 2px;
 }
  
 ul.socialicons li a i, .w3-sidenav a i, span i{
@@ -185,6 +186,7 @@ ul.socialicons li a i, .w3-sidenav a i, span i{
 }
 ul.socialicons li a i:hover {
     opacity: .7;
+    transform: scale(1.1);
 }
 .fa-share-alt{
   background:#dd4b39;
