@@ -1,4 +1,7 @@
 /* TIMELINE STYLES */
+.timeline > ul {
+  padding: 0;
+}
 
 .timeline ul li {
   list-style-type: none;
@@ -35,8 +38,14 @@
   padding-top: 87px;
 }
 
-.timeline ul li[data-year]:not(:first-child) + li:after {
-  visibility: hidden;
+.timeline ul li[data-year]:not(:first-child) + li {
+  display: none;
+}
+
+.timeline ul li:last-child:after {
+  width: 111px;
+  height: 49px;
+  line-height: 49px;
 }
 
 .timeline ul li article {
