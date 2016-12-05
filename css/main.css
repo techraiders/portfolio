@@ -107,14 +107,22 @@ td a {
     margin: 100px auto 20px auto;
 }
 
+@media only screen and (min-width: 993px) {
+  .timeline ul {
+    padding: 0;
+  }
+}
+
 @media only screen and (min-width: 1366px) {
   #menu + article {
     max-width: 85%;
   }
 }
 
-@media only screen and (max-width: 500px) {
-
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
 }
 
 p.speech {
