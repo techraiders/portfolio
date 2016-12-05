@@ -8,10 +8,10 @@
       candidatesFactory.getCandidates().then(function(response) {
         $scope.navneet = response.data;
         console.log("Navneet: ", $scope.navneet);
-        $scope.Hide = true;
+        $scope.hideSpinner = true;
       })
 
-      function w3_open() {
+      /*function w3_open() {
         document.getElementById("menuSidenav").style.display = "block";
       }
 
@@ -25,7 +25,7 @@
         } else{
           w3_open();
         }
-      }
+      }*/
 
       $scope.div = ['Progress Bars', 'Table'];
       $scope.selectedDiv = $scope.div[1];

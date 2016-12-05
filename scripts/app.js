@@ -4,5 +4,5 @@ angular.module("ngPortfolio", ['ui.router', '720kb.socialshare'])
 
        $urlRouterProvider.otherwise('/');
     });
-/*
-angular.module("ngPortfolio", []);*/
+
+/*angular.module("ngPortfolio", []);*/
