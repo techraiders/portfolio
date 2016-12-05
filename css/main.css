@@ -2,7 +2,9 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+body {
+    overflow-x: hidden;
+  }
 
 #loader {
   position: absolute;
@@ -119,9 +121,34 @@ td a {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    overflow-x: hidden;
+  #sideNavToggle {
+    margin: 0;
+  }
+  #sideNavToggle li, #sideNavToggle a {
+    display: inline-block;
+  }
+  #sideNavToggle li {
+    list-style-type: none;
+    margin: 5px;
+  }
+  #sideNavToggle a {
+    text-decoration: none;
+  }
+
+@media screen and (min-width:  1188px) {
+  #sideNavToggle {
+    display: none;
+  }
+  #navbar-large {
+    display: block;
+  }
+}
+@media screen and (max-width:  1187px) {
+  #navbar-large {
+    display: none;
+  }
+  #sideNavToggle {
+    display: block;
   }
 }
 
