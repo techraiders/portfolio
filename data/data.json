@@ -44,8 +44,8 @@
       { "name" : "Bootstrap",           "status" : "80%", "version" :"3.3.7",   "last_used_month" : "Aug", "last_used_year": "2016",  "experience": "2" }, 
       { "name" : "W3.css",              "status" : "90%", "version" :"Latest",  "last_used_month" : "Sept", "last_used_year": "2016", "experience": "1" },
       { "name" : "HTML",                "status" : "60%", "version" :"5",       "last_used_month" : "Nov", "last_used_year": "2016",  "experience": "1" },
-      { "name" : "CSS",                 "status" : "40%", "version" :"3",       "last_used_month" : "Oct", "last_used_year": "2016",  "experience": "1" },
-      { "name" : "AngularJS",           "status" : "60%", "version" :"1.5.8",   "last_used_month" : "Nov", "last_used_year": "2016",  "experience": "3" },
+      { "name" : "CSS",                 "status" : "75%", "version" :"3",       "last_used_month" : "Oct", "last_used_year": "2016",  "experience": "1" },
+      { "name" : "AngularJS",           "status" : "60%", "version" :"1.5.8",   "last_used_month" : "Nov", "last_used_year": "2016",  "experience": "4" },
       { "name" : "Firebase",            "status" : "20%", "version" :"Latest",  "last_used_month" : "Apr", "last_used_year": "2016",  "experience": "0" },
       { "name" : "JavaScript",          "status" : "40%", "version" :"ES5",     "last_used_month" : "Nov", "last_used_year": "2016",  "experience": "3" },
       { "name" : "Google Charts",       "status" : "30%", "version" :"Current", "last_used_month" : "Aug", "last_used_year": "2016",  "experience": "0" },
@@ -56,9 +56,9 @@
       { "name" : "OpenCart",            "status" : "22%", "version" :"2.2",     "last_used_month" : "Mar", "last_used_year": "2016",  "experience": "1" },
       { "name" : "SQL Server",          "status" : "40%", "version" :"2014",    "last_used_month" : "Mar", "last_used_year": "2016",  "experience": "1" },
       { "name" : "Core Java",           "status" : "30%", "version" :"SE5",     "last_used_month" : "Apr", "last_used_year": "2016",  "experience": "0" },
-      { "name" : "Adobe Photoshop",     "status" : "50%", "version" :"CS6",     "last_used_month" : "Nov", "last_used_year": "2016",  "experience": "4" },
-      { "name" : "Ionic",               "status" : "25%", "version" :"1",       "last_used_month" : "Oct", "last_used_year":"2016",   "experience": "1" } ,
-      { "name" : "SASS",                "status" : "25%", "version" :"--",      "last_used_month" : "Oct", "last_used_year":"2016",   "experience": "1" } 
+      { "name" : "Adobe Photoshop",     "status" : "70%", "version" :"CS6",     "last_used_month" : "Nov", "last_used_year": "2016",  "experience": "4" },
+      { "name" : "Ionic",               "status" : "50%", "version" :"1",       "last_used_month" : "Oct", "last_used_year":"2016",   "experience": "1" } ,
+      { "name" : "SASS",                "status" : "60%", "version" :"--",      "last_used_month" : "Oct", "last_used_year":"2016",   "experience": "1" } 
   ],
 
   "educations" : [

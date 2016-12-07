@@ -28,7 +28,7 @@
       }*/
 
       $scope.div = ['Progress Bars', 'Table'];
-      $scope.selectedDiv = $scope.div[1];
+      $scope.selectedDiv = $scope.div[0];
 
       // Intializing the filter variable
       $scope.sortColumn = 'experience', // - prefix operator sorts in decending order
