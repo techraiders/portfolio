@@ -50,12 +50,6 @@
       { "name" : "JavaScript",          "status" : "40%", "version" :"ES5",     "last_used_month" : "Nov", "last_used_year": "2016",  "experience": "3" },
       { "name" : "Google Charts",       "status" : "30%", "version" :"Current", "last_used_month" : "Aug", "last_used_year": "2016",  "experience": "0" },
       { "name" : "Git and Github",      "status" : "75%", "version" :"NA",      "last_used_month" : "Nov", "last_used_year": "2016",  "experience": "7" },
-      { "name" : "Balsamiq Mockups",    "status" : "90%", "version" :"2.2.13",  "last_used_month" : "Aug", "last_used_year": "2016",  "experience": "1" },
-      { "name" : "PHP",                 "status" : "20%", "version" :"6",       "last_used_month" : "Feb", "last_used_year": "2016",  "experience": "1" },
-      { "name" : "MySQL",               "status" : "20%", "version" :"5.7.14",  "last_used_month" : "Feb", "last_used_year": "2016",  "experience": "1" },
-      { "name" : "OpenCart",            "status" : "22%", "version" :"2.2",     "last_used_month" : "Mar", "last_used_year": "2016",  "experience": "1" },
-      { "name" : "SQL Server",          "status" : "40%", "version" :"2014",    "last_used_month" : "Mar", "last_used_year": "2016",  "experience": "1" },
-      { "name" : "Core Java",           "status" : "30%", "version" :"SE5",     "last_used_month" : "Apr", "last_used_year": "2016",  "experience": "0" },
       { "name" : "Adobe Photoshop",     "status" : "70%", "version" :"CS6",     "last_used_month" : "Nov", "last_used_year": "2016",  "experience": "4" },
       { "name" : "Ionic",               "status" : "50%", "version" :"1",       "last_used_month" : "Oct", "last_used_year":"2016",   "experience": "1" } ,
       { "name" : "SASS",                "status" : "60%", "version" :"--",      "last_used_month" : "Oct", "last_used_year":"2016",   "experience": "1" } 
@@ -117,6 +111,10 @@
       {
         "name" : "Learn AngularJS Step By Step",
         "certificateURL" : "ude.my/UC-2OKEOOR9"
+      },
+      {
+        "name" : "Photoshop Fantastic! - The Comprehensive Guide to Photoshop",
+        "certificateURL" : "ude.my/UC-9ZQ9UGZ9"
       },
       {
         "name" : "Ultimate AngularJS: Build a Real-World App from Scratch",

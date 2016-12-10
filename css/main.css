@@ -154,6 +154,13 @@ td a {
   #navbar-large {
     display: block;
   }
+  #skillsTable {
+    width: 800px;
+    margin: 0 auto;
+  }
+  .list-divider {
+    padding: 16px 8px;
+  }
 }
 @media screen and (max-width:  1187px) {
   #navbar-large {
