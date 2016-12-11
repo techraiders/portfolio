@@ -7,7 +7,6 @@
           <br/>
         </div><!-- col -->
       </div><!-- row -->
-
           <div ng-switch="selectedDiv">
             <div class="w3-row-padding" ng-switch-when="Progress Bars">                  
               <div class="w3-col s12 m4 l4 w3-animate-right">
@@ -69,9 +68,9 @@
                       <td> {{skill.experience}} </td>
                     </tr>
                   </tbody>
-                </table><!-- ng-switch-when -->
+                </table>
               </div><!-- col -->
-            </div><!-- row -->
+            </div><!-- row --><!-- ng-switch-when -->
 
               <button onclick="document.getElementById('id01').style.display='block'" class="w3-btn w3-blue w3-hover-white w3-right w3-margin">Show in Pie Chart</button><br/>
           </div><!-- ng-switch -->
@@ -84,11 +83,12 @@
                       <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">&times;</span>
                         <h3 class="">&darr; Level of skills</h3>
                     </header><!-- modal container -->
-                    <div>
-                        <figure  id="skills_chart">
-                        </figure>
-                          <figcaption class="w3-tag w3-orange w3-padding w3-margin-bottom">Can you please help me make this pie chart responsive?</figcaption>
-                    </div><!-- chart container -->
+                      <figure ng-switch-when="PieChart">
+                        <img id="skills_chart">
+                        <figcaption class="w3-tag w3-orange w3-padding w3-margin-bottom">
+                        write your caption here
+                      </figcaption>
+                      </figure>
                   </div><!-- modal content -->
                 </div><!-- modal -->     
               </div><!-- col -->

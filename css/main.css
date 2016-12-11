@@ -169,6 +169,7 @@ td a {
 #introduction dt {
   font-weight: bold;
   font-variant-caps: all-small-caps;
+  color: #509853 !important
 }
 #introduction dd {
   font-size: 1em;

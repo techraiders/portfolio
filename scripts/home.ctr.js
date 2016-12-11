@@ -27,7 +27,7 @@
         }
       }*/
 
-      $scope.div = ['Progress Bars', 'Table', 'Pie Chart'];
+      $scope.div = ['Progress Bars', 'Table'];
       $scope.selectedDiv = $scope.div[0];
 
       // Intializing the filter variable
