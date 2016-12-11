@@ -166,11 +166,11 @@ td a {
   }
 }
 
-dt {
+#introduction dt {
   font-weight: bold;
   font-variant-caps: all-small-caps;
 }
-dd {
+#introduction dd {
   font-size: 1em;
 }
 
@@ -259,24 +259,4 @@ p.speech:after {
 th {
   text-transform: uppercase;
   text-align: center;
-}
-
-.arrow-up {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 10px solid white;
-  display: inline-block;
-  color: white;
-}
-
-.arrow-down {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 10px solid white;
-  display: inline-block;
-  color: white;
 }

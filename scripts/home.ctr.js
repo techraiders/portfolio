@@ -27,7 +27,7 @@
         }
       }*/
 
-      $scope.div = ['Progress Bars', 'Table'];
+      $scope.div = ['Progress Bars', 'Table', 'Pie Chart'];
       $scope.selectedDiv = $scope.div[0];
 
       // Intializing the filter variable
@@ -42,7 +42,7 @@
 
       $scope.getSortClass = function(column) {
         if ($scope.sortColumn == column) {
-          return $scope.reverseSort ? 'arrow-down' : 'arrow-up';
+          return $scope.reverseSort ? 'fa fa-sort-amount-desc' : 'fa fa-sort-amount-asc';
         }
       }
 
