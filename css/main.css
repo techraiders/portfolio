@@ -159,9 +159,21 @@ td a {
     margin: 0 auto;
   }
   .list-divider {
-    padding: 16px 8px;
+    padding: 8px 4px;
+    font-weight: .7em;
+    font-size: 1.2em;
+    background-color: 
   }
 }
+
+dt {
+  font-weight: bold;
+  font-variant-caps: all-small-caps;
+}
+dd {
+  font-size: 1em;
+}
+
 @media screen and (max-width:  1187px) {
   #navbar-large {
     display: none;
