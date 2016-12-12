@@ -34,6 +34,7 @@ a.help:hover {
 }
 
 ul.socialicons {
+    display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-padding-start: 0px;
 }
@@ -117,8 +118,8 @@ td a {
     margin-left: 40px;
 }
 
-#menu + article {
-    margin: 60px auto 20px auto;
+article#main {
+    margin: 0 auto 20px auto;
 }
 
 @media only screen and (min-width: 993px) {
@@ -128,7 +129,7 @@ td a {
 }
 
 @media only screen and (min-width: 1366px) {
-  #menu + article {
+  article#main {
     max-width: 85%;
   }
 }
