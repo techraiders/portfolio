@@ -8,6 +8,10 @@ body {
     background-attachment: fixed;
   }
 
+a:not([href]) {
+  cursor: not-allowed;
+}
+
 #loader {
   position: absolute;
   left: 50%;
@@ -46,11 +50,6 @@ ul.socialicons li {
     float: left;
     padding-top: 2px;
     margin: 0 2px;
-}
-
-.w3-sidenav a {
-  padding: 0;
-  margin: 3px 4px;
 }
 
 ul.socialicons li a i, .w3-sidenav a i, span i{
@@ -137,22 +136,8 @@ article#main {
   }
 }
 
-  #sideNavToggle {
-    margin: 0;
-  }
-  #sideNavToggle li, #sideNavToggle a {
-    display: inline-block;
-  }
-  #sideNavToggle li {
-    list-style-type: none;
-    margin: 5px;
-  }
-  #sideNavToggle a {
-    text-decoration: none;
-  }
-
 @media screen and (min-width:  1188px) {
-  #sideNavToggle {
+  #burger {
     display: none;
   }
   #navbar-large {
@@ -164,9 +149,11 @@ article#main {
   }
   .list-divider {
     padding: 8px 4px;
-    font-weight: .7em;
     font-size: 1.2em;
-    background-color: 
+    background-color: rgba(211, 211, 211, 0.31);
+  }
+  .w3-dropdown-hover {
+    background-color: #4CAF50!important;
   }
 }
 
@@ -183,8 +170,26 @@ article#main {
   #navbar-large {
     display: none;
   }
-  #sideNavToggle {
-    display: block;
+  #burger li {
+    list-style-type: none;
+    margin: 5px;
+  }
+  #burger a {
+    text-decoration: none;
+  }
+  #burger {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 7px;
+    left: 7px;
+    z-index: 2;
+  }
+  #burger, #burger>li, #burger>li>a {
+    display: inline-block;
+  }
+  #menuSidenav a{
+    margin: 0 auto;
   }
 }
 

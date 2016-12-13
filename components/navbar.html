@@ -1,15 +1,10 @@
 
-
-<div class="w3-top"> <!-- Forces navbar to stay sticked at the top -->
-
-  <ul class="w3-green" id="sideNavToggle" ng-click="showSidenav=!showSidenav">
-    <li><a href="#"><span class="w3-large">&#9776;</span></a>
-    </li>
-    <li><a href="#">
-      PORTFOLIO <sup class="w3-tag w3-red">Alpha</sup></a>
+  <ul class="w3-green" id="burger">
+    <li><a href="#" ng-click="sideMenuToggle()">&#9776;</a>
     </li>
   </ul>
 
+<div class="w3-top"> <!-- Forces navbar to stay sticked at the top -->
   <ul class="w3-navbar w3-green w3-card-4" id="navbar-large">
     <li><a class="w3-padding-16" href="#">
       PORTFOLIO <sup class="w3-tag w3-red">Alpha</sup></a>
@@ -36,14 +31,15 @@
     <li class="w3-right w3-navitem"><i class="fa fa-search w3-margin-right"></i></li>
   </ul>
 
-  <nav class="w3-sidenav w3-collapse w3-white w3-card-2 w3-animate-left" id="menuSidenav" ng-show="showSidenav" ng-mouseleave="showSidenav=false">
-    <a class="w3-padding-16" href="#">SKILLS</a>
-    <a class="w3-padding-16" href="#">EDUCATION</a>
-    <a class="w3-padding-16" href="#">EXPERIENCE</a>
-    <a class="w3-padding-16" href="#">ACHIEVEMENTS</a>
-    <a class="w3-padding-16" href="#">CALENDAR</a>
-    <a class="w3-padding-16" href="#">PROJECTS</a>
-    <a class="w3-padding-16" href="#">REFERENCES</a>
-    <a class="w3-padding-16" href="#">CONTACT</a>
+  <nav class="w3-sidenav w3-collapse w3-white w3-card-2 w3-animate-left" id="menuSidenav" ng-init="w3_close()">
+    <a class="w3-padding-8" href="" ng-click="w3_close()">CLOSE</a>
+    <a class="w3-padding-8" href="#">SKILLS</a>
+    <a class="w3-padding-8" href="#">EDUCATION</a>
+    <a class="w3-padding-8" href="#">EXPERIENCE</a>
+    <a class="w3-padding-8" href="#">ACHIEVEMENTS</a>
+    <a class="w3-padding-8" href="#">CALENDAR</a>
+    <a class="w3-padding-8" href="#">PROJECTS</a>
+    <a class="w3-padding-8" href="#">REFERENCES</a>
+    <a class="w3-padding-8" href="#">CONTACT</a>
   </nav>
 </div>
