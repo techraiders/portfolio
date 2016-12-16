@@ -1,38 +1,41 @@
-<section class="w3-container w3-card-4">
+<section class="w3-container">
     <div class="w3-row" id="siteHeader">
-      <div class="w3-col w3-card m4 l2" style="height:350px;">
+      <div class="w3-col w3-card-2 m4 l2" style="height:350px;">
         <img src="img/dp.jpg" alt="Display Picture" style="width:100%;height:100%">
       </div>
-      <div class="w3-col m8 l10">
-        <div class="w3-margin-top">
-          <p class="speech w3-green mg-40 w3-card-2" style="margin-left: 10px;">Hello &amp; Welcome</p>
-          <p class="mg-40">
-            <span style="font-size: x-large;">I'M
-              <strong class="w3-text-green">NAVNEET PRAKASH</strong>
-            </span> <br/>
-              <a class="help" href="https://en.wikipedia.org/wiki/Front-end_web_development">Frontend Developer</a> at
-              <a class="company" href="http://www.nxtlifetechnologies.com/">NxtLife Technologies Ltd. UK</a><hr/>
-            <strong class="mg-40">Age:</strong> 24
-
-                  <!-- side nav that holds social sharing buttons -->
-                  <aside ng-include="'components/sidenav.html'"></aside>
-            
-            <address class="mg-40">
-              <strong> <i class="fa fa-map-marker w3-hide-medium w3-hide-large" aria-hidden="true"></i> <span class="w3-hide-small"> Address: </span></strong>Laxmi Nagar, New Delhi - 110092
-              <br/>
-              <strong><i class="fa fa-mobile w3-hide-medium w3-hide-large" aria-hidden="true"></i> <span class="w3-hide-small" > Phone:</span></strong> +91-9527936489<br/>
-              <strong> <i class="fa fa-envelope w3-hide-medium w3-hide-large" aria-hidden="true"></i> <span class="w3-hide-small"> Email:</span></strong> <span ng-copy="Message=true"> hello_navneet@hotmail.com</span> <span class="w3-tag w3-orange w3-margin-left" ng-show="Message"><em><strong>Email Copied</strong></em></span>
+      <div class="w3-col m8 l10" style="position: relative;">
+        <i class="fa fa-comment-o speech" aria-hidden="true"></i> <span class="speech-text">Hello <br/>and<br/> Welcome</span>
+        <div id="personal-info">
+          <h2 id="name"> I'M <span>NAVNEET PRAKASH</span></h2>
+          <p>
+            <a class="help" href="https://en.wikipedia.org/wiki/Front-end_web_development">Frontend Developer</a> at
+            <a class="company" href="http://www.nxtlifetechnologies.com/">NxtLife Technologies Ltd. UK</a><hr/>
+            <address>
+              <strong>Age:</strong> 24 <br/>
+              <strong>
+                <i class="fa fa-map-marker w3-hide-medium w3-hide-large" aria-hidden="true"></i> <span class="w3-hide-small"> Address: </span>
+              </strong>Laxmi Nagar, New Delhi - 110092  <br/>
+              <strong>
+                <i class="fa fa-mobile w3-hide-medium w3-hide-large" aria-hidden="true"></i> <span class="w3-hide-small" > Phone:
+                </span>
+              </strong> +91-9527936489  <br/>
+              <strong> <i class="fa fa-envelope w3-hide-medium w3-hide-large" aria-hidden="true"></i> <span class="w3-hide-small"> 
+                Email:</span>
+              </strong> <span ng-copy="Message=true"> hello_navneet@hotmail.com</span> <span class="w3-tag w3-orange w3-margin-left" ng-show="Message"><em><strong>Email Copied</strong></em></span>
             </address>
           </p>
-          <ul class="socialicons fmg-40">
-            <li><p style="margin-top: 5%;">Let's be in touch</p></li>  &nbsp;&nbsp;&nbsp;
+          <ul class="socialicons">
+            <li style="line-height: 2.5;">Let's be in touch</li>&nbsp;&nbsp;
             <li><a href="http://facebook.com/techraiders" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
             <li><a href="https://in.linkedin.com/in/techraiders" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
             <li><a href="https://github.com/techraiders" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> </li>
             <!-- <li class="disabled"><a href="#"><i class="fa fa-twitter" aria-hidden="true" target="_blank"></i></a></li> -->
             <li class="disabled"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i> </a></li>
           </ul>
-        </div> <!-- dp details -->
+        </div>
       </div> <!-- intro column beside dp -->
     </div><!-- dp row -->
 </section>
+
+<!-- side nav that holds social sharing buttons 
+<aside ng-include="'components/sidenav.html'"></aside> -->
