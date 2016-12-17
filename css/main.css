@@ -42,8 +42,8 @@ a.help:hover {
 ul.socialicons {
     display: -ms-inline-flexbox;
     display: inline-flex;
-    -webkit-padding-start: 0px;
-    margin: 0;
+    padding: 0;
+    margin-top: 4px;
 }
  
 ul.socialicons li {
@@ -105,11 +105,6 @@ footer{
     color: #fff;
 }
 
-h2#name {
-  margin-top: -18px;
-  margin-bottom: -18px;
-}
-
 h2#name > span {
   color: #4CAF50;
 }
@@ -122,6 +117,16 @@ td a {
   text-decoration: none;
 }
 
+#personal-info {
+	position: relative;
+	top: 9px;
+}
+h2#name {
+	margin: 0;
+}
+#name + h6 {
+	margin: 0;
+}
 article#main {
     margin: 0 auto 20px auto;
     background-color: #fff;
@@ -141,7 +146,7 @@ article#main {
 
 @media screen and (min-width: 601px) {
   #personal-info { 
-   left: 9px;position: relative;  
+   left: 9px;
   }
 }
 
@@ -200,20 +205,42 @@ article#main {
 }
 
 .speech {
-    position: relative;
-    color: #4CAF50;
-    font-size: 10em;
-    transform: rotateY(180deg);
-    top: -16px;
-    left: 3px;
+  position: relative;
+  margin: 0;
+  display: inline-block;
+  font-size: 1.5em;
+  font-variant: small-caps;
+  border-top-left-radius: 48%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+  padding: 4px 11px;
+  background-color: #4CAF50;
+  color: white;
+  box-shadow: -5px -3px 5px 2px rgba(0,0,0,0.3);
+  top: 5px;
+  left: 3px;
 }
-.speech-text {
+.speech::after, .speech::before {
+    top: 91%;
+    left: 87%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
     position: absolute;
-    text-align: center;
-    top: 23px;
-    left: 43px;
-    font-variant: small-caps;
-    font-weight: bold;
+    pointer-events: none;
+    border-width: 13px;
+    transform: skew(60deg);
+}
+
+.speech::after {
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: #4caf50;
+}
+.speech::before {
+  border-color: rgba(194, 225, 245, 0);
+  border-top-color: #4caf50;
 }
 
 hr {
@@ -222,6 +249,7 @@ hr {
 
 address {
   line-height: 1.7;
+  margin-top: 7px;
 }
 
 th {
