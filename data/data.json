@@ -44,15 +44,15 @@
       { "name" : "Bootstrap",           "status" : "80%", "version" :"3.3.7",   "last_used_month" : "Aug", "last_used_year": "2016",  "experience": "2" }, 
       { "name" : "W3.css",              "status" : "90%", "version" :"Latest",  "last_used_month" : "Dec", "last_used_year": "2016", "experience": "1" },
       { "name" : "HTML",                "status" : "60%", "version" :"5",       "last_used_month" : "Dec", "last_used_year": "2016",  "experience": "1" },
-      { "name" : "CSS3",                "status" : "75%", "version" :"3",       "last_used_month" : "Dec", "last_used_year": "2016",  "experience": "1" },
+      { "name" : "CSS3",                "status" : "85%", "version" :"3",       "last_used_month" : "Dec", "last_used_year": "2016",  "experience": "1" },
       { "name" : "AngularJS",           "status" : "60%", "version" :"1.5.8",   "last_used_month" : "Dec", "last_used_year": "2016",  "experience": "4" },
-      { "name" : "Firebase",            "status" : "20%", "version" :"Latest",  "last_used_month" : "Apr", "last_used_year": "2016",  "experience": "0" },
-      { "name" : "JavaScript",          "status" : "40%", "version" :"ES5",     "last_used_month" : "Dec", "last_used_year": "2016",  "experience": "3" },
-      { "name" : "Google Charts",       "status" : "30%", "version" :"Current", "last_used_month" : "Sept", "last_used_year": "2016",  "experience": "0" },
+      { "name" : "Firebase",            "status" : "30%", "version" :"Latest",  "last_used_month" : "Apr", "last_used_year": "2016",  "experience": "0" },
+      { "name" : "JavaScript",          "status" : "50%", "version" :"ES5",     "last_used_month" : "Dec", "last_used_year": "2016",  "experience": "3" },
+      { "name" : "Google Charts",       "status" : "50%", "version" :"Current", "last_used_month" : "Sept", "last_used_year": "2016",  "experience": "0" },
       { "name" : "Git and Github",      "status" : "75%", "version" :"NA",      "last_used_month" : "Dec", "last_used_year": "2016",  "experience": "7" },
       { "name" : "Adobe Photoshop",     "status" : "70%", "version" :"CS6",     "last_used_month" : "Dec", "last_used_year": "2016",  "experience": "4" },
       { "name" : "Ionic",               "status" : "50%", "version" :"1",       "last_used_month" : "Nov", "last_used_year":"2016",   "experience": "1" } ,
-      { "name" : "SASS",                "status" : "60%", "version" :"--",      "last_used_month" : "Nov", "last_used_year":"2016",   "experience": "1" } 
+      { "name" : "SASS",                "status" : "70%", "version" :"--",      "last_used_month" : "Nov", "last_used_year":"2016",   "experience": "1" } 
   ],
 
   "educations" : [

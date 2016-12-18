@@ -112,23 +112,25 @@
 }
 
 @media screen and (max-width: 600px) {
-  
   .timeline ul li {
     margin-left: 23px;
-  }
-   
+  }   
   .timeline ul li article {
     width: calc(100vw - 165px);
   }
-   
   .timeline ul li:nth-child(even) article {
     left: 45px;
   }
-   
   .timeline ul li:nth-child(even) article::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent #F45B69 transparent transparent;
+  }
+}
+
+@media screen and (min-width:  601px) { /* MENU STYLE ON LARGE DEVICES */
+  .timeline ul {
+    padding: 0;
   }
 }
 
@@ -238,4 +240,4 @@ h2.experience{
               swing 4s cubic-bezier(0.45, 0.03, 0.51, 0.95) forwards 8s infinite;
 }
 
-/* END OF TIMELINE HEADER FLIP UP ANIMATION */
+/* END OF TIMELINE HEADER FLIP UP ANIMATION */}

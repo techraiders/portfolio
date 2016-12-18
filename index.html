@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <base target="_blank">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
         <!-- font awesome CDN for social icons -->
         <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -20,7 +21,6 @@
         <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
         <link rel="stylesheet" href="css/timeline.css">
         <link rel="stylesheet" href="css/keyframeAnimations.css">
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
         <!--Load the AJAX API-->
         <script type="text/javascript" src="js/googlechart.js"></script>
@@ -37,45 +37,20 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
- 
+        <div class="modal" ng-hide="hideSpinner">
+          <div class="w3-jumbo modal-content"><i class="fa fa-spinner w3-spin w3-text-green"></i></div>
+        </div> 
       <header id="menu" ng-include="'components/navbar.html'"></header>
 
       <ul id="wire">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li>
+      </ul>
         <h2 id="christmas">Merry Christmas!</h2>
 
+    <!-- side nav that holds social sharing buttons -->
+    <aside ng-include="'components/sidenav.html'" style="position:absolute;top:30%;"></aside>
+
       <article id="main">
-        <div id="loader" class="w3-jumbo"><i class="fa fa-spinner w3-spin w3-text-green" ng-hide="hideSpinner"></i></div>
         <section ng-include="'components/siteheader.html'"></section>
 
           <section class="w3-container" id="introduction">

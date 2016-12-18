@@ -1,5 +1,5 @@
 <!-- Share button at the right that opens sidenav of sharing icons -->
-      <nav class="w3-sidenav w3-card-2 w3-hide-small w3-hide-medium w3-animate-right" style="width:auto;height:auto;right:0;" id="shareicon" ng-show="!showsocialshareiconsholder">
+      <nav class="w3-sidenav  w3-card-2 w3-hide-small w3-hide-medium w3-animate-right setAnchorPadding" style="width:auto;height:auto;right:0;" id="shareicon" ng-show="!showsocialshareiconsholder">
         <a href="">
           <i class="fa fa-share-alt" aria-hidden="true" ng-mouseover="showsocialshareiconsholder=true"></i>
         </a>
@@ -9,7 +9,7 @@
       </nav>
 
         <!-- side nav sharing icons holder -->
-      <nav class="w3-sidenav w3-animate-right w3-card-2" style="width:auto; height:auto;right:0;" id="socialshareiconsholder" ng-show="showsocialshareiconsholder" ng-mouseleave="showsocialshareiconsholder=false">
+      <nav class="w3-sidenav w3-animate-right w3-card-2 setAnchorPadding" style="width:auto; height:auto;right:0;" id="socialshareiconsholder" ng-show="showsocialshareiconsholder" ng-mouseleave="showsocialshareiconsholder=false">
         <!-- <a href="#" class="w3-closenav">Close &times;</a> -->
 
 

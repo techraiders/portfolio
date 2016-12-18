@@ -1,11 +1,11 @@
       <section class="w3-container" id="educationandtraining">
-        <h3><i class="fa fa-graduation-cap" aria-hidden="true"></i> EDUCATION AND TRAININGS</h3>
+        <h3 class="w3-green"><i class="fa fa-graduation-cap" aria-hidden="true"></i> EDUCATION AND TRAININGS</h3>
           <div class="w3-row">
               <div class="w3-col l6">
                 <div class="w3-responsive">
                   <table class="w3-table w3-striped">
                         <thead>
-                          <tr class="w3-green">
+                          <tr>
                             <th>Degree</th>
                             <th>University</th>
                             <!-- <th>Institute</th> -->
@@ -33,7 +33,7 @@
             <div class="w3-responsive">
               <table class="w3-table w3-striped">
                   <thead>
-                    <tr class="w3-green">
+                    <tr>
                       <th>
                          <span class="w3-tooltip">CA
                           <span class="w3-text w3-tag w3-blue" style="position:absolute;left:0;top:18px">Certification Authority</span>
@@ -45,7 +45,7 @@
                   </thead>
                   <tbody ng-repeat="course in navneet.trainings">
                     <tr class="w3-hover-light-grey">
-                      <td><a href="http://www.udemy.com/"><img src="https://media.licdn.com/media/p/8/005/05d/205/00a7692.png" style="width:75%" alt="UDEMY"></a> </td>
+                      <td><a href="http://www.udemy.com/"><img src="https://media.licdn.com/media/p/8/005/05d/205/00a7692.png" style="width:30px;height:22px;" alt="UDEMY"></a> </td>
                       <td>{{ course.name }}</td>
                       <td><a href="http://{{ course.certificateURL }}" target="_blank"> CLICK HERE</a></td>
                     </tr>
