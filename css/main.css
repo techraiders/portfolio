@@ -36,6 +36,9 @@ h2#name, h3 {
 a.help {
   text-decoration: none;
 }
+a:not([href]) {
+  cursor: not-allowed;
+}
 
 a.help:hover {
   cursor: help;
@@ -264,7 +267,7 @@ figcaption {
   opacity: 0;
   visibility: hidden;
   transform: rotate(360deg) translateY(-345px);
-  transition: all 2s ease-in-out .5s;
+  transition: all 1.3s ease-out;
 }
 .slides:hover figcaption {
   opacity: 1;

@@ -1,0 +1,30 @@
+      <section class="w3-container" id="educationandtraining">
+        <h3 class="w3-green"><i class="fa fa-graduation-cap" aria-hidden="true"></i> ONLINE TRAININGS</h3>
+          <div class="w3-row">
+          <div class="w3-col">
+            <div class="w3-responsive">
+              <table class="w3-table w3-striped">
+                  <thead>
+                    <tr>
+                      <th>
+                         <span class="w3-tooltip">CA
+                          <span class="w3-text w3-tag w3-blue" style="position:absolute;left:0;top:18px">Certification Authority</span>
+                          </span>
+                      </th>
+                      <th>Course Name</th>
+                      <th>Certificate</th>
+                    </tr>
+                  </thead>
+                  <tbody ng-repeat="course in navneet.trainings">
+                    <tr class="w3-hover-light-grey">
+                      <td><a href="http://www.udemy.com/"><img src="https://media.licdn.com/media/p/8/005/05d/205/00a7692.png" style="width:30px;height:22px;" alt="UDEMY"></a> </td>
+                      <td>{{ course.name }}</td>
+                      <td><a href="http://{{ course.certificateURL }}" target="_blank"> CLICK HERE</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <span class="w3-tag w3-blue w3-right w3-small" style="margin-bottom:5px;">Certificate of last course isn't available! </span>
+            </div>
+          </div><!-- col -->
+        </div><!-- row -->
+      </section>
