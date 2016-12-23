@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.5.8"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techraiders/portfolio.git"
+  },
+  "author": "Navneet Prakash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techraiders/portfolio/issues"
+  },
+  "homepage": "https://github.com/techraiders/portfolio#readme",
+  "description": "my gulp site"
+}
