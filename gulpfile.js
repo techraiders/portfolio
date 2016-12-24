@@ -5,6 +5,7 @@ var
 	gulp = require('gulp'),
 	newer = require('gulp-newer'),
 	preprocess = require('gulp-preprocess'),
+	htmlclean = require('gulp-htmlclean'),
 	imagemin = require('gulp-imagemin'),
 	del = require('del'),
 	pkg = require('./package.json');
@@ -44,9 +45,11 @@ gulp.task('clean', function() {
 
 // build HTML files
 gulp.task('html', function() {
-	return gulp.src(html.in)
-		.pipe(preprocess({context: html.context}))
-		.pipe(gulp.dest(html.out))
+	var page = gulp.src(html.in).pipe(preprocess({context: html.context}));
+	if (!devBuild) {
+		page = page.pipe(htmlclean());
+	}
+	return page.pipe(gulp.dest(html.out));
 });
 
 // manages images
