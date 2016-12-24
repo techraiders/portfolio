@@ -7,6 +7,7 @@ var
 	preprocess = require('gulp-preprocess'),
 	htmlclean = require('gulp-htmlclean'),
 	imagemin = require('gulp-imagemin'),
+	size = require('gulp-size'),
 	del = require('del'),
 	pkg = require('./package.json');
 
@@ -47,7 +48,10 @@ gulp.task('clean', function() {
 gulp.task('html', function() {
 	var page = gulp.src(html.in).pipe(preprocess({context: html.context}));
 	if (!devBuild) {
-		page = page.pipe(htmlclean());
+		page = page
+			.pipe(size({title: 'HTML in'}))
+			.pipe(htmlclean())
+			.pipe(size({title: 'HTML out'}));
 	}
 	return page.pipe(gulp.dest(html.out));
 });
