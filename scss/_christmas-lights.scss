@@ -31,17 +31,22 @@ h2#christmas {
                 border-radius: 50%;
                 padding: 0;
                 margin: 0 15px;
-                animation-duration: 1s;
-                animation-iteration-count: infinite;
-                animation-fill-mode: both;
+                -webkit-animation-duration: 1s;
+                        animation-duration: 1s;
+                -webkit-animation-iteration-count: infinite;
+                        animation-iteration-count: infinite;
+                -webkit-animation-fill-mode: both;
+                        animation-fill-mode: both;
             }
 
             #wire li:nth-child(even) {
-                animation-name: even-flash;
+                -webkit-animation-name: even-flash;
+                        animation-name: even-flash;
             }
             
             #wire li:nth-child(odd) {
-                animation-name: odd-flash;
+                -webkit-animation-name: odd-flash;
+                        animation-name: odd-flash;
             }
 
             #wire li:before {
@@ -55,6 +60,17 @@ h2#christmas {
                 top: -6px;
             }
 
+            @-webkit-keyframes even-flash {
+                0%, 100% {
+                    background: rgba(255, 230, 65, 1);
+                    box-shadow: 0px 2px 20px 4px rgba(255, 230, 65, 1);
+                }
+                50% {
+                    background: rgba(255, 230, 65, 1);
+                    box-shadow: 0px 2px 20px 4px rgba(255, 230, 65, 0.3);
+                }
+            }
+
             @keyframes even-flash {
                 0%, 100% {
                     background: rgba(255, 230, 65, 1);
@@ -63,6 +79,17 @@ h2#christmas {
                 50% {
                     background: rgba(255, 230, 65, 1);
                     box-shadow: 0px 2px 20px 4px rgba(255, 230, 65, 0.3);
+                }
+            }
+
+             @-webkit-keyframes odd-flash {
+                50% {
+                    background: rgba(255, 65, 185, 1);
+                    box-shadow: 0px 2px 20px 4px rgba(255, 65, 185, 1);
+                }
+                0%, 100% {
+                    background: rgba(255, 65, 185, 1);
+                    box-shadow: 0px 2px 20px 4px rgba(255, 65, 185, 0.3);
                 }
             }
 

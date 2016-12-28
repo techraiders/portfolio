@@ -5,7 +5,7 @@ angular.module("ngPortfolio", ['ui.router', '720kb.socialshare'])
       $stateProvider
         .state('pig-animation', {
           url: '/showcase',
-          templateUrl: 'components/pig-animation/pig06.html'
+          templateUrl: 'components/pig06.html'
         })
         .state('portfolio', {
         	url: '/portfolio',

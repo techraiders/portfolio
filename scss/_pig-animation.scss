@@ -1,7 +1,7 @@
 #pig-animation {
 	width: 800px;
 	height: 600px;
-	background: url('img/background.png') top left no-repeat;
+	background: url('../img/pig-animation/background.png') top left no-repeat;
 	border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
@@ -75,29 +75,58 @@
 }
 
 /******** ANIMATIONS ********/
+@-webkit-keyframes legs1 {
+	from { -webkit-transform: rotate(-10deg); transform: rotate(-10deg); }
+	to { -webkit-transform: rotate(10deg); transform: rotate(10deg); }
+}
 @keyframes legs1 {
-	from { transform: rotate(-10deg); }
-	to { transform: rotate(10deg); }
+	from { -webkit-transform: rotate(-10deg); transform: rotate(-10deg); }
+	to { -webkit-transform: rotate(10deg); transform: rotate(10deg); }
+}
+
+@-webkit-keyframes legs2 {
+	from { -webkit-transform: rotate(10deg); transform: rotate(10deg); }
+	to { -webkit-transform: rotate(-10deg); transform: rotate(-10deg); }
 }
 
 @keyframes legs2 {
-	from { transform: rotate(10deg); }
-	to { transform: rotate(-10deg); }
+	from { -webkit-transform: rotate(10deg); transform: rotate(10deg); }
+	to { -webkit-transform: rotate(-10deg); transform: rotate(-10deg); }
+}
+
+@-webkit-keyframes pig-body {
+	from { -webkit-transform: translateY(0px); transform: translateY(0px); }
+	to { -webkit-transform: translateY(10px); transform: translateY(10px); }
 }
 
 @keyframes pig-body {
-	from { transform: translateY(0px); }
-	to { transform: translateY(10px); }
+	from { -webkit-transform: translateY(0px); transform: translateY(0px); }
+	to { -webkit-transform: translateY(10px); transform: translateY(10px); }
+}
+
+@-webkit-keyframes ear-tail {
+	from { -webkit-transform: translateY(0px) rotate(-5deg); transform: translateY(0px) rotate(-5deg); }
+	to { -webkit-transform: translateY(10px) rotate(5deg); transform: translateY(10px) rotate(5deg);  }
 }
 
 @keyframes ear-tail {
-	from { transform: translateY(0px) rotate(-5deg); }
-	to { transform: translateY(10px) rotate(5deg);  }
+	from { -webkit-transform: translateY(0px) rotate(-5deg); transform: translateY(0px) rotate(-5deg); }
+	to { -webkit-transform: translateY(10px) rotate(5deg); transform: translateY(10px) rotate(5deg);  }
+}
+
+@-webkit-keyframes fence-far {
+	from { left: -10px; }
+	to { left: -114px; }
 }
 
 @keyframes fence-far {
 	from { left: -10px; }
 	to { left: -114px; }
+}
+
+@-webkit-keyframes fence-near {
+	from { left: -10px; }
+	to { left: -288px; }
 }
 
 @keyframes fence-near {
