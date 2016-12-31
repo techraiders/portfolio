@@ -7,14 +7,13 @@ body {
     background-image: url(../img/background.jpg);
     background-attachment: fixed;
   }
+* {box-sizing: border-box;}
 
 h2#name, h3 {
   font-family: serif;
 }
 
-.w3-navbar a:not([href]) {
-  cursor: not-allowed;
-}
+
 .modal {
   position: fixed;
   left: 0; top: 0;
@@ -27,10 +26,6 @@ h2#name, h3 {
   top: 50%; left: 50%;
   display: inline-block;
   padding: 20px;
-}
-
-.setAnchorPadding a {
-  padding: 4px 2px 4px 6px;
 }
 
 a.help {
@@ -126,7 +121,7 @@ th {
 }
 
 article#main {
-    margin: 0 auto 20px auto;
+    margin: 91px auto 20px auto;
     background-color: #fff;
 }
 
@@ -211,82 +206,6 @@ ul.socialicons li a i:hover {
   font-weight: bold;
 } /**************************** SOCIAL SHARE ************************************/
 
-/************************ SLIDE SHOW *********************************/
-.slides {
-  margin-top: -10px;
-}
-.slides figure {
-  margin: 0 20px;
-  position: relative;
-  overflow: hidden;
-}
-.slides figure img {
-  margin: 0;
-  opacity: .7;
-  -webkit-transition: all 1.5s;
-  transition: all 1.5s;
-}
-.slides:hover img {
-  opacity: 1;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-.slides a{
-  position: absolute;
-  top: 50%;
-  background-color: rgba(0,0,0,.8);
-  color: white;
-  z-index: 0;
-  font-size: 1.5em;
-  font-weight: bold;
-  height: 1.5em;
-  width: 1.5em;
-  border-radius: 50%;
-  padding-left: 5px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  padding-left: .3em;
-  cursor: pointer;
-  opacity: 0;
-  visibility: hidden;
-}
-.slides a#left {
-  left: 20px;
-  -webkit-transform: translateX(-34px);
-          transform: translateX(-34px);
-}
-.slides a#right {
-  right: 20px;
-  -webkit-transform: translateX(34px);
-          transform: translateX(34px);
-}
-.slides:hover a#left, .slides:hover a#right  {
-  -webkit-transform: none;
-          transform: none;
-  opacity: .8;
-  visibility: visible;
-}
-figcaption {
-  position: absolute;
-  bottom: 4px;
-  right: 0;
-  color: white;
-  text-align: center;
-  background-color: rgba(0,0,0,.5);
-  font-size: 1.3em;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: rotate(360deg) translateY(-345px);
-          transform: rotate(360deg) translateY(-345px);
-  -webkit-transition: all 1.3s ease-out;
-  transition: all 1.3s ease-out;
-}
-.slides:hover figcaption {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transform: none;
-          transform: none;
-} /************************ SLIDE SHOW *********************************/
 
 footer{
     text-align: center;
@@ -305,53 +224,5 @@ footer{
 @media screen and (min-width: 601px) { /* APPLICABLE ON MEDIUM & LARGE */
   #personal-info { 
    left: 9px;
-  }
-}
-@media screen and (min-width:  1188px) { /* MENU STYLE ON LARGE DEVICES */
-  .timeline ul {
-    padding: 0;
-  }
-  #burger {
-    display: none;
-  }
-  #navbar-large {
-    display: block;
-  }
-  #skillsTable {
-    width: 800px;
-    margin: 0 auto;
-  }
-  .list-divider {
-    padding: 8px 4px;
-    font-size: 1.2em;
-    background-color: rgba(211, 211, 211, 0.31);
-  }
-}
-
-
-@media screen and (max-width:  1187px) { /* APPLICABLE ON SMALL & MEDIUM */
-  #navbar-large {
-    display: none;
-  }
-  #burger li {
-    list-style-type: none;
-    margin: 5px;
-  }
-  #burger a {
-    text-decoration: none;
-  }
-  #burger {
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 7px;
-    left: 7px;
-    z-index: 2;
-  }
-  #burger, #burger>li, #burger>li>a {
-    display: inline-block;
-  }
-  #menuSidenav a{
-    margin: 0 auto;
   }
 }

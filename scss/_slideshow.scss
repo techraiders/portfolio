@@ -1,0 +1,76 @@
+/************************ SLIDE SHOW *********************************/
+.slides {
+  margin-top: -10px;
+}
+.slides figure {
+  margin: 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+.slides figure img {
+  margin: 0;
+  opacity: .7;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+.slides:hover img {
+  opacity: 1;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.slides a{
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0,0,0,.8);
+  color: white;
+  z-index: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 50%;
+  padding-left: 5px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  padding-left: .3em;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+}
+.slides a#left {
+  left: 20px;
+  -webkit-transform: translateX(-34px);
+          transform: translateX(-34px);
+}
+.slides a#right {
+  right: 20px;
+  -webkit-transform: translateX(34px);
+          transform: translateX(34px);
+}
+.slides:hover a#left, .slides:hover a#right  {
+  -webkit-transform: none;
+          transform: none;
+  opacity: .8;
+  visibility: visible;
+}
+figcaption {
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  color: white;
+  text-align: center;
+  background-color: rgba(0,0,0,.5);
+  font-size: 1.3em;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: rotate(360deg) translateY(-345px);
+          transform: rotate(360deg) translateY(-345px);
+  -webkit-transition: all 1.3s ease-out;
+  transition: all 1.3s ease-out;
+}
+.slides:hover figcaption {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: none;
+          transform: none;
+} /************************ SLIDE SHOW *********************************/
