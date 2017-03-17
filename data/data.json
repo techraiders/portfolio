@@ -41,18 +41,18 @@
   ],
 
   "skills" : [
-      { "name" : "Bootstrap",           "status" : "90%", "version" :"3.3.7",   "last_used_month" : "Mar", "last_used_year": "2017",  "experience": "2" }, 
-      { "name" : "W3.css",              "status" : "80%", "version" :"Latest",  "last_used_month" : "Dec", "last_used_year": "2016", "experience": "1" },
-      { "name" : "HTML",                "status" : "60%", "version" :"5",       "last_used_month" : "Mar", "last_used_year": "2017",  "experience": "1" },
-      { "name" : "CSS3",                "status" : "85%", "version" :"3",       "last_used_month" : "Mar", "last_used_year": "2017",  "experience": "1" },
-      { "name" : "AngularJS",           "status" : "80%", "version" :"1.5.8",   "last_used_month" : "Mar", "last_used_year": "2017",  "experience": "4" },
-      { "name" : "Firebase",            "status" : "20%", "version" :"Latest",  "last_used_month" : "Apr", "last_used_year": "2016",  "experience": "0" },
-      { "name" : "JavaScript",          "status" : "80%", "version" :"ES5",     "last_used_month" : "Mar", "last_used_year": "2017",  "experience": "3" },
-      { "name" : "Git and Github",      "status" : "75%", "version" :"NA",      "last_used_month" : "Mar", "last_used_year": "2017",  "experience": "7" },
-      { "name" : "Adobe Photoshop",     "status" : "70%", "version" :"CS6",     "last_used_month" : "Dec", "last_used_year": "2016",  "experience": "4" },
-      { "name" : "Ionic",               "status" : "30%", "version" :"1",       "last_used_month" : "Nov", "last_used_year":"2016",   "experience": "1" } ,
-      { "name" : "SASS",                "status" : "30%", "version" :"--",      "last_used_month" : "Nov", "last_used_year":"2016",   "experience": "1" },
-      { "name" : "Gulp",                "status" : "20%", "version" :"--",      "last_used_month" : "Jan", "last_used_year":"2017",   "experience": "1" }
+      { "name" : "Bootstrap",           "status" : "90%", "version" :"3.3.7",   "last_used_month" : "Mar", "last_used_year": "2017",  "experience": 12 }, 
+      { "name" : "W3.css",              "status" : "80%", "version" :"Latest",  "last_used_month" : "Dec", "last_used_year": "2016", "experience": 6 },
+      { "name" : "HTML",                "status" : "60%", "version" :"5",       "last_used_month" : "Mar", "last_used_year": "2017",  "experience": 12 },
+      { "name" : "CSS3",                "status" : "85%", "version" :"3",       "last_used_month" : "Mar", "last_used_year": "2017",  "experience": 6 },
+      { "name" : "AngularJS",           "status" : "80%", "version" :"1.5.8",   "last_used_month" : "Mar", "last_used_year": "2017",  "experience": 7 },
+      { "name" : "Firebase",            "status" : "20%", "version" :"Latest",  "last_used_month" : "Apr", "last_used_year": "2016",  "experience": 0 },
+      { "name" : "JavaScript",          "status" : "80%", "version" :"ES5",     "last_used_month" : "Mar", "last_used_year": "2017",  "experience": 6 },
+      { "name" : "Git and Github",      "status" : "75%", "version" :"NA",      "last_used_month" : "Mar", "last_used_year": "2017",  "experience": 7 },
+      { "name" : "Adobe Photoshop",     "status" : "70%", "version" :"CS6",     "last_used_month" : "Dec", "last_used_year": "2016",  "experience": 6 },
+      { "name" : "Ionic",               "status" : "30%", "version" :"1",       "last_used_month" : "Nov", "last_used_year":"2016",   "experience": 1 } ,
+      { "name" : "SASS",                "status" : "30%", "version" :"--",      "last_used_month" : "Nov", "last_used_year":"2016",   "experience": 1 },
+      { "name" : "Gulp",                "status" : "20%", "version" :"--",      "last_used_month" : "Jan", "last_used_year":"2017",   "experience": 1 }
   ],
 
   "educations" : [
