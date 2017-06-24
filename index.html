@@ -2,178 +2,203 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en-us" ng-app="ngPortfolio" > <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>HIRE THE MOST CREATIVE FRONT END DEVELOPER | SOFTWARE DEVELOPER</title>
-        <meta name="description" content="Navneet is an awarded wekgeek and the most creative Front End Developer | Software Engineer. He is also a consistent self-learner. He likes to make the web a beautiful place by his design and animation skills. His measure skills includes AngularJs, Ionic, SASS, Bootstrap3, CSS3, JavaScript, HTML5, Version COntrol using Git and Github etc.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <base target="_blank">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-us" data-ng-app="ngPortfolio">
+<!--<![endif]-->
 
-        <!-- font awesome CDN for social icons -->
-        <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/w3.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/christmas-lights.css">
-        <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
-        <link rel="stylesheet" href="css/timeline.css">
-        <link rel="stylesheet" href="css/keyframeAnimations.css">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>HIRE THE MOST CREATIVE FRONT END DEVELOPER | SOFTWARE DEVELOPER</title>
+  <meta name="description" content="Navneet is an awarded wekgeek and the most creative Front End Developer | Software Engineer. He is also a consistent self-learner. He likes to make the web a beautiful place by his design and animation skills. His measure skills includes AngularJs, Ionic, SASS, Bootstrap3, CSS3, JavaScript, HTML5, Version COntrol using Git and Github etc.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base target="_blank">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <!-- font awesome CDN for social icons -->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/christmas-lights.css">
+  <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
+  <link rel="stylesheet" href="css/timeline.css">
+  <link rel="stylesheet" href="css/keyframeAnimations.css">
+  <!--Load the AJAX API-->
+  <script type="text/javascript" src="js/googlechart.js"></script>
+  <style>
+  @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+    .fmg-40 {
+      margin-left: 40px;
+    }
+  }
+  </style>
+</head>
 
-        <!--Load the AJAX API-->
-        <script type="text/javascript" src="js/googlechart.js"></script>
-        <style>
-          @media screen and (-webkit-min-device-pixel-ratio:0)
-              and (min-resolution:.001dpcm) {
-             .fmg-40 {
-                  margin-left: 40px;
-              }
-          }
-        </style>
-    </head>
-    <body ng-controller="homeCtrl">
-        <!--[if lt IE 8]>
+<body data-ng-controller="homeCtrl">
+  <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="modal" ng-hide="hideSpinner">
-          <div class="w3-jumbo modal-content"><i class="fa fa-spinner w3-spin w3-text-green"></i></div>
-        </div> 
-      <header id="menu" ng-include="'components/navbar.html'"></header>
-
-      <ul id="wire">
-        <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li>
-      </ul>
-        <h2 id="christmas">Happy Holi</h2>
-
-    <!-- side nav that holds social sharing buttons -->
-    <aside ng-include="'components/sidenav.html'" style="position:absolute;top:30%;"></aside>
-
-      <article id="main">
-        <section ng-include="'components/siteheader.html'"></section>
-
-          <section class="w3-container" id="introduction">
-              <div class="w3-row">
-                <div class="w3-col l6">
-                  <header class="w3-green">
-                    <h3>May I introduce myself?</h3>
-                  </header>
-
-                    <dl>
-                      <p>Following terms describes my personality well:</p>
-                      <dt><i class="fa fa-code" aria-hidden="true"></i> APP DEVELOPER</dt>
-                        <dd>Using Angular Js, JavaScript, CSS3, I can build dynamic, interactive, cross browser <i class="fa fa-mobile" aria-hidden="true"></i>
-                        <i class="fa fa-tablet" aria-hidden="true"></i> <i class="fa fa-desktop" aria-hidden="true"></i> platform independent
-                        <i class="fa fa-android" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-windows" aria-hidden="true"></i> HTML enhanced web / mobile applications.</dd>
-                      <dt><i class="fa fa-bug" aria-hidden="true"></i> DEBUGGER</dt>
-                        <dd>Using Google Chrome Dev Tool I can easily inspect web/mobile apps, locate bugs and debug, and optimize performance to maximize speed and scale.</dd>
-                      <dt><i class="fa fa-code-fork" aria-hidden="true"></i> VERSION CONTROLLER</dt>
-                        <dd>Using my Git and Github version control skills I can easily maintain my source code avoiding complexity and bugs, Contribute to a project from anywhere in the world.</dd>
-                    </dl>
-                </div><!-- col -->
-                
-                <div class="w3-col l6">
-                  <header class="w3-green">
-                    <h3><i class="fa fa-trophy" aria-hidden="true"></i> Achievements &amp; Participations</h3>
-                  </header>
-                  <div class="slides" style="max-width:800px;position:relative">
-                    <figure class="w3-display-container mySlides">
-                      <img ng-src="img/quiz.jpg" style="width:100%" class="w3-animate-opacity">
-                      <figcaption>
-                        Runner up in Technical Quiz
-                      </figcaption>
-                    </figure>
-                    <figure class="w3-display-container mySlides">
-                      <img src="img/webgeek.jpg" style="width:100%" class="w3-animate-opacity">
-                      <figcaption>
-                        Won Web Design Competition
-                      </figcaption>
-                    </figure>
-                    <figure class="w3-display-container mySlides">
-                      <img ng-src="img/coverdesign.jpg" style="width:100%" class="w3-animate-opacity">
-                      <figcaption>
-                        Participated in Magazine Cover Design Competition
-                      </figcaption>
-                    </figure>
-                    <figure class="w3-display-container mySlides">
-                      <img ng-src="img/studentcouncil.jpg" style="width:100%" class="w3-animate-opacity">
-                      <figcaption>
-                        Have been a member of student council
-                      </figcaption>
-                    </figure>
-                      <a id="left" onclick="plusDivs(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-                      <a id="right" onclick="plusDivs(1)"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                  </div>
-                </div> <!-- col -->
-              </div><!-- row -->
-              <div class="w3-row-padding">
-                <div class="w3-col">
-                  <dl>
-                      <dt><i class="fa fa-css3" aria-hidden="true"></i> ANIMATOR</dt>
-                          <dd>Using CSS3 keyframe animations or Adobe Photoshop CS6, I can build high performance customized animations in your UI. <a href="https://goo.gl/photos/3trtkzuWVutgSi3w7">WORK SAMPLE</a> </dd>
-                      <dt><i class="fa fa-pencil-square-o" aria-hidden="true"></i> IMAGE EDITOR</dt>
-                        <dd>Using Adobe Photoshop CS6, I do non-destructive, revision controlled editing of pictures, images. <a href="https://goo.gl/photos/3trtkzuWVutgSi3w7">WORK SAMPLE</a></dd>
-                      <dt><i class="fa fa-line-chart" aria-hidden="true"></i> CONSISTENT PERFORMER</dt>
-                        <dd>I am a consistent performer as despite tons of ups and downs in my life. I always secured approximately same score in my academics.</dd>
-                      <dt><i class="fa fa-graduation-cap" aria-hidden="true"></i> SELF-LEARNER</dt>
-                        <dd>I am a self-learner. I keep on updating/upgrading my skills, learning new skills on Lynda.com and Udemy.com </dd>
-                      <dt><i class="fa fa-eye" aria-hidden="true"></i> PROOFREADER</dt>
-                        <dd>I am good at proofreading, and written communication skill, have contributed articles to institute's annual magazine, have partcipated in essay writing competition. </dd>
-                      <dt></dt>
-                  </dl>
-                </div>
-              </div>
-           </section>
-
-        <!--  EXPERIENCE AND SERVICES 
-        <section ng-include="'components/experienceandservices.html'"></section> -->
-
-        <!-- TIMELINE -->
-        <section ng-include="'components/timeline.html'"></section>
-
-        <div class="w3-row">
-          <div class="w3-col">
-            <header class="w3-green"><h3>PROJECT SHOW CASE</h3></header>
-            <button class="w3-btn" ui-sref="pig-animation">PIG ANIMATION</button>
-            <button class="w3-btn" ui-sref="portfolio">portfolio</button>
-            <ui-view></ui-view>
+  <div class="modal" data-ng-hide="hideSpinner">
+    <div class="w3-jumbo modal-content"><i class="fa fa-spinner w3-spin w3-text-green"></i></div>
+  </div>
+  <header id="menu" data-ng-include="'components/navbar.html'"></header>
+  <ul id="wire">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <h2 id="christmas">Happy New Year 2017</h2>
+  <!-- side nav that holds social sharing buttons -->
+  <aside data-ng-include="'components/sidenav.html'" style="position:absolute;top:30%;"></aside>
+  <article id="main">
+    <section data-ng-include="'components/siteheader.html'"></section>
+    <section class="w3-container" id="introduction">
+      <div class="w3-row">
+        <div class="w3-col l6">
+          <header class="w3-green">
+            <h3>May I introduce myself?</h3>
+          </header>
+          <dl>
+            <p>Following terms describes my personality well:</p>
+            <dt><i class="fa fa-code" aria-hidden="true"></i> APP DEVELOPER</dt>
+            <dd>Using Angular Js, JavaScript, CSS3, I can build dynamic, interactive, cross browser <i class="fa fa-mobile" aria-hidden="true"></i>
+              <i class="fa fa-tablet" aria-hidden="true"></i> <i class="fa fa-desktop" aria-hidden="true"></i> platform independent
+              <i class="fa fa-android" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-windows" aria-hidden="true"></i> HTML enhanced web / mobile applications.</dd>
+            <dt><i class="fa fa-bug" aria-hidden="true"></i> DEBUGGER</dt>
+            <dd>Using Google Chrome Dev Tool I can easily inspect web/mobile apps, locate bugs and debug, and optimize performance to maximize speed and scale.</dd>
+            <dt><i class="fa fa-code-fork" aria-hidden="true"></i> VERSION CONTROLLER</dt>
+            <dd>Using my Git and Github version control skills I can easily maintain my source code avoiding complexity and bugs, Contribute to a project from anywhere in the world.</dd>
+          </dl>
+        </div>
+        <!-- col -->
+        <div class="w3-col l6">
+          <header class="w3-green">
+            <h3><i class="fa fa-trophy" aria-hidden="true"></i> Achievements &amp; Participations</h3>
+          </header>
+          <div class="slides" style="max-width:800px;position:relative">
+            <figure class="w3-display-container mySlides">
+              <img data-ng-src="img/quiz.jpg" style="width:100%" class="w3-animate-opacity">
+              <figcaption>
+                Runner up in Technical Quiz
+              </figcaption>
+            </figure>
+            <figure class="w3-display-container mySlides">
+              <img src="img/webgeek.jpg" style="width:100%" class="w3-animate-opacity">
+              <figcaption>
+                Won Web Design Competition
+              </figcaption>
+            </figure>
+            <figure class="w3-display-container mySlides">
+              <img data-ng-src="img/coverdesign.jpg" style="width:100%" class="w3-animate-opacity">
+              <figcaption>
+                Participated in Magazine Cover Design Competition
+              </figcaption>
+            </figure>
+            <figure class="w3-display-container mySlides">
+              <img data-ng-src="img/studentcouncil.jpg" style="width:100%" class="w3-animate-opacity">
+              <figcaption>
+                Have been a member of student council
+              </figcaption>
+            </figure>
+            <a id="left" onclick="plusDivs(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+            <a id="right" onclick="plusDivs(1)"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
           </div>
         </div>
-        
-        <!-- EDUCATION and TRAININGS-->
-        <section ng-include="'components/onlinetrainings.html'"></section>
-        <!-- SKILLS and HOBBIES-->
-        <section ng-include="'components/skills.html'"></section>
+        <!-- col -->
+      </div>
+      <!-- row -->
+      <div class="w3-row-padding">
+        <div class="w3-col">
+          <dl>
+            <dt><i class="fa fa-css3" aria-hidden="true"></i> ANIMATOR</dt>
+            <dd>Using CSS3 keyframe animations or Adobe Photoshop CS6, I can build high performance customized animations in your UI. <a href="https://goo.gl/photos/3trtkzuWVutgSi3w7">WORK SAMPLE</a> </dd>
+            <dt><i class="fa fa-pencil-square-o" aria-hidden="true"></i> IMAGE EDITOR</dt>
+            <dd>Using Adobe Photoshop CS6, I do non-destructive, revision controlled editing of pictures, images. <a href="https://goo.gl/photos/3trtkzuWVutgSi3w7">WORK SAMPLE</a></dd>
+            <dt><i class="fa fa-line-chart" aria-hidden="true"></i> CONSISTENT PERFORMER</dt>
+            <dd>I am a consistent performer as despite tons of ups and downs in my life. I always secured approximately same score in my academics.</dd>
+            <dt><i class="fa fa-graduation-cap" aria-hidden="true"></i> SELF-LEARNER</dt>
+            <dd>I am a self-learner. I keep on updating/upgrading my skills, learning new skills on Lynda.com and Udemy.com </dd>
+            <dt><i class="fa fa-eye" aria-hidden="true"></i> PROOFREADER</dt>
+            <dd>I am good at proofreading, and written communication skill, have contributed articles to institute's annual magazine, have partcipated in essay writing competition. </dd>
+            <dt></dt>
+          </dl>
+        </div>
+      </div>
+    </section>
+    <!--  EXPERIENCE AND SERVICES 
+        <section data-ng-include="'components/experienceandservices.html'"></section> -->
+    <!-- TIMELINE -->
+    <section data-ng-include="'components/timeline.html'"></section>
+    <div class="w3-row">
+      <div class="w3-col">
+        <header class="w3-green">
+          <h3>PROJECT SHOW CASE</h3></header>
+        <button class="w3-btn" ui-sref="pig-animation">PIG ANIMATION</button>
+        <button class="w3-btn" ui-sref="portfolio">portfolio</button>
+        <ui-view></ui-view>
+      </div>
+    </div>
+    <!-- EDUCATION and TRAININGS-->
+    <section data-ng-include="'components/onlinetrainings.html'"></section>
+    <!-- SKILLS and HOBBIES-->
+    <section data-ng-include="'components/skills.html'"></section>
+    <!-- CONTACT US -->
+    <section data-ng-include="'components/contactus.html'"></section>
+  </article>
+  <footer class="text-center">
+    <p>Copyright &copy; Navneet Creations.
+      <br/> All rights reserved &reg;</p>
+    </div>
+  </footer>
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+  <script type="text/javascript" src="js/vendor/jquery-1.11.2.min.js"></script>
+  <script>
+  window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-socialshare/2.3.3/angular-socialshare.min.js"></script>
+  <!-- <script src="node_modules/angular/angular.min.js"></script> -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/candidates.fac.js" type="text/javascript"></script>
+  <script src="scripts/home.ctr.js" type="text/javascript"></script>
+  <script src="js/main.js"></script>
+  <script>
+  /* Google Analytics: change UA-XXXXX-X to be your site's ID. */
+  /* (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+   function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+   e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+   e.src='//www.google-analytics.com/analytics.js';
+   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+   ga('create','UA-XXXXX-X','auto');ga('send','pageview');*/
+  </script>
+</body>
 
-        <!-- CONTACT US -->
-        <section ng-include="'components/contactus.html'"></section>
-      </article>
-
-      <footer class="text-center">
-              <p>Copyright &copy; Navneet Creations. <br/> All rights reserved &reg;</p>
-        </div>   
-      </footer>      
-        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
-        <script type="text/javascript" src="js/vendor/jquery-1.11.2.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-socialshare/2.3.3/angular-socialshare.min.js"></script>
-       <!-- <script src="node_modules/angular/angular.min.js"></script> -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/candidates.fac.js" type="text/javascript"></script>
-        <script src="scripts/home.ctr.js" type="text/javascript"></script>
-        <script src="js/main.js"></script>
-        
-        <script>
-        /* Google Analytics: change UA-XXXXX-X to be your site's ID. */
-           /* (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');*/ 
-        </script>
-    </body>
 </html>
