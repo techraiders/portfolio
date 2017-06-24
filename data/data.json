@@ -1,36 +1,43 @@
 {
-  "firstName" : "Navneet",
-  "lastName"  : "Prakash",
-  "address"   : {
-      "apartment" : "WA-112",
-      "street"    : "Gali No. -16",
-      "colony"    : "Shakarpur",
-      "city"      : "Delhi-92",
-      "state"     : "New Delhi"
+  "firstName": "Navneet",
+  "lastName": "Prakash",
+  "address": {
+    "apartment": "WA-112",
+    "street": "Gali No. -16",
+    "colony": "Shakarpur",
+    "city": "Delhi-92",
+    "state": "New Delhi"
   },
-  "contact"   : {
-      "phone"     : "+91-9527936489",
-      "email"     : "hello_navneet@hotmail.com",
-      "github"    : "https://www.github.com/techraiders",
-      "linkedin"  : "in.linkedin.com/in/techraiders",
-      "skype"     : "null"
+  "contact": {
+    "phone": "+91-9527936489",
+    "email": "hello_navneet@hotmail.com",
+    "github": "https://www.github.com/techraiders",
+    "linkedin": "in.linkedin.com/in/techraiders",
+    "skype": "null"
   },
 
-  "summary"   : [
-      "I am an awarded 'WebGeek' with Hands-on experience of CSS Framework W3.CSS, and Bootstrap3, Google's MV(Whatever) Front End Framework AngularJS. I also have good knowledge of HTML5, Object Oriented Javascript., PHP, SDLC, Git and Github.",
-      "I am a tech savvy who likes to play with Front End Development."
+  "summary": [
+    "I am an awarded 'WebGeek' with Hands-on experience of CSS Framework W3.CSS, and Bootstrap3, Google's MV(Whatever) Front End Framework AngularJS. I also have good knowledge of HTML5, Object Oriented Javascript., PHP, SDLC, Git and Github.",
+    "I am a tech savvy who likes to play with Front End Development."
   ],
 
-  "slides" : [
-      {"imgname" : "quiz.jpg",    "caption" : "Runner up in Technical Quiz"},
-      {"imgname" : "webgeek.jpg", "caption" : "Won Web Design Competition"},
-      {"imgname" : "trophy.jpg", "caption" : "Received trophy for quiz contest"},
-      {"imgname" : "team.jpg", "caption" : "Awarded for team work"}
-  ],
+  "slides": [{
+    "imgname": "quiz.jpg",
+    "caption": "Runner up in Technical Quiz"
+  }, {
+    "imgname": "webgeek.jpg",
+    "caption": "Won Web Design Competition"
+  }, {
+    "imgname": "trophy.jpg",
+    "caption": "Received trophy for quiz contest"
+  }, {
+    "imgname": "team.jpg",
+    "caption": "Awarded for team work"
+  }],
 
-  "whatido" : [ ],
+  "whatido": [],
 
-  "services" : [
+  "services": [
     "Wireframing/Mockups/Prototyping with Balsamiq Mockups.",
     "Translating those wireframes/mockups/prototypes into fully functional UI.",
     "Responsive web app or Hybrid mobile app development using W3.css/Bootstrap 3/Ionic, AngularJS.",
@@ -40,103 +47,169 @@
     "E-commerce setup using OpenCart.", "Technical Writing"
   ],
 
-  "skills" : [
-      { "name" : "Bootstrap",           "status" : "90%", "version" :"3.3.7",   "last_used_month" : "Mar", "last_used_year": "2017",  "experience": 12 }, 
-      { "name" : "W3.css",              "status" : "80%", "version" :"Latest",  "last_used_month" : "Dec", "last_used_year": "2016", "experience": 6 },
-      { "name" : "HTML",                "status" : "60%", "version" :"5",       "last_used_month" : "Mar", "last_used_year": "2017",  "experience": 12 },
-      { "name" : "CSS3",                "status" : "85%", "version" :"3",       "last_used_month" : "Mar", "last_used_year": "2017",  "experience": 6 },
-      { "name" : "AngularJS",           "status" : "80%", "version" :"1.5.8",   "last_used_month" : "Mar", "last_used_year": "2017",  "experience": 7 },
-      { "name" : "Firebase",            "status" : "20%", "version" :"Latest",  "last_used_month" : "Apr", "last_used_year": "2016",  "experience": 0 },
-      { "name" : "JavaScript",          "status" : "80%", "version" :"ES5",     "last_used_month" : "Mar", "last_used_year": "2017",  "experience": 6 },
-      { "name" : "Git and Github",      "status" : "75%", "version" :"NA",      "last_used_month" : "Mar", "last_used_year": "2017",  "experience": 7 },
-      { "name" : "Adobe Photoshop",     "status" : "70%", "version" :"CS6",     "last_used_month" : "Dec", "last_used_year": "2016",  "experience": 6 },
-      { "name" : "Ionic",               "status" : "30%", "version" :"1",       "last_used_month" : "Nov", "last_used_year":"2016",   "experience": 1 } ,
-      { "name" : "SASS",                "status" : "30%", "version" :"--",      "last_used_month" : "Nov", "last_used_year":"2016",   "experience": 1 },
-      { "name" : "Gulp",                "status" : "20%", "version" :"--",      "last_used_month" : "Jan", "last_used_year":"2017",   "experience": 1 }
-  ],
+  "skills": [{
+    "name": "AngularJS",
+    "status": "80%",
+    "version": "1.5.8",
+    "last_used_month": "June",
+    "last_used_year": "2017",
+    "experience": 7
+  }, {
+    "name": "Jasmine",
+    "status": "50%",
+    "version": "2.6.4",
+    "last_used_month": "April",
+    "last_used_year": "2017",
+    "experience": 1
+  }, {
+    "name": "Protractor",
+    "status": "50%",
+    "version": "--",
+    "last_used_month": "June",
+    "last_used_year": "2017",
+    "experience": 1.5
+  }, {
+    "name": "Bootstrap",
+    "status": "95%",
+    "version": "3.3.7",
+    "last_used_month": "June",
+    "last_used_year": "2017",
+    "experience": 12
+  }, {
+    "name": "W3.css",
+    "status": "80%",
+    "version": "Latest",
+    "last_used_month": "Dec",
+    "last_used_year": "2016",
+    "experience": 6
+  }, {
+    "name": "HTML",
+    "status": "60%",
+    "version": "5",
+    "last_used_month": "June",
+    "last_used_year": "2017",
+    "experience": 12
+  }, {
+    "name": "CSS3",
+    "status": "85%",
+    "version": "3",
+    "last_used_month": "Mar",
+    "last_used_year": "2017",
+    "experience": 6
+  }, {
+    "name": "JavaScript",
+    "status": "80%",
+    "version": "ES5",
+    "last_used_month": "Mar",
+    "last_used_year": "2017",
+    "experience": 6
+  }, {
+    "name": "Git and Github",
+    "status": "75%",
+    "version": "NA",
+    "last_used_month": "Mar",
+    "last_used_year": "2017",
+    "experience": 7
+  }, {
+    "name": "Adobe Photoshop",
+    "status": "70%",
+    "version": "CS6",
+    "last_used_month": "Dec",
+    "last_used_year": "2016",
+    "experience": 6
+  }, {
+    "name": "Ionic",
+    "status": "30%",
+    "version": "1",
+    "last_used_month": "Nov",
+    "last_used_year": "2016",
+    "experience": 1
+  }, {
+    "name": "SASS",
+    "status": "30%",
+    "version": "--",
+    "last_used_month": "Nov",
+    "last_used_year": "2016",
+    "experience": 1
+  }, {
+    "name": "Gulp",
+    "status": "20%",
+    "version": "--",
+    "last_used_month": "Jan",
+    "last_used_year": "2017",
+    "experience": 1
+  }],
 
-  "educations" : [
-      {
-        "degree"     : "MCA",
-        "university" : "University of Pune, Pune",
-        "institute"  : "Padmashree Dr. D.Y.Patil Institute of MCA, Akurdi, Pune",
-        "yop"        : "2016",
-        "percentage" : "64.38"
-      },
-      {
-        "degree"     : "BCA",
-        "university" : "Jiwaji University, Gwalior",
-        "institute"  : "Prestige Institute of Management, Gwalior",
-        "yop"        : "2013",
-        "percentage" : "67.85"
-      },
-      {
-        "degree"      : "H.SC.",
-        "university"  : "Bihar School Examination Board, Patna",
-        "institute"     : "Tapeshwar Singh College, Chapra",
-        "yop"         : "2009",
-        "percentage"  : "68.60"
-      },
-       {
-        "degree"      : "S.SC",
-        "university"  : "Bihar School Examination Board, Patna",
-        "institute"     : "Vishweshwar Seminary High School, Chapra",
-        "yop"         : "2007",
-        "percentage"  : "60.80"
-      }
-  ],
+  "educations": [{
+    "degree": "MCA",
+    "university": "University of Pune, Pune",
+    "institute": "Padmashree Dr. D.Y.Patil Institute of MCA, Akurdi, Pune",
+    "yop": "2016",
+    "percentage": "64.38"
+  }, {
+    "degree": "BCA",
+    "university": "Jiwaji University, Gwalior",
+    "institute": "Prestige Institute of Management, Gwalior",
+    "yop": "2013",
+    "percentage": "67.85"
+  }, {
+    "degree": "H.SC.",
+    "university": "Bihar School Examination Board, Patna",
+    "institute": "Tapeshwar Singh College, Chapra",
+    "yop": "2009",
+    "percentage": "68.60"
+  }, {
+    "degree": "S.SC",
+    "university": "Bihar School Examination Board, Patna",
+    "institute": "Vishweshwar Seminary High School, Chapra",
+    "yop": "2007",
+    "percentage": "60.80"
+  }],
 
-  "trainings" : [
-      
-      {
-        "name" : "HTML 5 - HTML5 training for web developers",
-        "certificateURL" : "ude.my/UC-59ZM2CW8"
-      },
-      {
-        "name" : "Git Fundamentals Mastery & GitHub : 100% Hands-on Git Guide",
-        "certificateURL" : "ude.my/UC-DIX4NVSM"
-      },
-      {
-        "name" : "Mastering Web and Mobile Debugging Using Dev Tools",
-        "certificateURL" : "ude.my/UC-XGNOIS8P"
-      },
-      {
-        "name" : "Angular 2 Master Class",
-        "certificateURL" : "ude.my/UC-V0SYWARM"
-      },
-      {
-        "name" : "OpenCart 2.0 Video QuickStart",
-        "certificateURL" : "ude.my/UC-40TOTS5R"
-      },
-      {
-        "name" : "Learn AngularJS Step By Step",
-        "certificateURL" : "ude.my/UC-2OKEOOR9"
-      },
-      {
-        "name" : "Photoshop Fantastic! - The Comprehensive Guide to Photoshop",
-        "certificateURL" : "ude.my/UC-9ZQ9UGZ9"
-      },
-      {
-        "name" : "Ultimate AngularJS: Build a Real-World App from Scratch",
-        "certificateURL" : "NA"
-      }
+  "trainings": [
+
+    {
+      "name": "HTML 5 - HTML5 training for web developers",
+      "certificateURL": "ude.my/UC-59ZM2CW8"
+    }, {
+      "name": "Git Fundamentals Mastery & GitHub : 100% Hands-on Git Guide",
+      "certificateURL": "ude.my/UC-DIX4NVSM"
+    }, {
+      "name": "Mastering Web and Mobile Debugging Using Dev Tools",
+      "certificateURL": "ude.my/UC-XGNOIS8P"
+    }, {
+      "name": "Angular 2 Master Class",
+      "certificateURL": "ude.my/UC-V0SYWARM"
+    }, {
+      "name": "OpenCart 2.0 Video QuickStart",
+      "certificateURL": "ude.my/UC-40TOTS5R"
+    }, {
+      "name": "Learn AngularJS Step By Step",
+      "certificateURL": "ude.my/UC-2OKEOOR9"
+    }, {
+      "name": "Photoshop Fantastic! - The Comprehensive Guide to Photoshop",
+      "certificateURL": "ude.my/UC-9ZQ9UGZ9"
+    }, {
+      "name": "Ultimate AngularJS: Build a Real-World App from Scratch",
+      "certificateURL": "NA"
+    }
   ],
-  "achievements" : [
-        "Won 1st prize in inter-college ‘Web Design’ competition.",
-        "Awarded as Runner-up in ‘Technical Quiz’ Competition.",
-        "Have been a member of Student Council at my institute.",
-        "Contributed as Proofreader for my college magazine.",
-        "Participated in Magazine Cover design competition.",
-        "Participated in Essay Writing Competition on national youth day.",
-        "Coordinated cultural and sports events organized in the college.",
-        "Actively participated in social activities."
+  "achievements": [
+    "Won 1st prize in inter-college ‘Web Design’ competition.",
+    "Awarded as Runner-up in ‘Technical Quiz’ Competition.",
+    "Have been a member of Student Council at my institute.",
+    "Contributed as Proofreader for my college magazine.",
+    "Participated in Magazine Cover design competition.",
+    "Participated in Essay Writing Competition on national youth day.",
+    "Coordinated cultural and sports events organized in the college.",
+    "Actively participated in social activities."
   ],
-  "experiences" : [
-      "Achieved modern, complex, professional and responsive web layout using grid system in W3.css and Bootstrap3.",
-      "Created configured Pie charts using Google Charts.",
-      "Contributed to development of E-commerce from scratch.",
-      "Prepared Wireframes / Mockups using Balsamiq Mockups.",
-      "Ensured cross browser compatibility and responsiveness, debugged pages using Google Chrome Developer tools.",
-      "Managed source code using Git on Github, this includes creating repositories, branches, committing, resetting, merging and deleting branches."            
+  "experiences": [
+    "Achieved modern, complex, professional and responsive web layout using grid system in W3.css and Bootstrap3.",
+    "Created configured Pie charts using Google Charts.",
+    "Contributed to development of E-commerce from scratch.",
+    "Prepared Wireframes / Mockups using Balsamiq Mockups.",
+    "Ensured cross browser compatibility and responsiveness, debugged pages using Google Chrome Developer tools.",
+    "Managed source code using Git on Github, this includes creating repositories, branches, committing, resetting, merging and deleting branches."
   ]
 }
